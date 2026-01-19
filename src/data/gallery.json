@@ -1,0 +1,30 @@
+[
+  {
+    "id": "g1",
+    "title": "Brickhill Corporate Office",
+    "description": "Our headquarters in Mohali",
+    "category": "office",
+    "image_url": "https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg"
+  },
+  {
+    "id": "g2",
+    "title": "Residential Project",
+    "description": "Luxury apartments project",
+    "category": "project",
+    "image_url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+  },
+  {
+    "id": "g3",
+    "title": "Team Meeting",
+    "description": "Strategy & planning session",
+    "category": "team",
+    "image_url": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+  },
+  {
+    "id": "g4",
+    "title": "Project Launch Event",
+    "description": "New commercial project launch",
+    "category": "event",
+    "image_url": "https://images.pexels.com/photos/534228/pexels-photo-534228.jpeg"
+  }
+]

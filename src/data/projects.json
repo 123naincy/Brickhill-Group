@@ -1,0 +1,55 @@
+
+[
+  {
+    "id": "p1",
+    "title": "Eden Street",
+    "description": "Eden Street is envisioned as a modern shopping and business destination.",
+    "type": "commercial",
+    "location": "Mohali, Punjab",
+    "area": "2 Acre",
+    "status": "ongoing",
+    "price_range": "₹1.2Cr",
+    "featured_image": "edenStreet",
+    "amenities": ["Parking", "Gym", "Club House", "24x7 Security"],
+    "created_at": "2026-01-10T10:30:00Z"
+  },
+  {
+    "id": "p2",
+    "title": "Bridal Square",
+    "description": "Bridal Square represents the perfect convergence of location, design, and opportunity.",
+    "type": "commercial",
+    "location": "Chandigarh-Manali National Highway",
+    "area": "6 Acre",
+    "status": "ongoing",
+    "price_range": "₹7 - 7.5Cr",
+    "featured_image": "bridalSquare",
+    "amenities": ["Premium Showrooms", "Ample Parking", "Security"],
+    "created_at": "2026-01-05T09:00:00Z"
+  },
+  {
+    "id": "p3",
+    "title": "Panipat Industrial Plots",
+    "description": "Panipat’s NH-709 industrial belt is rapidly emerging as a major growth hotspot.",
+    "type": "industrial",
+    "location": "Panipat National Highway",
+    "area": "18.5 Acre",
+    "status": "ongoing",
+    "price_range": "₹1.3Cr",
+    "featured_image": "panipatIndustrial",
+    "amenities": ["High Growth Potential", "Ample Parking", "Security"],
+    "created_at": "2026-01-05T09:00:00Z"
+  },
+  {
+    "id": "p4",
+    "title": "Logi Prime Warehouse",
+    "description": "End-to-end warehousing, fulfillment, and distribution solutions designed to scale your business efficiently.",
+    "type": "warehouse",
+    "location": "All Over India",
+    "area": "Specific to requirement",
+    "status": "ongoing",
+    "price_range": "Specific to warehouse size",
+    "featured_image": "logiPrime",
+    "amenities": ["Shared Warehousing", "Brokerage Services", "3PL Solutions"],
+    "created_at": "2026-01-05T09:00:00Z"
+  }
+]

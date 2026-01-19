@@ -1,0 +1,22 @@
+[
+  {
+    "id": "b1",
+    "title": "Mohali Real Estate: Why Investors Are Choosing Tricity",
+    "excerpt": "Mohali has emerged as one of North India’s fastest-growing real estate hubs. Here’s why smart investors are shifting focus here.",
+    "author": "Brickhill Group",
+    "category": "Investment",
+    "published_at": "2025-01-10",
+    "featured_image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg",
+    "slug": "mohali-real-estate-investment"
+  },
+  {
+    "id": "b2",
+    "title": "Commercial Property vs Residential: What Should You Buy?",
+    "excerpt": "Choosing between commercial and residential property can be confusing. We break it down for you in this guide.",
+    "author": "Brickhill Group",
+    "category": "Buying Guide",
+    "published_at": "2025-01-05",
+    "featured_image": "https://images.pexels.com/photos/534228/pexels-photo-534228.jpeg",
+    "slug": "commercial-vs-residential-property"
+  }
+]
