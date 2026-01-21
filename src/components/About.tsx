@@ -70,10 +70,9 @@ export default function About() {
 
           <div className="space-y-8">
             {[
-              { year: '2008', title: 'Foundation', desc: 'Started with a vision to transform the real estate landscape' },
-              { year: '2012', title: 'Expansion', desc: 'Expanded into commercial and industrial sectors' },
-              { year: '2018', title: 'Recognition', desc: 'Received multiple industry awards for excellence' },
-              { year: '2024', title: 'Innovation', desc: 'Leading sustainable development initiatives' },
+              { year: '2016', title: 'Foundation', desc: 'Started with a vision to transform the real estate landscape' },
+              { year: '2021', title: 'Expansion', desc: 'Expanded into commercial and industrial sectors' },
+              { year: '2025', title: 'Innovation', desc: 'Leading sustainable development initiatives' },
             ].map((item, i) => (
               <div key={i} className="flex items-start">
                 <div className="w-32 font-bold text-[#c8f0e6]">{item.year}</div>

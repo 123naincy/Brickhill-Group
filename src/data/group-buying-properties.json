@@ -2,11 +2,11 @@
 "properties": [
 {
 "id": "p1",
-"title": "Luxury Beachfront Villa",
-"description": "Stunning 4-bedroom villa with ocean views, infinity pool, and private beach access.",
-"location": "Malibu, California",
+"title": "Eden Street",
+"description": "Eden Street is envisioned as a modern shopping and business destination , designed to cater to the needs of today’s entrepreneurs and investors. ",
+"location": "Chandigarh-Manali Highway, Mohali, Punjab 140301",
 "image_url": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
-"total_price": 2500000,
+"total_price": "1.35Cr",
 "min_participants": 5,
 "max_participants": 10,
 "deadline": "2026-02-20T23:59:59Z",

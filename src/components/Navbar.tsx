@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: "Group Buying", path: "/group-buying" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+    
   ];
 
   return (
@@ -47,10 +48,10 @@ export default function Navbar() {
 
             {/* CTA */}
             <Link
-              to="/group-buying"
+              to="/webinar"
               className="ml-6 bg-[#fffbba] text-[#0f4b40] px-6 py-2 rounded-full font-bold hover:scale-105 transition"
             >
-              Join Group Buying
+              Join Webinar
             </Link>
           </div>
 

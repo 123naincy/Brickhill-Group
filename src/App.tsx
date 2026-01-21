@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import GroupBuying from "./pages/GroupBuying";
+import WebinarPage from "./pages/WebinarPage"
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/group-buying" element={<GroupBuying />} />
+          <Route path="/webinar" element={<WebinarPage />} />
         </Routes>
 
         <Footer />

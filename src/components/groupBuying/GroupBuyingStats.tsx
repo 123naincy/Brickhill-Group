@@ -16,10 +16,11 @@ export function GroupBuyingStats({ propertiesCount, investorsCount, totalInveste
       </p>
 
       <div className="grid md:grid-cols-4 gap-8">
-        <StatCard icon={Building2} value={propertiesCount} label="Properties Available" tag="Active" color="emerald" />
-        <StatCard icon={Users} value={investorsCount} label="Active Investors" tag="Live" color="blue" />
-        <StatCard icon={DollarSign} value={`$${(totalInvested/1000000).toFixed(1)}M`} label="Total Invested" tag="Total" color="purple" />
-        <StatCard icon={TrendingUp} value={`$${(avgInvestment/1000).toFixed(0)}K`} label="Avg Investment" tag="Avg" color="teal" />
+       <StatCard icon={Building2} value={propertiesCount} label="Live Investment Opportunities" tag="Active" color="emerald" />
+<StatCard icon={Users} value={investorsCount} label="Verified Investors" tag="Live" color="blue" />
+<StatCard icon={DollarSign} value={`₹${(totalInvested/10000000).toFixed(1)} Cr`} label="Capital Deployed" tag="Total" color="purple" />
+<StatCard icon={TrendingUp} value={`₹${(avgInvestment/100000).toFixed(0)} L`} label="Avg Ticket Size" tag="Avg" color="teal" />
+
       </div>
     </div>
   );

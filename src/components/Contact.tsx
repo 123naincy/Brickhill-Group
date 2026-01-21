@@ -44,8 +44,8 @@ export default function Contact() {
 
             <div className="space-y-6">
               {[
-                { icon: MapPin, title: 'Address', lines: ['123 Business Street, City Center, State 12345'] },
-                { icon: Phone, title: 'Phone', lines: ['+91 98765 43210', '+91 91234 56789'] },
+                { icon: MapPin, title: 'Address', lines: ['Dlf Corporates Greens, Tower 1 1604-1605, Gurugram,Haryana,122002'] },
+                { icon: Phone, title: 'Phone', lines: ['+91-8395994524'] },
                 { icon: Mail, title: 'Email', lines: ['info@brickhillgroup.com', 'sales@brickhillgroup.com'] },
                 { icon: Clock, title: 'Business Hours', lines: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM', 'Sun: Closed'] },
               ].map((item, i) => (

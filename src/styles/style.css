@@ -1,0 +1,34 @@
+/* Smooth feel */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hover micro-interactions */
+.gw-primary-btn {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.gw-primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Stat hover */
+.gw-stat-box:hover {
+  transform: translateY(-6px);
+  transition: 0.3s;
+}
+
+/* Register emphasis */
+.gw-register-card {
+  animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 20px rgba(212,175,55,0.25);
+  }
+  to {
+    box-shadow: 0 0 35px rgba(212,175,55,0.45);
+  }
+}
