@@ -1,7 +1,9 @@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
+import { submitToSheet } from "../components/utils/submitToSheet";
 
 export default function Contact() {
+  // ✅ Form State
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -10,30 +12,31 @@ export default function Contact() {
     message: "",
   });
 
-  // ✅ Google Sheet Script URL
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbxZnnrIcXIFEC1BmAPa8Nk9xQT97DrvbwbpW8e4IWv69ryNqHask6REHM9ylhUGZP32/exec";
+  // ✅ Handle Change
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
-  // ✅ Submit Form Data to Google Sheet
- const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+  // ✅ Submit Form
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
 
-  try {
-    const formBody = new FormData();
-    formBody.append("name", formData.name);
-    formBody.append("email", formData.email);
-    formBody.append("phone", formData.phone);
-    formBody.append("subject", formData.subject);
-    formBody.append("message", formData.message);
-
-    await fetch(scriptURL, {
-      method: "POST",
-      mode: "no-cors", // ✅ FIXED
-      body: formBody,
+    await submitToSheet({
+      formName: "Contact Page Form",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message,
     });
 
-    alert("✅ Message sent successfully and saved in Excel Sheet!");
+    alert("✅ Message Sent Successfully!");
 
+    // ✅ Reset Form
     setFormData({
       name: "",
       email: "",
@@ -41,22 +44,12 @@ export default function Contact() {
       subject: "",
       message: "",
     });
-  } catch (error) {
-    console.log("Error:", error);
-    alert("❌ Something went wrong!");
-  }
-};
-
-
-  const handleChange = (
-    e: React.ChangeEvent<
-      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
-    >
-  ) => setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   return (
     <section id="contact" className="py-20 bg-[#f6fbf9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#1E6F64] mb-4">
@@ -68,6 +61,7 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
+          
           {/* Left Info */}
           <div>
             <h3 className="text-2xl font-bold text-[#1E6F64] mb-6">
@@ -145,7 +139,8 @@ export default function Contact() {
                     {field.label}
                   </label>
                   <input
-                    {...field}
+                    name={field.name}
+                    type={field.type}
                     required={field.name !== "phone"}
                     value={(formData as any)[field.name]}
                     onChange={handleChange}
@@ -164,7 +159,7 @@ export default function Contact() {
                   required
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30 outline-none focus:ring-2 focus:ring-[#1E6F64]/30"
+                  className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30"
                 >
                   <option value="">Select a subject</option>
                   <option value="general">General Inquiry</option>
@@ -187,8 +182,8 @@ export default function Contact() {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30 outline-none focus:ring-2 focus:ring-[#1E6F64]/30 resize-none"
-                ></textarea>
+                  className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30 resize-none"
+                />
               </div>
 
               {/* Button */}

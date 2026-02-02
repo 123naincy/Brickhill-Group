@@ -1,6 +1,28 @@
 import { Calendar, Users, Video, Phone, ShieldCheck } from "lucide-react";
+import { useState } from "react";
+import { submitToSheet } from "../utils/submitToSheet";
 
 export default function GroupBuyingHero() {
+  const [data, setData] = useState({
+    name: "",
+    phone: "",
+    email: "",
+    location: "",
+  });
+
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    await submitToSheet({
+      formName: "Group Buying Form",
+      ...data,
+    });
+
+    alert("✅ Registered Successfully!");
+
+    setData({ name: "", phone: "", email: "", location: "" });
+  };
+
   return (
     <section className="py-28 bg-gradient-to-r from-[#0f4b40] via-[#0b6b5c] to-[#0f4b40] text-[#fffbba]">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
@@ -39,24 +61,45 @@ export default function GroupBuyingHero() {
             Access Fee: <b>₹99 only</b> • Refundable if you don’t like the session
           </p>
 
-          <form className="space-y-4">
-            <input className="w-full border p-3 rounded-lg" placeholder="Full Name" />
-            <input className="w-full border p-3 rounded-lg" placeholder="Mobile Number" />
-            <input className="w-full border p-3 rounded-lg" placeholder="Email Address" />
+          <form className="space-y-4" onSubmit={handleSubmit}>
+            <input
+              placeholder="Full Name"
+              value={data.name}
+              onChange={(e) => setData({ ...data, name: e.target.value })}
+              required
+              className="w-full border p-3 rounded-lg"
+            />
 
-            <select className="w-full border p-3 rounded-lg">
-              <option>Interested Location</option>
-              <option>Mohali</option>
-              <option>Chandigarh</option>
-              <option>Kharar</option>
-              <option>Zirakpur</option>
+            <input
+              placeholder="Mobile Number"
+              value={data.phone}
+              onChange={(e) => setData({ ...data, phone: e.target.value })}
+              className="w-full border p-3 rounded-lg"
+            />
+
+            <input
+              placeholder="Email Address"
+              value={data.email}
+              onChange={(e) => setData({ ...data, email: e.target.value })}
+              className="w-full border p-3 rounded-lg"
+            />
+
+            <select
+              value={data.location}
+              onChange={(e) => setData({ ...data, location: e.target.value })}
+              className="w-full border p-3 rounded-lg"
+            >
+              <option value="">Interested Location</option>
+              <option value="Mohali">Mohali</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Kharar">Kharar</option>
+              <option value="Zirakpur">Zirakpur</option>
             </select>
 
-            <button className="w-full bg-gradient-to-r from-[#0f4b40] to-[#0b6b5c] text-[#fffbba] py-3 rounded-lg font-semibold text-lg hover:opacity-90">
-              Pay ₹99 & Reserve My Seat
+            <button className="w-full bg-green-700 text-white py-3 rounded-lg">
+              Reserve Seat Free ✅
             </button>
           </form>
-
           <p className="text-xs text-gray-500 text-center mt-4">
             Limited seats • Secure payment • Privacy protected • No spam
           </p>
