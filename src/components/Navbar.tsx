@@ -12,6 +12,7 @@ export default function Navbar() {
     { name: "Group Buying", path: "/group-buying" },
     { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
+    { name: "Gallery", path: "/gallery" },
     
   ];
 

@@ -1,53 +1,73 @@
-import { useState } from 'react';
-import data from '../data/group-buying-properties.json';
-import { PropertyCard } from '../components/groupBuying/PropertyCard';
-import { PropertyModal } from '../components/groupBuying/PropertyModal';
-import { GroupBuyingStats } from '../components/groupBuying/GroupBuyingStats';
-import GroupBuyingHero from '../components/groupBuying/GroupBuyingHero';
-import GroupBuyingCTA from '../components/groupBuying/GroupBuyingCTA';
-import HowGroupBuyingFlow from "../components/groupBuying/HowGroupBuyingFlow"
-import HowItWorks from '../components/groupBuying/HowItWorks';
-type Participation = { id:string; property_id:string; participant_name:string; participant_email:string; investment_amount:number; created_at:string; };
+import { useMemo, useState } from "react";
+import rawData from "../data/group-buying-properties.json";
 
+import { PropertyCard } from "../components/groupBuying/PropertyCard";
+import { PropertyModal } from "../components/groupBuying/PropertyModal";
+import { GroupBuyingStats } from "../components/groupBuying/GroupBuyingStats";
+import GroupBuyingHero from "../components/groupBuying/GroupBuyingHero";
+import GroupBuyingCTA from "../components/groupBuying/GroupBuyingCTA";
+import HowGroupBuyingFlow from "../components/groupBuying/HowGroupBuyingFlow";
+import HowItWorks from "../components/groupBuying/HowItWorks";
 
-export default function GroupBuying(){
-const [participations,setParticipations]=useState<Participation[]>(data.participations);
-const [selected,setSelected]=useState<any>(null);
+import type { GroupBuyingData, Participation, Property } from "../data/types/groupBuying";
 
+// ✅ ensure JSON matches expected type
+const data = rawData as GroupBuyingData;
 
-const stats = (id:string)=>{
-const list = participations.filter(p=>p.property_id===id);
-return { participantCount:list.length, totalInvested:list.reduce((s,p)=>s+p.investment_amount,0), list };
-};
+export default function GroupBuying() {
+  const [participations, setParticipations] = useState<Participation[]>(
+    data.participations || []
+  );
 
+  const [selected, setSelected] = useState<Property | null>(null);
 
-return (
- <>
-<GroupBuyingHero />
-  <GroupBuyingStats
-  propertiesCount={data.properties.length}
-  investorsCount={participations.length}
-  totalInvested={participations.reduce((s,p)=>s+p.investment_amount,0)}
-  avgInvestment={
-    participations.length === 0 ? 0 :
-    participations.reduce((s,p)=>s+p.investment_amount,0) / participations.length
-  }
-/>
+  const totalInvested = useMemo(
+    () => participations.reduce((sum, p) => sum + (Number(p.investment_amount) || 0), 0),
+    [participations]
+  );
 
-<div className="max-w-7xl mx-auto p-10">
-<h1 className="text-4xl font-bold mb-8">Group Buying Properties</h1>
-<div className="grid md:grid-cols-3 gap-8">
-{data.properties.map(p=>{ const s=stats(p.id); return (
-<PropertyCard key={p.id} property={p} participantCount={s.participantCount} totalInvested={s.totalInvested} onClick={()=>setSelected(p)} />
-);})}
-</div>
+  const getParticipations = (propertyId: string) =>
+    participations.filter((p) => p.property_id === propertyId);
 
+  return (
+    <>
+      <GroupBuyingHero />
 
-{selected && <PropertyModal property={selected} participations={stats(selected.id).list} onClose={()=>setSelected(null)} onSuccess={p=>setParticipations(prev=>[...prev,p])} />}
-</div>
-<HowGroupBuyingFlow />
-<HowItWorks />
-<GroupBuyingCTA />
- </>
-);
+      <GroupBuyingStats
+        propertiesCount={(data.properties || []).length}
+        investorsCount={participations.length}
+        totalInvested={totalInvested}
+        avgInvestment={participations.length ? totalInvested / participations.length : 0}
+      />
+
+      <div className="max-w-7xl mx-auto p-10">
+        <h1 className="text-4xl font-bold mb-8">Group Buying Properties</h1>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {(data.properties || []).map((p) => (
+            <PropertyCard
+              key={p.id}
+              property={p}
+              onClick={() => setSelected(p)}
+            />
+          ))}
+        </div>
+
+        {selected && (
+          <PropertyModal
+            property={selected}
+            participations={getParticipations(selected.id)}
+            onClose={() => setSelected(null)}
+            onSuccess={(newParticipation) =>
+              setParticipations((prev) => [...prev, newParticipation])
+            }
+          />
+        )}
+      </div>
+
+      <HowGroupBuyingFlow />
+      <HowItWorks />
+      <GroupBuyingCTA />
+    </>
+  );
 }

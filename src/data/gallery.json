@@ -1,30 +1,65 @@
 [
   {
-    "id": "g1",
-    "title": "Brickhill Corporate Office",
-    "description": "Our headquarters in Mohali",
-    "category": "office",
-    "image_url": "https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg"
+    "id": "g-p1",
+    "title": "Eden Street",
+    "description": "Eden Street is envisioned as a modern shopping and business destination.",
+    "category": "commercial",
+    "image_key": "edenStreet"
   },
   {
-    "id": "g2",
-    "title": "Residential Project",
-    "description": "Luxury apartments project",
-    "category": "project",
-    "image_url": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg"
+    "id": "g-p2",
+    "title": "Bridal Square",
+    "description": "Bridal Square represents the perfect convergence of location, design, and opportunity.",
+    "category": "commercial",
+    "image_key": "bridalSquare"
   },
   {
-    "id": "g3",
-    "title": "Team Meeting",
-    "description": "Strategy & planning session",
-    "category": "team",
-    "image_url": "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
+    "id": "g-p3",
+    "title": "Panipat Industrial Plots",
+    "description": "Panipat’s NH-709 industrial belt is rapidly emerging as a major growth hotspot.",
+    "category": "industrial",
+    "image_key": "panipatIndustrial"
   },
   {
-    "id": "g4",
-    "title": "Project Launch Event",
-    "description": "New commercial project launch",
-    "category": "event",
-    "image_url": "https://images.pexels.com/photos/534228/pexels-photo-534228.jpeg"
+    "id": "g-p4",
+    "title": "Logi Prime Warehouse Leasing Development & Operations",
+    "description": "End-to-end warehousing, fulfillment, and distribution solutions designed to scale your business efficiently.",
+    "category": "warehouse",
+    "image_key": "logiPrime"
+  },
+  {
+    "id": "g-p5",
+    "title": "KBD Plaza 117",
+    "description": "Successfully delivered commercial project showcasing quality and commitment in real estate development.",
+    "category": "commercial",
+    "image_key": "kbdPlaza"
+  },
+  {
+    "id": "g-p6",
+    "title": "KBD Himalayan City",
+    "description": "Exclusive residential plots and villas with commercial showrooms in a serene environment.",
+    "category": "residential",
+    "image_key": "himalayanCity"
+  },
+  {
+    "id": "g-p7",
+    "title": "KBD Yash Homes",
+    "description": "Modern residential development designed for quality living and comfort.",
+    "category": "residential",
+    "image_key": "yashHomes"
+  },
+  {
+    "id": "g-p8",
+    "title": "KBD Plaza 21",
+    "description": "A premium commercial development featuring 152 showroom units on a prime highway location.",
+    "category": "commercial",
+    "image_key": "kbdPlaza21"
+  },
+  {
+    "id": "g-p9",
+    "title": "KBD Himalayan City 2",
+    "description": "Residential plots, commercial booths and showrooms blending modern and secure living.",
+    "category": "residential",
+    "image_key": "kbdHimalayanCity2"
   }
 ]

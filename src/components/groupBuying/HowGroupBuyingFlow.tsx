@@ -9,7 +9,7 @@ const steps = [
   { step: "05", title: "Secure Purchase", desc: "RERA verified, transparent documentation & smooth booking experience.", icon: FileCheck },
 ];
 
-export default function TogetherBuyingFlow() {
+export default function HowGroupBuyingFlow() {
   return (
     <section className="py-32 bg-gradient-to-b from-[#f4f9f7] to-[#e7f3ee] overflow-hidden">
       <h2 className="text-4xl md:text-5xl font-semibold text-center text-[#0f4b40] mb-6">

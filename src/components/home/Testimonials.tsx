@@ -2,28 +2,31 @@ import { Star } from 'lucide-react';
 
 export default function Testimonials() {
   const testimonials = [
-    {
-      name: 'Sarah Johnson',
-      role: 'Homeowner',
-      image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg',
-      content: 'Brickhill Group transformed our dream into reality. The quality of construction and attention to detail exceeded our expectations.',
-      rating: 5,
-    },
-    {
-      name: 'Michael Chen',
-      role: 'Business Owner',
-      image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg',
-      content: 'Our new commercial space has significantly enhanced our business operations. Professional team and exceptional delivery.',
-      rating: 5,
-    },
-    {
-      name: 'Emily Rodriguez',
-      role: 'Property Investor',
-      image: 'https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg',
-      content: 'Working with Brickhill has been a pleasure. Their projects consistently deliver strong returns and quality construction.',
-      rating: 5,
-    },
-  ];
+  {
+    name: 'Ankit Sharma',
+    role: 'Home Buyer, Gurugram',
+    image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg',
+    content:
+      'Brickhill Group made our home-buying journey smooth and transparent. The build quality and timely delivery truly impressed us.',
+    rating: 5,
+  },
+  {
+    name: 'Priya Mehta',
+    role: 'Retail Business Owner',
+    image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg',
+    content:
+      'Our commercial unit is perfectly planned and strategically located. Brickhill’s team was professional and supportive throughout.',
+    rating: 5,
+  },
+  {
+    name: 'Rohit Verma',
+    role: 'Real Estate Investor',
+    image: 'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg',
+    content:
+      'As an investor, I value trust and returns. Brickhill Group consistently delivers projects with excellent appreciation potential.',
+    rating: 5,
+  },
+];
 
   return (
     <section className="py-20 bg-[#f6fbf9]">

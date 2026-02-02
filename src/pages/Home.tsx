@@ -4,7 +4,6 @@ import WhyChooseUs from "../components/home/WhyChooseUs";
 import FeaturedProjects from "../components/home/FeaturedProjects";
 import Testimonials from "../components/home/Testimonials";
 import AboutSection from "../components/About";
-import Gallery from "../components/Gallery";
 import BlogSection from "../components/Blog";
 
 export default function Home() {
@@ -16,7 +15,6 @@ export default function Home() {
       <WhyChooseUs />
       <FeaturedProjects />
       <Testimonials />
-      <Gallery />
       <BlogSection />
     </>
   );

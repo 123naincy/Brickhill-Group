@@ -1,23 +1,29 @@
-import { useEffect, useState } from "react";
-import banner1 from "../../assets/Banner-1.jpg";
-import banner2 from "../../assets/Banner-2.jpg";
+import { useState } from "react";
+import video1 from "../../assets/Banner-one.mp4";
+import video2 from "../../assets/Banner-two.mp4";
+
+const videos = [video1, video2];
 
 export default function Hero() {
   const [active, setActive] = useState(0);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActive((prev) => (prev === 0 ? 1 : 0));
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
+  const handleVideoEnd = () => {
+    setActive(prev => (prev + 1) % videos.length); // 🔁 second → first
+  };
 
   return (
-    <section className="relative h-screen pt-20 overflow-hidden">
-      <div
-        className="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 mt-20"
-        style={{ backgroundImage: `url(${active === 0 ? banner1 : banner2})` }}
+    <section className="relative h-screen pt-20 overflow-hidden mt-20">
+
+      <video
+        key={active}   // forces reload
+        className="absolute inset-0 w-full h-full object-cover"
+        src={videos[active]}
+        autoPlay
+        muted
+        playsInline
+        onEnded={handleVideoEnd}
       />
+
     </section>
   );
 }

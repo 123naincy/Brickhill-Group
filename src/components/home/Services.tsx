@@ -1,30 +1,40 @@
-import { Home, Building, Factory, Warehouse } from 'lucide-react';
+import { Home, Building, Factory, Warehouse } from "lucide-react";
+import { allImages } from "../../data/AllImages";
+
+const residential = allImages.kbdResidential;
+const commercial = allImages.kbdPlaza21;
+const industrial = allImages.panipatIndustrial;
+const warehouse = allImages.logiPrime;
 
 export default function Services() {
   const services = [
     {
       icon: Home,
-      title: 'Residential',
-      description: 'Luxurious homes and apartments designed for modern living with premium amenities and strategic locations.',
-      image: 'https://images.pexels.com/photos/186077/pexels-photo-186077.jpeg',
+      title: "Residential",
+      description:
+        "Luxurious homes and apartments designed for modern living with premium amenities and strategic locations.",
+      image: residential,
     },
     {
       icon: Building,
-      title: 'Commercial',
-      description: 'State-of-the-art office spaces and retail complexes that drive business growth and success.',
-      image: 'https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg',
+      title: "Commercial",
+      description:
+        "State-of-the-art office spaces and retail complexes that drive business growth and success.",
+      image: commercial,
     },
     {
       icon: Factory,
-      title: 'Industrial',
-      description: 'Robust industrial facilities equipped with modern infrastructure for manufacturing excellence.',
-      image: 'https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg',
+      title: "Industrial",
+      description:
+        "Robust industrial facilities equipped with modern infrastructure for manufacturing excellence.",
+      image: industrial,
     },
     {
       icon: Warehouse,
-      title: 'Warehouse',
-      description: 'Efficient storage and logistics solutions with strategic connectivity and advanced systems.',
-      image: 'https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg',
+      title: "Warehouse",
+      description:
+        "Efficient storage and logistics solutions with strategic connectivity and advanced systems.",
+      image: warehouse,
     },
   ];
 
@@ -49,7 +59,11 @@ export default function Services() {
               key={i}
               className="bg-white rounded-2xl shadow hover:shadow-xl transition border border-[#1E6F64]/10 overflow-hidden"
             >
-              <img src={s.image} alt={s.title} className="w-full h-48 object-cover" />
+              <img
+                src={s.image}
+                alt={s.title}
+                className="w-full h-48 object-cover"
+              />
 
               <div className="p-6 text-center">
                 <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br from-[#1E6F64] to-[#4FA59A] flex items-center justify-center">

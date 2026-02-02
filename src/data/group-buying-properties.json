@@ -1,18 +1,211 @@
 {
-"properties": [
-{
-"id": "p1",
-"title": "Eden Street",
-"description": "Eden Street is envisioned as a modern shopping and business destination , designed to cater to the needs of today’s entrepreneurs and investors. ",
-"location": "Chandigarh-Manali Highway, Mohali, Punjab 140301",
-"image_url": "https://images.pexels.com/photos/1396122/pexels-photo-1396122.jpeg",
-"total_price": "1.35Cr",
-"min_participants": 5,
-"max_participants": 10,
-"deadline": "2026-02-20T23:59:59Z",
-"status": "open",
-"created_at": "2026-01-15T10:00:00Z"
-}
-],
-"participations": []
+  "properties": [
+     {
+      "id": "p1-lower-ground",
+      "title": "Eden Street(Lower Ground)",
+      "description": "The Lower Ground floor with size 16*66 at Eden Street is strategically planned for high-usage commercial activity with easy accessibility and efficient layouts. Ideal for retail and food brands, this level offers strong commercial viability. From an investment perspective, the entire Lower Ground tower carries a value of around ₹7 crore, offering a consolidated asset with significant scope for leasing, branding, or resale in a high-growth corridor of Mohali.",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 18500000,
+      "project_sizes": ["16' X 66' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },
+     {
+      "id": "p2-lower-ground",
+      "title": "Eden Street(Lower Ground)",
+      "description": "The Lower Ground floor with size 16×70 at Eden Street is strategically planned for high-usage commercial activity with easy accessibility and efficient layouts. Ideal for retail and food brands, this level offers strong commercial viability. From an investment perspective, the entire Lower Ground tower carries a value of around ₹7.5 crore, offering a consolidated asset with significant scope for leasing, branding, or resale in a high-growth corridor of Mohali.",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 19500000,
+      "project_sizes": ["16' X 70' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },
+    {
+      "id": "p3-upper-ground",
+      "title": "Eden Street(Upper Ground)",
+      "description": "The Upper Ground floor with size 16×70 at Eden Street is strategically planned for high-visibility commercial activity with easy accessibility and efficient layouts. Ideal for branded retail, showrooms, and cafés, this level offers strong commercial viability. From an investment perspective, the entire Upper Ground tower carries a value of around ₹7.5 crore, offering a consolidated asset with significant scope for leasing, branding, or resale in a high-growth corridor of Mohali.",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 28500000,
+      "project_sizes": ["16' X 70' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },{
+      "id": "p9-upper-ground",
+      "title": "Eden Street(Upper Ground)",
+      "description": "The Upper Ground floor with a size of 16×66 at Eden Street is designed to deliver strong visibility along with smooth customer access. Suited for premium retail outlets, showrooms, cafés, and branded stores, the layout ensures efficient space utilization and sustained footfall, enhancing overall business performance.From an investment standpoint, the complete Upper Ground tower is valued at approximately ₹7 crore, presenting a solid opportunity for investors seeking a high-demand commercial asset with strong leasing potential and long-term appreciation in Mohali’s rapidly developing commercial zone.",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 27500000,
+      "project_sizes": ["16' X 66' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },
+    
+    {
+      "id": "p5-first-floor",
+      "title": "Eden Street(First Floor)",
+      "description": "The First Floor at Eden Street, with a configuration of 16×66, is thoughtfully planned for businesses that prioritize brand presence, operational efficiency, and a refined customer experience. Ideal for offices, clinics, studios, and service-based brands, this floor offers a balanced mix of accessibility and exclusivity. From an investor’s perspective, the entire First Floor tower holds a value of around ₹7 crore, making it a consolidated investment option with steady rental prospects and resale value in a prominent commercial corridor of Mohali. ",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 16000000,
+      "project_sizes": ["16' X 66' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },
+    {
+      "id": "p6-first-floor",
+      "title": "Eden Street(First Floor)",
+      "description": "The First Floor with size 16×70 at Eden Street is strategically planned for professional and service-oriented commercial activity with easy accessibility and efficient layouts. Ideal for offices, clinics, and studios, this level offers strong commercial viability. From an investment perspective, the entire First Floor tower carries a value of around ₹7.5 crore, offering a consolidated asset with significant scope for leasing, branding, or resale in a high-growth corridor of Mohali.",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 17500000,
+      "project_sizes": ["16' X 70' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },
+    {
+      "id": "p7-Second-floor",
+      "title": "Eden Street(Second Floor)",
+      "description": "The Second Floor with size 16×70 at Eden Street is strategically planned for destination-based and long-term commercial activity with easy accessibility and efficient layouts. Ideal for corporate offices, institutes, and wellness brands, this level offers strong commercial viability.From an investment perspective, the entire Second Floor tower carries a value of around ₹7.5 crore, offering a consolidated asset with significant scope for leasing, branding, or resale in a high-growth corridor of Mohali.",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 14500000,
+      "project_sizes": ["16' X 70' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },
+     {
+      "id": "p8-Second-floor",
+      "title": "Eden Street(Second Floor)",
+      "description": "The Second Floor at Eden Street, sized 16×66, is optimized for professional and destination-based businesses such as corporate offices, coaching institutes, wellness centers, and boutique studios. The floor layout supports privacy, efficient workflows, and long-term tenancy stability.As an investment asset, the complete Second Floor tower is valued at approximately ₹7 crore, offering investors a well-positioned commercial holding with consistent income potential and future capital growth in a high-growth business district.",
+      "location": "Mohali, Punjab",
+      "image_url": "edenStreet",
+      "total_price": 13500000,
+      "project_sizes": ["16' X 66' "],
+      "status": "open",
+      "created_at": "2026-01-10"
+    },
+    {
+      "id": "p10",
+      "title": "Bridal Square",
+      "description": "Bridal Square represents the perfect convergence of location, design, and opportunity. The 16×66 configuration is efficiently planned for premium bridal and lifestyle retail, offering enhanced space depth and strong commercial potential.Complete tower value: approx. ₹7.5 crore.",
+      "location": "Chandigarh–Manali National Highway",
+      "image_url": "bridalSquare",
+      "total_price": 75000000,
+     "project_sizes": ["16' X 66' "],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+    {
+      "id": "p11",
+      "title": "Bridal Square",
+      "description": "Bridal Square represents the perfect convergence of location, design, and opportunity. The 16×60 configuration is efficiently planned for premium bridal and lifestyle retail, offering elegant frontage and strong commercial potential. Complete tower value: approx. ₹7 crore. ",
+      "location": "Chandigarh–Manali National Highway",
+      "image_url": "bridalSquare",
+      "total_price": 70000000,
+     "project_sizes": ["16' X 60' "],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+    {
+      "id": "p12",
+      "title": "Panipat Industrial Plots",
+      "description": "A compact industrial plot ideal for small manufacturing units, workshops, or storage facilities. Located along Panipat’s NH-709 belt, it offers efficient land utilization with strong connectivity for daily operations.Price: ₹22,250 per sq. yard ",
+      "location": "Panipat National Highway",
+      "image_url": "panipatIndustrial",
+      "total_price": 22250,
+      "project_sizes": ["628 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+   {
+      "id": "p13",
+      "title": "Panipat Industrial Plots",
+      "description": "A mid-sized industrial plot suitable for growing manufacturing businesses and warehousing needs. Positioned on the NH-709 industrial corridor, it balances operational flexibility with long-term investment potential.Price: ₹22,250 per sq. yard",
+      "location": "Panipat National Highway",
+      "image_url": "panipatIndustrial",
+      "total_price": 22250,
+      "project_sizes": ["783 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+    {
+      "id": "p14",
+      "title": "Panipat Industrial Plots",
+      "description": "A larger industrial plot designed for businesses requiring expanded layouts, vehicle movement, and future scalability. Located in Panipat’s fast-emerging NH-709 industrial zone, it supports long-term industrial growth. Price: ₹22,250 per sq. yard ",
+      "location": "Panipat National Highway",
+      "image_url": "panipatIndustrial",
+      "total_price": 22250,
+      "project_sizes": ["809 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+    {
+      "id": "p15",
+      "title": "Sindhudurg Residential Plots",
+      "description": "A well-planned residential plot ideal for compact luxury homes or holiday villas. Located in Sindhudurg’s fast-developing region, it offers a peaceful environment with strong future appreciation potential.Price: ₹25,000 per sq. yard ",
+      "location": "Sindhudurg, Maharashtra",
+      "image_url": "sindhudurgResidential",
+      "total_price": 25000,
+      "project_sizes": ["300 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+     {
+      "id": "p16",
+      "title": "Sindhudurg Residential Plots",
+      "description": "A mid-sized residential plot suited for spacious independent homes with landscaped surroundings. Positioned in a growing residential pocket of Sindhudurg, it balances lifestyle comfort with long-term value. Price: ₹25,000 per sq. yard ",
+      "location": "Sindhudurg, Maharashtra",
+      "image_url": "sindhudurgResidential",
+      "total_price": 25000,
+      "project_sizes": ["350 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    }, {
+      "id": "p17",
+      "title": "Sindhudurg Residential Plots",
+      "description": "A larger residential plot designed for premium villas or luxury residences, offering ample space and design flexibility. Located in Sindhudurg’s emerging residential belt, it promises a serene lifestyle and strong investment appeal.Price: ₹25,000 per sq. yard ",
+      "location": "Sindhudurg, Maharashtra",
+      "image_url": "sindhudurgResidential",
+      "total_price": 25000,
+      "project_sizes": ["400 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    }, {
+      "id": "p18",
+      "title": "Kurali Residential Plots",
+      "description": "A compact residential plot ideal for efficient home planning and first-time buyers. Located in Kurali’s rapidly developing region, it offers affordability, connectivity, and strong future residential potential.Price: ₹36,490 per sq. yard ",
+      "location": "Kurali, Haryana",
+      "image_url": "kuraliResidential",
+      "total_price": 36490,
+      "project_sizes": ["100 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+    {
+      "id": "p19",
+      "title": "Kurali Residential Plots",
+      "description": "A well-balanced residential plot suitable for comfortable independent homes with smart layouts. Positioned in a growing residential pocket of Kurali, it combines lifestyle convenience with long-term appreciation.Price: ₹36,490 per sq. yard ",
+      "location": "Kurali, Haryana",
+      "image_url": "kuraliResidential",
+      "total_price": 36490,
+      "project_sizes": ["120.6 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    },
+    {
+      "id": "p20",
+      "title": "Kurali Residential Plots",
+      "description": "A larger residential plot designed for spacious homes with enhanced design flexibility. Situated in Kurali’s emerging residential belt, it offers a peaceful living environment and strong investment appeal.Price: ₹36,490 per sq. yard ",
+      "location": "Kurali, Haryana",
+      "image_url": "kuraliResidential",
+      "total_price": 36490,
+      "project_sizes": ["134 sqyd"],
+      "status": "open",
+      "created_at": "2026-01-05"
+    }
+  ]
 }

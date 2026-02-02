@@ -8,9 +8,10 @@ import Projects from "./pages/Projects";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import GroupBuying from "./pages/GroupBuying";
-import WebinarPage from "./pages/WebinarPage"
+import WebinarPage from "./pages/WebinarPage";
+import GalleryPage from "./pages/Gallery";
 
-function App() {
+export default function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-white">
@@ -24,6 +25,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/group-buying" element={<GroupBuying />} />
           <Route path="/webinar" element={<WebinarPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
         </Routes>
 
         <Footer />
@@ -31,5 +33,3 @@ function App() {
     </BrowserRouter>
   );
 }
-
-export default App;

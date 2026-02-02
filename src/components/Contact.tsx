@@ -1,29 +1,62 @@
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
-import { useState } from 'react';
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { useState } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    phone: "",
+    subject: "",
+    message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-  };
+  // ✅ Google Sheet Script URL
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbxZnnrIcXIFEC1BmAPa8Nk9xQT97DrvbwbpW8e4IWv69ryNqHask6REHM9ylhUGZP32/exec";
+
+  // ✅ Submit Form Data to Google Sheet
+ const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    const formBody = new FormData();
+    formBody.append("name", formData.name);
+    formBody.append("email", formData.email);
+    formBody.append("phone", formData.phone);
+    formBody.append("subject", formData.subject);
+    formBody.append("message", formData.message);
+
+    await fetch(scriptURL, {
+      method: "POST",
+      mode: "no-cors", // ✅ FIXED
+      body: formBody,
+    });
+
+    alert("✅ Message sent successfully and saved in Excel Sheet!");
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: "",
+    });
+  } catch (error) {
+    console.log("Error:", error);
+    alert("❌ Something went wrong!");
+  }
+};
+
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   return (
     <section id="contact" className="py-20 bg-[#f6fbf9]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         {/* Header */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#1E6F64] mb-4">
@@ -35,7 +68,6 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-
           {/* Left Info */}
           <div>
             <h3 className="text-2xl font-bold text-[#1E6F64] mb-6">
@@ -44,19 +76,41 @@ export default function Contact() {
 
             <div className="space-y-6">
               {[
-                { icon: MapPin, title: 'Address', lines: ['Dlf Corporates Greens, Tower 1 1604-1605, Gurugram,Haryana,122002'] },
-                { icon: Phone, title: 'Phone', lines: ['+91-8395994524'] },
-                { icon: Mail, title: 'Email', lines: ['info@brickhillgroup.com', 'sales@brickhillgroup.com'] },
-                { icon: Clock, title: 'Business Hours', lines: ['Mon - Fri: 9:00 AM - 6:00 PM', 'Sat: 10:00 AM - 4:00 PM', 'Sun: Closed'] },
+                {
+                  icon: MapPin,
+                  title: "Address",
+                  lines: [
+                    "Dlf Corporates Greens, Tower 1 1604-1605, Gurugram,Haryana,122002",
+                  ],
+                },
+                { icon: Phone, title: "Phone", lines: ["+91-8395994524"] },
+                {
+                  icon: Mail,
+                  title: "Email",
+                  lines: ["info@brickhillgroup.com", "sales@brickhillgroup.com"],
+                },
+                {
+                  icon: Clock,
+                  title: "Business Hours",
+                  lines: [
+                    "Mon - Fri: 9:00 AM - 6:00 PM",
+                    "Sat: 10:00 AM - 4:00 PM",
+                    "Sun: Closed",
+                  ],
+                },
               ].map((item, i) => (
                 <div key={i} className="flex items-start">
                   <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[#1E6F64] to-[#4FA59A] flex items-center justify-center">
                     <item.icon className="h-6 w-6 text-white" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-semibold text-[#1E6F64]">{item.title}</h4>
+                    <h4 className="font-semibold text-[#1E6F64]">
+                      {item.title}
+                    </h4>
                     {item.lines.map((line, idx) => (
-                      <p key={idx} className="text-neutral-600">{line}</p>
+                      <p key={idx} className="text-neutral-600">
+                        {line}
+                      </p>
                     ))}
                   </div>
                 </div>
@@ -72,15 +126,19 @@ export default function Contact() {
 
           {/* Form */}
           <div>
-            <form onSubmit={handleSubmit} className="bg-white rounded-2xl p-8 shadow-xl border border-[#1E6F64]/10">
+            <form
+              onSubmit={handleSubmit}
+              className="bg-white rounded-2xl p-8 shadow-xl border border-[#1E6F64]/10"
+            >
               <h3 className="text-2xl font-bold text-[#1E6F64] mb-6">
                 Send Us a Message
               </h3>
 
+              {/* Inputs */}
               {[
-                { label: 'Full Name *', name: 'name', type: 'text' },
-                { label: 'Email Address *', name: 'email', type: 'email' },
-                { label: 'Phone Number', name: 'phone', type: 'tel' },
+                { label: "Full Name *", name: "name", type: "text" },
+                { label: "Email Address *", name: "email", type: "email" },
+                { label: "Phone Number", name: "phone", type: "tel" },
               ].map((field) => (
                 <div key={field.name} className="mb-5">
                   <label className="block text-sm font-semibold text-[#1E6F64] mb-2">
@@ -88,7 +146,7 @@ export default function Contact() {
                   </label>
                   <input
                     {...field}
-                    required={field.name !== 'phone'}
+                    required={field.name !== "phone"}
                     value={(formData as any)[field.name]}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30 outline-none focus:ring-2 focus:ring-[#1E6F64]/30"
@@ -96,8 +154,11 @@ export default function Contact() {
                 </div>
               ))}
 
+              {/* Subject */}
               <div className="mb-5">
-                <label className="block text-sm font-semibold text-[#1E6F64] mb-2">Subject *</label>
+                <label className="block text-sm font-semibold text-[#1E6F64] mb-2">
+                  Subject *
+                </label>
                 <select
                   name="subject"
                   required
@@ -115,8 +176,11 @@ export default function Contact() {
                 </select>
               </div>
 
+              {/* Message */}
               <div className="mb-6">
-                <label className="block text-sm font-semibold text-[#1E6F64] mb-2">Message *</label>
+                <label className="block text-sm font-semibold text-[#1E6F64] mb-2">
+                  Message *
+                </label>
                 <textarea
                   name="message"
                   rows={5}
@@ -127,6 +191,7 @@ export default function Contact() {
                 ></textarea>
               </div>
 
+              {/* Button */}
               <button
                 type="submit"
                 className="w-full bg-gradient-to-r from-[#1E6F64] to-[#4FA59A] text-white font-semibold py-4 rounded-lg hover:scale-105 transition"
@@ -135,7 +200,6 @@ export default function Contact() {
               </button>
             </form>
           </div>
-
         </div>
       </div>
     </section>
