@@ -1,12 +1,11 @@
 import { CheckCircle, Lightbulb } from "lucide-react";
 
 const benefits = [
-  "Lower entry barriers",
-  "Professional management",
-  "Diversified portfolio",
-  "Network building with investors",
-  "Access to exclusive bulk deals",
-  "Tax-efficient investment structure",
+  "Accessible Entry Model",
+  "Institutional-Grade Management",
+  "Strategic Diversification",
+  "Strong Investor Ecosystem",
+  "Early Deal Access",
 ];
 
 export default function BenefitsSection() {
@@ -55,7 +54,7 @@ export default function BenefitsSection() {
             </p>
 
             <div className="inline-block bg-green-400 text-green-900 font-bold px-6 py-3 rounded-full">
-              FREE with ₹99 Ticket
+              Webinar with ₹99 Ticket
             </div>
           </div>
         </div>

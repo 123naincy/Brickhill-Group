@@ -2,11 +2,11 @@ import { motion } from "framer-motion";
 import { Users, Building2, BadgePercent, FileCheck, Handshake } from "lucide-react";
 
 const steps = [
-  { step: "01", title: "Shortlist Dream Project", desc: "Use search, map & virtual site visit to shortlist your top 3 projects.", icon: Building2 },
-  { step: "02", title: "Express Interest", desc: "Plan a site visit with our RM & choose your dream project confidently.", icon: Users },
-  { step: "03", title: "Join the Group", desc: "Become part of a verified buyer group for bulk negotiation power.", icon: Handshake },
-  { step: "04", title: "Bulk Price Negotiation", desc: "We negotiate directly with builders for best group pricing.", icon: BadgePercent },
-  { step: "05", title: "Secure Purchase", desc: "RERA verified, transparent documentation & smooth booking experience.", icon: FileCheck },
+  { step: "01", title: "Discover the Right Project", desc: "Explore projects using smart search, interactive maps, and virtual site tours to shortlist your top choices.", icon: Building2 },
+  { step: "02", title: "Show Your Interest", desc: "Connect with our Relationship Manager, schedule a site visit, and evaluate your selected project with confidence.", icon: Users },
+  { step: "03", title: "Join a Buyer Group", desc: "Become part of a verified buyer group to unlock collective buying power and stronger negotiation leverage.", icon: Handshake },
+  { step: "04", title: "Unlock Group Pricing", desc: "We negotiate directly with trusted developers to secure the most competitive pricing through bulk deals.", icon: BadgePercent },
+  { step: "05", title: "Book with Confidence", desc: "Enjoy RERA-verified projects, transparent documentation, and a seamless booking process from start to finish.", icon: FileCheck },
 ];
 
 export default function HowGroupBuyingFlow() {

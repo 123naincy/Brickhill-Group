@@ -11,7 +11,6 @@ const WebinarPage = () => {
   return (
     <>
      <Hero />
-      <TrustIndicators />
       <LearnSection />
       <BenefitsSection />
       <Testimonials />

@@ -56,20 +56,48 @@ export function PropertyCard({ property, onClick }: Props) {
         </p>
 
         {/* Sizes */}
+        {/* Sizes + Offers + Group Members */}
         <div className="mb-6">
-          <h4 className="text-sm font-semibold text-gray-700 mb-2">
-            Project Sizes
-          </h4>
+          <div className="flex flex-wrap justify-between gap-4">
 
-          <div className="flex flex-wrap gap-2">
-            {(property.project_sizes || []).map((size, i) => (
-              <span
-                key={`${property.id}-size-${i}`}
-                className="px-3 py-1 text-xs rounded-full bg-emerald-50 text-emerald-700 border"
-              >
-                {size}
-              </span>
-            ))}
+            {/* Project Sizes */}
+            <div>
+              <h4 className="text-sm font-semibold text-gray-700 mb-2">
+                Project Sizes
+              </h4>
+
+              <div className="flex flex-wrap gap-2">
+                {(property.project_sizes || []).map((size, i) => (
+                  <span
+                    key={`${property.id}-size-${i}`}
+                    className="px-3 py-1 text-xs rounded-full bg-emerald-50 text-emerald-700 border"
+                  >
+                    {size}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Offers */}
+            <div>
+              <h4 className="text-sm font-semibold text-gray-700 mb-2">
+                Offers
+              </h4>
+              <p className="text-xs text-emerald-700 font-semibold">
+                1% Assured Returns Till Possession
+              </p>
+            </div>
+
+            {/* Group Members */}
+            <div>
+              <h4 className="text-sm font-semibold text-gray-700 mb-2">
+                Group Members
+              </h4>
+              <p className="text-xs text-gray-600 font-medium">
+                {property.group_members || "0"} Joined
+              </p>
+            </div>
+
           </div>
         </div>
 
@@ -77,7 +105,7 @@ export function PropertyCard({ property, onClick }: Props) {
           className="w-full bg-emerald-600 text-white py-3 rounded-2xl font-bold"
           type="button"
         >
-          Join Group
+          I am Intrested
         </button>
       </div>
     </div>

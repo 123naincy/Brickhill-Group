@@ -10,7 +10,9 @@ import Contact from "./pages/Contact";
 import GroupBuying from "./pages/GroupBuying";
 import WebinarPage from "./pages/WebinarPage";
 import GalleryPage from "./pages/Gallery";
-
+import BlogDetail from "./pages/BlogDetail";
+import NewsletterCard from "./pages/NewsletterCard";
+import NewsletterDetail from "./pages/NewsletterDetail";
 export default function App() {
   return (
     <BrowserRouter>
@@ -22,10 +24,13 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/group-buying" element={<GroupBuying />} />
           <Route path="/webinar" element={<WebinarPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/newsletter-card" element={<NewsletterCard />} />
+           <Route path="/newsletter/:id" element={<NewsletterDetail />} />
         </Routes>
 
         <Footer />

@@ -12,7 +12,7 @@ export default function FinalCTA() {
         }}
         className="bg-white text-green-700 px-8 py-4 rounded font-bold"
       >
-        Register Now – It's Free
+        Register Now – It's just ₹99
       </a>
     </section>
   );
