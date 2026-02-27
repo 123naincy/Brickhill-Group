@@ -4,16 +4,18 @@ import { Calendar, User } from "lucide-react";
 
 export default function BlogPage() {
   return (
-    <section className="min-h-screen bg-gray-50 py-16">
+    <section className="min-h-screen bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb] py-16">
       <div className="max-w-7xl mx-auto px-6">
+
         {/* Header */}
         <div className="text-center mb-14">
-          <h1 className="text-4xl font-extrabold text-gray-900">
+          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent">
             Latest Blogs & Insights
           </h1>
-          <p className="text-lg text-gray-600 mt-3 max-w-2xl mx-auto">
+
+          <p className="text-lg text-neutral-600 mt-3 max-w-2xl mx-auto">
             Stay updated with real estate investment trends, market news, and
-            property insights from KBD Landcorp.
+            property insights from Brickhill Group.
           </p>
         </div>
 
@@ -22,38 +24,39 @@ export default function BlogPage() {
           {blogs.map((blog) => (
             <article
               key={blog.id}
-              className="bg-white rounded-3xl shadow-md hover:shadow-xl transition overflow-hidden"
+              className="group bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-[#9fc5e9]/30 hover:-translate-y-2"
             >
               {/* Blog Image */}
               <div className="h-60 overflow-hidden">
                 <img
                   src={blog.image}
                   alt={blog.title}
-                  className="w-full h-full object-cover hover:scale-110 transition duration-500"
+                  className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                 />
               </div>
 
               {/* Blog Content */}
               <div className="p-6">
+
                 {/* Category */}
-                <span className="text-sm bg-[#FCAF2E]/20 text-[#FCAF2E] px-3 py-1 rounded-full">
+                <span className="text-sm bg-[#3d85c5]/10 text-[#073762] px-3 py-1 rounded-full font-semibold">
                   {blog.category}
                 </span>
 
                 {/* Title */}
-                <h2 className="text-xl font-bold text-gray-900 mt-4 line-clamp-2">
+                <h2 className="text-xl font-bold text-[#073762] mt-4 line-clamp-2">
                   {blog.title}
                 </h2>
 
                 {/* Author + Date */}
-                <div className="flex items-center gap-4 text-sm text-gray-500 mt-4">
+                <div className="flex items-center gap-4 text-sm text-neutral-500 mt-4">
                   <p className="flex items-center gap-1">
-                    <User size={16} />
+                    <User size={16} className="text-[#3d85c5]" />
                     {blog.author}
                   </p>
 
                   <p className="flex items-center gap-1">
-                    <Calendar size={16} />
+                    <Calendar size={16} className="text-[#3d85c5]" />
                     {blog.date}
                   </p>
                 </div>
@@ -61,7 +64,7 @@ export default function BlogPage() {
                 {/* Button */}
                 <Link
                   to={`/blog/${blog.id}`}
-                  className="inline-block mt-6 text-[#FCAF2E] font-semibold hover:underline"
+                  className="inline-block mt-6 text-[#0b5394] font-semibold hover:text-[#3d85c5] transition"
                 >
                   Read Full Blog →
                 </Link>
@@ -69,6 +72,7 @@ export default function BlogPage() {
             </article>
           ))}
         </div>
+
       </div>
     </section>
   );

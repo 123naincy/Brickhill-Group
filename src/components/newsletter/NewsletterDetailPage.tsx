@@ -46,7 +46,7 @@ import adaniGroup from "../../assets/newsletter/adani-group.jpg";
 export default function NewsletterDetailPage() {
     return (
         <>
-            <Container className="newsletter-container">
+            <Container className="newsletter-container py-5">
                 {/* First Full Page Image */}
                 <img
                     src={FirstPage}
@@ -54,7 +54,8 @@ export default function NewsletterDetailPage() {
                     className="newsletter-image img-fluid mb-4"
                 />
                 {/* ================= HEADER ================= */}
-                <Row className="align-items-center text-center border-bottom border-dark pb-3 mb-4">
+                <Row className="align-items-center text-center pb-4 mb-5"
+     style={{ borderBottom: "2px solid rgba(159,197,233,0.4)" }}>
 
                     {/* LEFT LOGO */}
                     <Col md={3} className="text-md-start text-center">
@@ -63,9 +64,14 @@ export default function NewsletterDetailPage() {
 
                     {/* CENTER TITLE */}
                     <Col md={9}>
-                        <h1 className="fw-bold newsletter-title mb-1">
-                            NEWS LETTER
-                        </h1>
+                       <h1 className="fw-bold newsletter-title mb-1"
+    style={{
+      background: "linear-gradient(90deg,#073762,#3d85c5)",
+      WebkitBackgroundClip: "text",
+      WebkitTextFillColor: "transparent",
+    }}>
+  NEWS LETTER
+</h1>
 
                         <div className="d-flex justify-content-between small">
                             <span>February 2026</span>
@@ -120,7 +126,7 @@ export default function NewsletterDetailPage() {
                 </div>
 
                 {/* ================= WORLD 2.0 SECTION ================= */}
-                <h2 className="section-heading text-center border-top border-bottom border-dark py-2 my-5">
+                <h2 className="section-heading text-center py-3 my-5">
                     WORLD 2.0
                 </h2>
                 <div className="main-banner">

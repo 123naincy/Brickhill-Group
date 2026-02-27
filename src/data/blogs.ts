@@ -1,4 +1,4 @@
-import postBudgetImg from "../assets/Banner-1.jpg";
+import postBudgetImg from "../assets/banner-two.jpg";
 
 export const blogs = [
   {

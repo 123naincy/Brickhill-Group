@@ -3,86 +3,95 @@ import {
   Clock,
   Award,
   Star,
-  Calendar
+  Calendar,
+  ShieldCheck
 } from "lucide-react";
 import RegistrationForm from "../webinar/RegistrationForm";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-[#0f4b40] via-[#0b6b5c] to-[#0f4b40] text-white overflow-hidden">
-      
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/20"></div>
+    <section className="relative bg-gradient-to-br from-[#041f38] via-[#073762] to-[#041f38] text-white overflow-hidden mt-10">
 
-      <div className="relative max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-14 items-center">
-        
+      {/* Background glow effects */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#3d85c5]/20 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#9fc5e9]/20 blur-3xl rounded-full"></div>
+
+      <div className="relative max-w-7xl mx-auto px-6 py-28 grid lg:grid-cols-2 gap-16 items-center">
+
         {/* LEFT CONTENT */}
         <div>
-          {/* Top badges */}
-          <div className="flex flex-wrap items-center gap-3 mb-8">
-            <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full text-sm font-semibold">
-              <Calendar className="w-4 h-4 text-green-300" />
-              Live Paid Webinar · ₹99
-            </span>
 
-            <span className="inline-flex items-center gap-2 bg-red-500/20 text-red-300 px-4 py-2 rounded-full text-sm font-semibold animate-pulse">
-              ⏳ Starts in 02:14:36
-            </span>
+          {/* Premium Tag */}
+          <div className="inline-flex items-center gap-3 bg-[#9fc5e9]/10 border border-[#9fc5e9]/30 px-5 py-2 rounded-full text-sm font-semibold mb-8">
+            <Calendar className="w-4 h-4 text-[#9fc5e9]" />
+            Live Premium Webinar · ₹99 Only
           </div>
 
           <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
-            Master <span className="text-green-300">Group Buying</span><br />
+            Unlock the Power of{" "}
+            <span className="bg-gradient-to-r from-[#9fc5e9] to-[#3d85c5] bg-clip-text text-transparent">
+              Group Buying
+            </span>{" "}
             in Real Estate
           </h1>
 
-          <p className="text-xl text-green-100 max-w-xl mb-10">
-            Learn how smart investors reduce property prices, minimize risk,
-            and grow wealth by investing together.
+          <p className="text-xl text-[#cfe3f8] max-w-xl mb-10">
+            Discover how investors save ₹10–25 Lakhs by negotiating
+            property deals collectively with verified builders.
           </p>
 
-          {/* Stats */}
-          <div className="flex flex-wrap gap-8 mb-10">
-            <HeroStat icon={<Clock />} label="60-Min Live Session" />
-            <HeroStat icon={<Users />} label="Limited Paid Seats" />
-            <HeroStat icon={<Award />} label="Expert-Led Strategy" />
+          {/* Feature points */}
+          <div className="grid sm:grid-cols-2 gap-6 mb-10">
+            <HeroPoint icon={<Clock />} text="60-Min Live Strategy Session" />
+            <HeroPoint icon={<Users />} text="Limited Paid Seats" />
+            <HeroPoint icon={<Award />} text="Expert-Led Negotiation Model" />
+            <HeroPoint icon={<ShieldCheck />} text="Transparent & Verified Projects" />
           </div>
 
-          {/* Social proof */}
-          <div className="flex items-center gap-3 bg-white/10 backdrop-blur-md p-4 rounded-xl max-w-md">
-            <Star className="w-6 h-6 text-yellow-400 fill-current" />
-            <p className="text-sm">
-              <strong>2,800+ investors</strong> attended our paid sessions
-            </p>
+          {/* Social Proof Card */}
+          <div className="bg-white/10 backdrop-blur-lg border border-white/20 rounded-xl p-5 max-w-md flex items-center gap-4">
+            <Star className="w-7 h-7 text-[#9fc5e9] fill-current" />
+            <div>
+              <p className="font-semibold">2,800+ Paid Investors Attended</p>
+              <p className="text-sm text-[#cfe3f8]">
+                Rated 4.9/5 for value & clarity
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* RIGHT – GLASS FORM */}
+        {/* RIGHT – PREMIUM FORM CARD */}
         <div className="relative">
-          
-          {/* Price badge */}
-          <div className="absolute -top-6 -right-6 bg-green-400 text-green-900 px-5 py-3 rounded-full font-bold shadow-xl z-10">
+
+          {/* Floating Price Badge */}
+          <div className="absolute -top-8 right-6 bg-gradient-to-r from-[#3d85c5] to-[#9fc5e9] text-[#041f38] px-6 py-3 rounded-full font-bold shadow-2xl text-lg animate-bounce">
             ₹99 ONLY
           </div>
 
-          <div className="bg-white/15 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl p-8">
+          <div className="bg-white text-gray-800 rounded-3xl shadow-2xl p-10">
+            <h3 className="text-2xl font-bold text-center text-[#073762] mb-6">
+              Reserve Your Seat Now
+            </h3>
+
             <RegistrationForm />
+
+            <p className="text-xs text-gray-500 text-center mt-6">
+              🔒 Secure payment · No spam · Limited seats available
+            </p>
           </div>
 
-          <p className="text-xs text-green-100 text-center mt-4">
-            🔒 Secure payment · No spam · Limited seats
-          </p>
         </div>
-
       </div>
     </section>
   );
 }
 
-function HeroStat({ icon, label }: { icon: JSX.Element; label: string }) {
+/* Reusable Feature Point */
+function HeroPoint({ icon, text }: { icon: JSX.Element; text: string }) {
   return (
-    <div className="flex items-center gap-2 text-green-100">
-      <span className="text-green-300">{icon}</span>
-      <span>{label}</span>
+    <div className="flex items-center gap-3 text-[#cfe3f8]">
+      <div className="text-[#9fc5e9]">{icon}</div>
+      <span>{text}</span>
     </div>
   );
 }

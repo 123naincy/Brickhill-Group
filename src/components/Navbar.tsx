@@ -1,93 +1,124 @@
-import { Building2, Menu, X } from "lucide-react";
+import {Menu, X, Mail, CalendarDays, Users ,Phone } from "lucide-react";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-
+import logo from "../assets/logo.png";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navItems = [
+  const mainNav = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
-    { name: "Group Buying", path: "/group-buying" },
     { name: "Blog", path: "/blog" },
-    { name: "Contact", path: "/contact" },
     { name: "Gallery", path: "/gallery" },
-    
   ];
 
   return (
-    <nav className="bg-gradient-to-r from-[#083a33] via-[#0f4b40] to-[#083a33] shadow-xl fixed w-full top-0 z-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between h-20 items-center">
+    <header className="fixed w-full top-0 z-50 shadow-xl">
 
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <Building2 className="h-10 w-10 text-[#fffbba]" />
-            <span className="ml-3 text-2xl font-extrabold text-[#fffbba] tracking-wide">
-              Brickhill Group
-            </span>
-          </Link>
+      {/* ================= TOP BAR ================= */}
+     {/* ================= TOP BAR ================= */}
+<div className="bg-[#073762] text-white text-sm">
+  <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-12">
 
-          {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-10">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                className={({ isActive }) =>
-                  `font-semibold tracking-wide transition ${
-                    isActive
-                      ? "text-[#fffbba] border-b-2 border-[#fffbba] pb-1"
-                      : "text-[#fffbba]/80 hover:text-[#fffbba]"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
+    {/* Left Animated Icons */}
+    <div className="flex items-center gap-6">
 
-            {/* CTA */}
-            <Link
-              to="/webinar"
-              className="ml-6 bg-[#fffbba] text-[#0f4b40] px-6 py-2 rounded-full font-bold hover:scale-105 transition"
-            >
-              Join Webinar
-            </Link>
-          </div>
-
-          {/* Mobile Toggle */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-[#fffbba]">
-              {isOpen ? <X /> : <Menu />}
-            </button>
-          </div>
-        </div>
+      {/* Email */}
+      <div className="flex items-center gap-2 group cursor-pointer">
+        <Mail className="w-4 h-4 animate-pulse group-hover:scale-110 transition" />
+        <span className="text-white">info@brickhillgroup.com</span>
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-[#0f4b40] border-t border-[#fffbba]/20">
-          <div className="px-4 py-3 space-y-2">
-            {navItems.map((item) => (
-              <NavLink
-                key={item.name}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className={({ isActive }) =>
-                  `block px-4 py-3 rounded font-semibold ${
-                    isActive
-                      ? "bg-[#fffbba] text-[#0f4b40]"
-                      : "text-[#fffbba]/80 hover:bg-[#fffbba]/10"
-                  }`
-                }
-              >
-                {item.name}
-              </NavLink>
-            ))}
-          </div>
-        </div>
-      )}
-    </nav>
+      {/* Phone */}
+      <div className="flex items-center gap-2 group cursor-pointer">
+        <Phone className="w-4 h-4 animate-bounce group-hover:scale-110 transition" />
+        <span className="text-white">+91 99107 29093</span>
+      </div>
+
+    </div>
+
+    {/* Right Important Links */}
+    <div className="flex items-center gap-6 font-medium">
+
+      <Link
+        to="/newsletter-card"
+        className="flex items-center gap-2 text-white hover:text-[#9fc5e9] transition"
+      >
+        <Mail size={16} />
+        Newsletter
+      </Link>
+
+      <Link
+        to="/webinar"
+        className="flex items-center gap-2 text-white hover:text-[#9fc5e9] transition"
+      >
+        <CalendarDays size={16} />
+       Join  Webinar
+      </Link>
+
+      <Link
+        to="/group-buying"
+        className="flex items-center gap-2 text-white hover:text-[#9fc5e9] transition"
+      >
+        <Users size={16} />
+        Group Buying
+      </Link>
+
+    </div>
+  </div>
+</div>
+
+      {/* ================= MAIN NAVBAR ================= */}
+     {/* ================= MAIN NAVBAR ================= */}
+<nav className="bg-white border-b border-[#0b5394]/10">
+  <div className="max-w-7xl mx-auto px-6">
+    <div className="flex justify-between items-center h-20">
+
+      {/* Logo */}
+      <Link to="/" className="logo">
+        <img src={logo} alt="Brickhill-group"  className="img-fluid"/>
+      </Link>
+
+      {/* Desktop Menu */}
+      <div className="hidden md:flex items-center space-x-10">
+        {mainNav.map((item) => (
+          <NavLink
+            key={item.name}
+            to={item.path}
+            className={({ isActive }) =>
+              `font-semibold tracking-wide transition ${
+                isActive
+                  ? "text-[#0b5394] border-b-2 border-[#0b5394] pb-1"
+                  : "text-[#073762] hover:text-[#3d85c5]"
+              }`
+            }
+          >
+            {item.name}
+          </NavLink>
+        ))}
+
+        {/* CTA */}
+        <Link
+          to="/contact"
+          className="ml-6 bg-gradient-to-r from-[#0b5394] to-[#3d85c5] text-white px-6 py-2 rounded-full font-bold hover:opacity-90 transition"
+        >
+         Contact Us
+        </Link>
+      </div>
+
+      {/* Mobile Toggle */}
+      <div className="md:hidden">
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className="text-[#0b5394]"
+        >
+          {isOpen ? <X /> : <Menu />}
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>
+    </header>
   );
 }

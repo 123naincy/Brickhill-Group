@@ -1,32 +1,34 @@
-import { useEffect, useState } from 'react';
-import projectsData from '../data/projects.json';
-import { MapPin, Square, Tag } from 'lucide-react';
-import { Project } from '../types/Project';
-import { IMAGES } from '../assets/images';
+import { useEffect, useState } from "react";
+import projectsData from "../data/projects.json";
+import { MapPin, Square, Tag } from "lucide-react";
+import { Project } from "../types/Project";
+import { IMAGES } from "../assets/images";
 
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
-  const [filter, setFilter] = useState<string>('all');
+  const [filter, setFilter] = useState<string>("all");
 
   const filters = [
-    { value: 'all', label: 'All Projects' },
-    { value: 'residential', label: 'Residential' },
-    { value: 'commercial', label: 'Commercial' },
-    { value: 'industrial', label: 'Industrial' },
-    { value: 'warehouse', label: 'Warehouse' },
+    { value: "all", label: "All Projects" },
+    { value: "residential", label: "Residential" },
+    { value: "commercial", label: "Commercial" },
+    { value: "industrial", label: "Industrial" },
+    { value: "warehouse", label: "Warehouse" },
   ];
 
   useEffect(() => {
     setLoading(true);
     let filteredProjects = [...projectsData] as Project[];
 
-    if (filter !== 'all') {
-      filteredProjects = filteredProjects.filter(p => p.type === filter);
+    if (filter !== "all") {
+      filteredProjects = filteredProjects.filter((p) => p.type === filter);
     }
 
     filteredProjects.sort(
-      (a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+      (a, b) =>
+        new Date(b.created_at).getTime() -
+        new Date(a.created_at).getTime()
     );
 
     setProjects(filteredProjects);
@@ -34,12 +36,15 @@ export default function Projects() {
   }, [filter]);
 
   return (
-    <section id="projects" className="py-20 bg-[#f6fbf9]">
+    <section
+      id="projects"
+      className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#1E6F64] mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
             Our Projects
           </h2>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
@@ -53,10 +58,10 @@ export default function Projects() {
             <button
               key={f.value}
               onClick={() => setFilter(f.value)}
-              className={`px-6 py-3 rounded-lg font-semibold transition-all ${
+              className={`px-6 py-3 rounded-lg font-semibold transition-all duration-300 ${
                 filter === f.value
-                  ? 'bg-gradient-to-r from-[#1E6F64] to-[#4FA59A] text-white shadow'
-                  : 'bg-white text-[#1E6F64] border border-[#1E6F64]/20 hover:bg-[#eef7f5]'
+                  ? "bg-gradient-to-r from-[#0b5394] to-[#3d85c5] text-white shadow-lg"
+                  : "bg-white text-[#073762] border border-[#9fc5e9]/40 hover:bg-[#f0f6fd]"
               }`}
             >
               {f.label}
@@ -66,7 +71,7 @@ export default function Projects() {
 
         {/* Content */}
         {loading ? (
-          <div className="text-center py-20 text-[#1E6F64]/70">
+          <div className="text-center py-20 text-[#073762]/70">
             Loading projects...
           </div>
         ) : (
@@ -74,7 +79,7 @@ export default function Projects() {
             {projects.map((project) => (
               <div
                 key={project.id}
-                className="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden border border-[#1E6F64]/10"
+                className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-[#9fc5e9]/30 hover:-translate-y-2"
               >
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
@@ -85,12 +90,12 @@ export default function Projects() {
                       ] || IMAGES.common.placeholder
                     }
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
                   />
 
                   {/* Badge */}
                   <div className="absolute top-4 right-4">
-                    <span className="bg-gradient-to-r from-[#1E6F64] to-[#4FA59A] text-white px-4 py-1 rounded-full text-sm font-semibold capitalize">
+                    <span className="bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white px-4 py-1 rounded-full text-sm font-semibold capitalize shadow">
                       {project.type}
                     </span>
                   </div>
@@ -98,7 +103,7 @@ export default function Projects() {
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-[#1E6F64] mb-3">
+                  <h3 className="text-2xl font-bold text-[#073762] mb-3">
                     {project.title}
                   </h3>
 
@@ -108,18 +113,18 @@ export default function Projects() {
 
                   <div className="space-y-2 text-neutral-600">
                     <div className="flex items-center">
-                      <MapPin className="h-4 w-4 mr-2 text-[#1E6F64]" />
+                      <MapPin className="h-4 w-4 mr-2 text-[#3d85c5]" />
                       <span className="text-sm">{project.location}</span>
                     </div>
 
                     <div className="flex items-center">
-                      <Square className="h-4 w-4 mr-2 text-[#1E6F64]" />
+                      <Square className="h-4 w-4 mr-2 text-[#3d85c5]" />
                       <span className="text-sm">{project.area}</span>
                     </div>
 
                     {project.price_range && (
                       <div className="flex items-center">
-                        <Tag className="h-4 w-4 mr-2 text-[#1E6F64]" />
+                        <Tag className="h-4 w-4 mr-2 text-[#3d85c5]" />
                         <span className="text-sm">{project.price_range}</span>
                       </div>
                     )}
@@ -129,7 +134,6 @@ export default function Projects() {
             ))}
           </div>
         )}
-
       </div>
     </section>
   );

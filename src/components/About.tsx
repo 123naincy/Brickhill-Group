@@ -1,14 +1,17 @@
-import { Target, Eye, Award, Users } from 'lucide-react';
+import { Target, Eye, Award, Users } from "lucide-react";
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-[#f6fbf9]">
+    <section
+      id="about"
+      className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-inter antialiased">
 
         {/* Intro */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <h2 className="text-4xl font-bold text-[#1E6F64] mb-6">
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-6">
               About Brickhill Group
             </h2>
 
@@ -32,7 +35,9 @@ export default function About() {
               alt="Brickhill Group Office"
               className="rounded-2xl shadow-xl"
             />
-            <div className="absolute -bottom-6 -left-6 bg-gradient-to-br from-[#1E6F64] to-[#4FA59A] text-white p-8 rounded-xl shadow-lg">
+
+            {/* Gradient badge */}
+            <div className="absolute -bottom-6 -left-6 bg-gradient-to-r from-[#0b5394] to-[#3d85c5] text-white p-8 rounded-xl shadow-2xl">
               <div className="text-4xl font-bold mb-2">5+</div>
               <div>Years of Excellence</div>
             </div>
@@ -42,43 +47,53 @@ export default function About() {
         {/* Mission / Vision / Values / Team */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {[
-            { icon: Target, title: 'Our Mission', desc: 'World-class real estate solutions that exceed expectations' },
-            { icon: Eye, title: 'Our Vision', desc: 'Most trusted and innovative developer in the region' },
-            { icon: Award, title: 'Our Values', desc: 'Integrity, quality, innovation, customer focus' },
-            { icon: Users, title: 'Our Team', desc: 'Experienced professionals dedicated to you' },
+            { icon: Target, title: "Our Mission", desc: "World-class real estate solutions that exceed expectations" },
+            { icon: Eye, title: "Our Vision", desc: "Most trusted and innovative developer in the region" },
+            { icon: Award, title: "Our Values", desc: "Integrity, quality, innovation, customer focus" },
+            { icon: Users, title: "Our Team", desc: "Experienced professionals dedicated to you" },
           ].map((item, i) => (
             <div
               key={i}
-              className="text-center bg-[#eef7f5] p-8 rounded-2xl shadow border border-[#1E6F64]/10"
+              className="text-center bg-white/70 backdrop-blur-sm p-8 rounded-2xl shadow-lg border border-[#9fc5e9]/30 hover:shadow-2xl hover:-translate-y-1 transition duration-300"
             >
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#1E6F64] to-[#4FA59A] rounded-full mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-[#3d85c5] to-[#073762] rounded-full mb-4">
                 <item.icon className="h-8 w-8 text-white" />
               </div>
-              <h3 className="text-xl font-bold text-[#1E6F64] mb-2">
+
+              <h3 className="text-xl font-bold text-[#073762] mb-2">
                 {item.title}
               </h3>
-              <p className="text-neutral-700">{item.desc}</p>
+
+              <p className="text-neutral-600">
+                {item.desc}
+              </p>
             </div>
           ))}
         </div>
 
         {/* Journey */}
-        <div className="bg-gradient-to-br from-[#1E6F64] to-[#4FA59A] rounded-2xl p-8 md:p-12 shadow-xl text-white">
+        <div className="bg-gradient-to-r from-[#073762] via-[#0b5394] to-[#3d85c5] rounded-2xl p-8 md:p-12 shadow-2xl text-white">
           <h3 className="text-3xl font-bold mb-8 text-center">
             Our Journey
           </h3>
 
           <div className="space-y-8">
             {[
-              { year: '2016', title: 'Foundation', desc: 'Started with a vision to transform the real estate landscape' },
-              { year: '2021', title: 'Expansion', desc: 'Expanded into commercial and industrial sectors' },
-              { year: '2025', title: 'Innovation', desc: 'Leading sustainable development initiatives' },
+              { year: "2016", title: "Foundation", desc: "Started with a vision to transform the real estate landscape" },
+              { year: "2021", title: "Expansion", desc: "Expanded into commercial and industrial sectors" },
+              { year: "2025", title: "Innovation", desc: "Leading sustainable development initiatives" },
             ].map((item, i) => (
               <div key={i} className="flex items-start">
-                <div className="w-32 font-bold text-[#c8f0e6]">{item.year}</div>
+                <div className="w-32 font-bold text-[#9fc5e9]">
+                  {item.year}
+                </div>
                 <div>
-                  <h4 className="text-xl font-semibold mb-2">{item.title}</h4>
-                  <p className="text-white/90">{item.desc}</p>
+                  <h4 className="text-xl font-semibold mb-2">
+                    {item.title}
+                  </h4>
+                  <p className="text-white/90">
+                    {item.desc}
+                  </p>
                 </div>
               </div>
             ))}

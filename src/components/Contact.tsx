@@ -3,7 +3,6 @@ import { useState } from "react";
 import { submitToSheet } from "../components/utils/submitToSheet";
 
 export default function Contact() {
-  // ✅ Form State
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -12,7 +11,6 @@ export default function Contact() {
     message: "",
   });
 
-  // ✅ Handle Change
   const handleChange = (
     e: React.ChangeEvent<
       HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
@@ -21,7 +19,6 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // ✅ Submit Form
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
@@ -36,7 +33,6 @@ export default function Contact() {
 
     alert("✅ Message Sent Successfully!");
 
-    // ✅ Reset Form
     setFormData({
       name: "",
       email: "",
@@ -47,12 +43,15 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20 bg-[#f6fbf9]">
+    <section
+      id="contact"
+      className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#1E6F64] mb-4">
+          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
             Get In Touch
           </h2>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
@@ -61,10 +60,10 @@ export default function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          
+
           {/* Left Info */}
           <div>
-            <h3 className="text-2xl font-bold text-[#1E6F64] mb-6">
+            <h3 className="text-2xl font-bold text-[#073762] mb-6">
               Contact Information
             </h3>
 
@@ -74,14 +73,17 @@ export default function Contact() {
                   icon: MapPin,
                   title: "Address",
                   lines: [
-                    "Dlf Corporates Greens, Tower 1 1604-1605, Gurugram,Haryana,122002",
+                    "DLF Corporate Greens, Tower 1 1604-1605, Gurugram, Haryana, 122002",
                   ],
                 },
                 { icon: Phone, title: "Phone", lines: ["+91-8395994524"] },
                 {
                   icon: Mail,
                   title: "Email",
-                  lines: ["info@brickhillgroup.com", "sales@brickhillgroup.com"],
+                  lines: [
+                    "info@brickhillgroup.com",
+                    "sales@brickhillgroup.com",
+                  ],
                 },
                 {
                   icon: Clock,
@@ -94,11 +96,11 @@ export default function Contact() {
                 },
               ].map((item, i) => (
                 <div key={i} className="flex items-start">
-                  <div className="h-12 w-12 rounded-xl bg-gradient-to-br from-[#1E6F64] to-[#4FA59A] flex items-center justify-center">
+                  <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-[#0b5394] to-[#3d85c5] flex items-center justify-center shadow-md">
                     <item.icon className="h-6 w-6 text-white" />
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-semibold text-[#1E6F64]">
+                    <h4 className="font-semibold text-[#073762]">
                       {item.title}
                     </h4>
                     {item.lines.map((line, idx) => (
@@ -114,7 +116,7 @@ export default function Contact() {
             <img
               src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="Office Building"
-              className="rounded-2xl shadow-lg mt-8"
+              className="rounded-2xl shadow-xl mt-8"
             />
           </div>
 
@@ -122,20 +124,19 @@ export default function Contact() {
           <div>
             <form
               onSubmit={handleSubmit}
-              className="bg-white rounded-2xl p-8 shadow-xl border border-[#1E6F64]/10"
+              className="bg-white rounded-2xl p-8 shadow-2xl border border-[#9fc5e9]/30"
             >
-              <h3 className="text-2xl font-bold text-[#1E6F64] mb-6">
+              <h3 className="text-2xl font-bold text-[#073762] mb-6">
                 Send Us a Message
               </h3>
 
-              {/* Inputs */}
-              {[
+              {[ 
                 { label: "Full Name *", name: "name", type: "text" },
                 { label: "Email Address *", name: "email", type: "email" },
                 { label: "Phone Number", name: "phone", type: "tel" },
               ].map((field) => (
                 <div key={field.name} className="mb-5">
-                  <label className="block text-sm font-semibold text-[#1E6F64] mb-2">
+                  <label className="block text-sm font-semibold text-[#073762] mb-2">
                     {field.label}
                   </label>
                   <input
@@ -144,14 +145,14 @@ export default function Contact() {
                     required={field.name !== "phone"}
                     value={(formData as any)[field.name]}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30 outline-none focus:ring-2 focus:ring-[#1E6F64]/30"
+                    className="w-full px-4 py-3 rounded-lg border border-[#9fc5e9]/40 outline-none focus:ring-2 focus:ring-[#3d85c5] focus:border-[#3d85c5] transition"
                   />
                 </div>
               ))}
 
               {/* Subject */}
               <div className="mb-5">
-                <label className="block text-sm font-semibold text-[#1E6F64] mb-2">
+                <label className="block text-sm font-semibold text-[#073762] mb-2">
                   Subject *
                 </label>
                 <select
@@ -159,7 +160,7 @@ export default function Contact() {
                   required
                   value={formData.subject}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30"
+                  className="w-full px-4 py-3 rounded-lg border border-[#9fc5e9]/40 focus:ring-2 focus:ring-[#3d85c5]"
                 >
                   <option value="">Select a subject</option>
                   <option value="general">General Inquiry</option>
@@ -173,7 +174,7 @@ export default function Contact() {
 
               {/* Message */}
               <div className="mb-6">
-                <label className="block text-sm font-semibold text-[#1E6F64] mb-2">
+                <label className="block text-sm font-semibold text-[#073762] mb-2">
                   Message *
                 </label>
                 <textarea
@@ -182,19 +183,20 @@ export default function Contact() {
                   required
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-lg border border-[#1E6F64]/30 resize-none"
+                  className="w-full px-4 py-3 rounded-lg border border-[#9fc5e9]/40 resize-none focus:ring-2 focus:ring-[#3d85c5]"
                 />
               </div>
 
               {/* Button */}
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#1E6F64] to-[#4FA59A] text-white font-semibold py-4 rounded-lg hover:scale-105 transition"
+                className="w-full bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white font-semibold py-4 rounded-lg hover:scale-105 hover:shadow-lg transition duration-300"
               >
                 Send Message
               </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>

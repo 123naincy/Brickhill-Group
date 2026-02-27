@@ -23,21 +23,30 @@ export default function FeaturedProjects() {
   if (!projects.length) return null;
 
   return (
-    <section className="py-20 bg-[#f6fbf9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-24 bg-gradient-to-b from-[#f4f8fc] to-white">
+      <div className="max-w-7xl mx-auto px-6">
 
         {/* HEADER */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-[#1E6F64] mb-4">
+          <h2
+            className="text-4xl font-extrabold mb-4"
+            style={{
+              background: "linear-gradient(90deg,#073762,#3d85c5)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }}
+          >
             Delivered Projects
           </h2>
-          <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
-            Successfully delivered developments that reflect trust and quality
+
+          <p className="text-neutral-600 max-w-2xl mx-auto text-lg">
+            Successfully delivered developments that reflect trust,
+            precision, and long-term value creation.
           </p>
         </div>
 
         {/* CARDS */}
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 mb-14">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 mb-16">
           {projects.map((project) => {
             const imageSrc =
               allImages[project.featured_image] || fallbackImage;
@@ -45,28 +54,29 @@ export default function FeaturedProjects() {
             return (
               <div
                 key={project.id}
-                className="bg-white rounded-2xl overflow-hidden border border-[#1E6F64]/10 shadow hover:shadow-xl transition"
+                className="group bg-white rounded-3xl overflow-hidden border border-[#9fc5e9]/30 shadow-md hover:shadow-2xl transition duration-500"
               >
                 {/* Image */}
-                <div className="relative h-64">
+                <div className="relative h-64 overflow-hidden">
                   <img
                     src={imageSrc}
                     alt={project.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
                   />
-                  <span className="absolute top-4 right-4 bg-gradient-to-r from-[#1E6F64] to-[#4FA59A] text-white px-4 py-1 rounded-full text-sm capitalize">
+
+                  <span className="absolute top-4 right-4 bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white px-4 py-1 rounded-full text-sm capitalize shadow">
                     {project.type}
                   </span>
                 </div>
 
                 {/* Content */}
                 <div className="p-6">
-                  <h3 className="text-2xl font-bold text-[#1E6F64] mb-2">
+                  <h3 className="text-2xl font-bold text-[#073762] mb-2">
                     {project.title}
                   </h3>
 
                   <div className="flex items-center text-neutral-600 mb-3">
-                    <MapPin className="h-4 w-4 mr-1 text-[#1E6F64]" />
+                    <MapPin className="h-4 w-4 mr-1 text-[#3d85c5]" />
                     <span className="text-sm">{project.location}</span>
                   </div>
 
@@ -78,9 +88,10 @@ export default function FeaturedProjects() {
                     <span className="text-sm text-neutral-500">
                       {project.area}
                     </span>
+
                     <a
                       href="#projects"
-                      className="text-[#1E6F64] font-semibold hover:underline"
+                      className="text-[#3d85c5] font-semibold hover:text-[#073762] transition"
                     >
                       Learn More →
                     </a>
@@ -95,7 +106,7 @@ export default function FeaturedProjects() {
         <div className="text-center">
           <a
             href="#projects"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-[#1E6F64] to-[#4FA59A] text-white font-semibold rounded-lg transition hover:scale-105"
+            className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white font-semibold rounded-full shadow-xl hover:scale-105 transition duration-300"
           >
             View All Projects
             <ArrowRight className="h-5 w-5" />

@@ -72,84 +72,105 @@ export default function LeftSidebar() {
   };
 
   return (
-    <div className="left-sidebar">
+  <div className="space-y-4 mt-20 left-sidebar">
 
-      {/* OUR LATEST PROJECTS */}
-      <div className="sidebar-box">
-        <h5 className="sidebar-heading">Our Latest Projects</h5>
-        <ul className="sidebar-list">
-          {latestProjects.map((item) => (
-            <li key={item.title}>
-              <a href={item.link} target="_blank" rel="noopener noreferrer">
-                {item.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
+    {/* OUR LATEST PROJECTS */}
+    <div className="bg-white p-6 rounded-2xl shadow-md border border-[#9fc5e9]/30">
+      <h5 className="text-lg font-bold text-[#073762] mb-4 border-b border-[#9fc5e9]/30 pb-2">
+        Our Latest Projects
+      </h5>
 
-      {/* BLOG SECTION */}
-      <div className="sidebar-box">
-        <h5 className="sidebar-heading">Latest Blogs</h5>
-        <ul className="sidebar-list">
-          {latestBlogs.map((blog) => (
-            <li key={blog.title}>
-              <a href={blog.link} target="_blank" rel="noopener noreferrer">
-                {blog.title}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* LEAD FORM */}
-      <div className="sidebar-box">
-        <h5 className="sidebar-heading">Get Free Consultation</h5>
-
-        <form onSubmit={handleSubmit} className="lead-form">
-
-          <input
-            type="text"
-            name="name"
-            placeholder="Your Name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="tel"
-            name="mobile"
-            placeholder="Mobile Number"
-            value={formData.mobile}
-            onChange={handleChange}
-            required
-          />
-
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-
-          <button
-            type="submit"
-            className="submit-btn"
-            disabled={loading}
-          >
-            {loading ? "Submitting..." : "Submit"}
-          </button>
-
-          <small style={{ display: "block", marginTop: "8px" }}>
-            We respect your privacy. Your information is safe with us.
-          </small>
-
-        </form>
-      </div>
-
+      <ul className="space-y-3">
+        {latestProjects.map((item) => (
+          <li key={item.title}>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#0b5394] hover:text-[#3d85c5] transition text-sm"
+            >
+              {item.title}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
-  );
+
+    {/* BLOG SECTION */}
+    <div className="bg-white p-6 rounded-2xl shadow-md border border-[#9fc5e9]/30">
+      <h5 className="text-lg font-bold text-[#073762] mb-4 border-b border-[#9fc5e9]/30 pb-2">
+        Latest Blogs
+      </h5>
+
+      <ul className="space-y-3">
+        {latestBlogs.map((blog) => (
+          <li key={blog.title}>
+            <a
+              href={blog.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#0b5394] hover:text-[#3d85c5] transition text-sm"
+            >
+              {blog.title}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    {/* LEAD FORM */}
+    <div className="bg-gradient-to-br from-[#f4f8fc] to-white p-6 rounded-2xl shadow-xl border border-[#9fc5e9]/40">
+      <h5 className="text-lg font-bold text-[#073762] mb-6">
+        Get Free Consultation
+      </h5>
+
+      <form onSubmit={handleSubmit} className="space-y-4">
+
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+          className="w-full p-3 rounded-lg border border-[#9fc5e9]/40 focus:ring-2 focus:ring-[#3d85c5] outline-none transition"
+        />
+
+        <input
+          type="tel"
+          name="mobile"
+          placeholder="Mobile Number"
+          value={formData.mobile}
+          onChange={handleChange}
+          required
+          className="w-full p-3 rounded-lg border border-[#9fc5e9]/40 focus:ring-2 focus:ring-[#3d85c5] outline-none transition"
+        />
+
+        <input
+          type="email"
+          name="email"
+          placeholder="Email Address"
+          value={formData.email}
+          onChange={handleChange}
+          required
+          className="w-full p-3 rounded-lg border border-[#9fc5e9]/40 focus:ring-2 focus:ring-[#3d85c5] outline-none transition"
+        />
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white py-3 rounded-full font-bold shadow-lg hover:scale-105 hover:shadow-2xl transition duration-300 disabled:opacity-70"
+        >
+          {loading ? "Submitting..." : "Submit"}
+        </button>
+
+        <small className="block text-xs text-neutral-500 text-center mt-2">
+          We respect your privacy. Your information is safe with us.
+        </small>
+
+      </form>
+    </div>
+
+  </div>
+);
 }

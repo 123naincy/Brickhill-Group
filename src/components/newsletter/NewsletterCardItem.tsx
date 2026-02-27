@@ -15,19 +15,51 @@ export default function NewsletterCardItem({
   buttonText = "Read More",
 }: NewsletterCardProps) {
   return (
-    <Card className="nl-card border-0 shadow-sm">
-      <div className="nl-image-wrap">
-        <img src={imageUrl} alt={title} className="nl-image" />
+    <Card
+      className="border-0 shadow-sm h-100 overflow-hidden"
+      style={{
+        borderRadius: "20px",
+        border: "1px solid rgba(159,197,233,0.4)",
+        transition: "all 0.3s ease",
+      }}
+    >
+      {/* Image */}
+      <div
+        style={{
+          overflow: "hidden",
+          borderTopLeftRadius: "20px",
+          borderTopRightRadius: "20px",
+        }}
+      >
+        <img
+          src={imageUrl}
+          alt={title}
+          style={{
+            width: "100%",
+            height: "220px",
+            objectFit: "cover",
+            transition: "transform 0.5s ease",
+          }}
+          className="nl-hover-image"
+        />
       </div>
 
-      <Card.Body className="text-center">
-        <Card.Title className="fw-bold fs-5">{title}</Card.Title>
+      <Card.Body className="text-center p-4">
+        <Card.Title
+          className="fw-bold fs-5 mb-3"
+          style={{ color: "#073762" }}
+        >
+          {title}
+        </Card.Title>
 
         <Button
           as={Link}
           to={to}
-          variant="dark"
-          className="mt-2 px-4 rounded-pill"
+          className="px-4 py-2 border-0 fw-semibold"
+          style={{
+            background: "linear-gradient(90deg, #073762, #3d85c5)",
+            borderRadius: "50px",
+          }}
         >
           {buttonText}
         </Button>

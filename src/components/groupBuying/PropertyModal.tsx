@@ -24,15 +24,14 @@ export function PropertyModal({
   const totalPrice = Number(property.total_price) || 0;
   const isClosed = property.status !== "open";
 
-  // ✅ use mapped image or fallback
   const imageUrl =
     allImages[property.image_url as keyof typeof allImages] || fallbackImage;
 
   const offers: string[] = [
-    "✅ Priority Allotment in First Round",
-    "✅ Early Bird Discount for Group Members",
-    "✅ Free Site Visit & Pick-up",
-    "✅ Legal Documentation Assistance",
+    "Priority Allotment in First Round",
+    "Early Bird Discount for Group Members",
+    "Free Site Visit & Pick-up",
+    "Legal Documentation Assistance",
   ];
 
   const handleSubmit = (e: FormEvent) => {
@@ -61,19 +60,20 @@ export function PropertyModal({
   };
 
   return (
-    <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 z-50">
-      <div className="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+    <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center p-4 z-50">
+      <div className="bg-white rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+
         {/* Header */}
         <div className="relative h-80">
           <img
-            src={imageUrl}   // ✅ FIXED
+            src={imageUrl}
             className="w-full h-full object-cover"
             alt={property.title}
           />
 
           <button
             onClick={onClose}
-            className="absolute top-4 right-4 bg-white p-2 rounded-full"
+            className="absolute top-4 right-4 bg-white p-2 rounded-full shadow"
             type="button"
             aria-label="Close"
           >
@@ -81,8 +81,10 @@ export function PropertyModal({
           </button>
 
           <div className="absolute bottom-0 p-8 bg-gradient-to-t from-black/80 to-transparent w-full">
-            <h2 className="text-4xl font-bold text-white">{property.title}</h2>
-            <div className="text-white/80 flex items-center">
+            <h2 className="text-4xl font-extrabold text-white">
+              {property.title}
+            </h2>
+            <div className="text-white/85 flex items-center mt-2">
               <MapPin className="mr-2" />
               {property.location}
             </div>
@@ -90,70 +92,85 @@ export function PropertyModal({
         </div>
 
         {/* Body */}
-        <div className="p-8 grid md:grid-cols-2 gap-8">
-          {/* Details */}
-          <div>
-            <h3 className="text-2xl font-bold mb-4">Property Details</h3>
-            <p className="text-gray-600 mb-6">{property.description}</p>
+        <div className="p-10 grid md:grid-cols-2 gap-10">
 
-            <div className="space-y-4">
-              <div className="flex justify-between items-center p-4 bg-emerald-50 rounded-xl">
-                <span className="flex items-center gap-2">
-                  <Tag className="w-4 h-4" />
-                  Total Price
+          {/* LEFT DETAILS */}
+          <div>
+            <h3 className="text-2xl font-bold mb-4 text-[#073762]">
+              Investment Details
+            </h3>
+
+            <p className="text-[#3d85c5] mb-6">
+              {property.description}
+            </p>
+
+            <div className="space-y-5">
+
+              {/* Price Box */}
+              <div className="flex justify-between items-center p-5 bg-[#f4f8fc] rounded-2xl border border-[#0b5394]/10">
+                <span className="flex items-center gap-2 text-[#073762] font-medium">
+                  <Tag className="w-4 h-4 text-[#0b5394]" />
+                  Total Investment
                 </span>
-                <b>₹{totalPrice.toLocaleString("en-IN")}</b>
+                <span className="text-2xl font-bold text-[#073762]">
+                  ₹{totalPrice.toLocaleString("en-IN")}
+                </span>
               </div>
 
               {/* Offers */}
-              <div className="p-5 bg-yellow-50 rounded-2xl border border-yellow-200">
-                <div className="flex items-center gap-2 mb-3 font-bold text-yellow-900">
-                  <Gift className="w-5 h-5" />
-                  Offers for Group Members
+              <div className="p-6 bg-[#9fc5e9]/20 rounded-2xl border border-[#6fa8dd]">
+                <div className="flex items-center gap-2 mb-4 font-semibold text-[#073762]">
+                  <Gift className="w-5 h-5 text-[#0b5394]" />
+                  Exclusive Group Benefits
                 </div>
 
-                <ul className="space-y-2 text-sm text-yellow-900">
+                <ul className="space-y-2 text-sm text-[#073762]">
                   {offers.map((offer, i) => (
                     <li key={i} className="flex gap-2">
-                      <span>•</span>
+                      <span className="text-[#0b5394]">•</span>
                       <span>{offer}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className="p-4 bg-gray-50 rounded-xl text-sm text-gray-700">
-                Interested Members: <b>{participations.length}</b>
+              <div className="p-4 bg-[#f4f8fc] rounded-xl text-sm text-[#3d85c5]">
+                Interested Members:{" "}
+                <b className="text-[#073762]">{participations.length}</b>
               </div>
+
             </div>
           </div>
 
-          {/* Join */}
+          {/* RIGHT FORM */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Join Interest Group</h3>
+            <h3 className="text-2xl font-bold mb-6 text-[#073762]">
+              Join Investment Group
+            </h3>
 
             <form onSubmit={handleSubmit} className="space-y-4">
+
               <input
                 placeholder="Full Name"
-                className="w-full p-3 border rounded-xl"
+                className="w-full p-3 border border-[#0b5394]/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#3d85c5]"
                 value={name}
                 onChange={(e) => setName(e.target.value)}
                 disabled={isClosed}
               />
 
               <input
-                placeholder="Email"
-                className="w-full p-3 border rounded-xl"
+                placeholder="Email Address"
+                className="w-full p-3 border border-[#0b5394]/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#3d85c5]"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 disabled={isClosed}
               />
 
               <div className="relative">
-                <Phone className="absolute left-3 top-3.5 w-4 h-4 text-gray-400" />
+                <Phone className="absolute left-3 top-3.5 w-4 h-4 text-[#3d85c5]" />
                 <input
                   placeholder="Phone Number"
-                  className="w-full p-3 pl-10 border rounded-xl"
+                  className="w-full p-3 pl-10 border border-[#0b5394]/20 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#3d85c5]"
                   value={phone}
                   onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))}
                   disabled={isClosed}
@@ -163,25 +180,36 @@ export function PropertyModal({
               </div>
 
               {error && (
-                <div className="bg-red-50 text-red-600 p-3 rounded">
+                <div className="bg-red-50 text-red-600 p-3 rounded-lg text-sm">
                   {error}
                 </div>
               )}
 
               <button
-                className={`w-full text-white py-3 rounded-xl font-bold ${
-                  isClosed ? "bg-gray-400 cursor-not-allowed" : "bg-emerald-600"
+                className={`w-full py-3 rounded-xl font-semibold shadow-lg transition ${
+                  isClosed
+                    ? "bg-gray-400 cursor-not-allowed text-white"
+                    : ""
                 }`}
+                style={
+                  isClosed
+                    ? {}
+                    : {
+                        background:
+                          "linear-gradient(90deg,#0b5394,#3d85c5)",
+                        color: "white",
+                      }
+                }
                 disabled={isClosed}
                 type="submit"
               >
-                {isClosed ? "Closed" : "Join Now"}
+                {isClosed ? "Closed" : "Join Now →"}
               </button>
 
-              <p className="text-xs text-gray-500">
-                Our team will contact you via phone/email with offers & next
-                steps.
+              <p className="text-xs text-[#3d85c5]">
+                Our investment team will contact you with pricing details and next steps.
               </p>
+
             </form>
           </div>
         </div>

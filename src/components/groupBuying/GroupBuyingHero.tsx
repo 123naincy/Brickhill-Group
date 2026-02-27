@@ -1,4 +1,9 @@
-import { Calendar, Users, Video, Phone, ShieldCheck } from "lucide-react";
+import {
+  Users,
+  Building2,
+  TrendingUp,
+  ShieldCheck,
+} from "lucide-react";
 import { useState } from "react";
 import { submitToSheet } from "../utils/submitToSheet";
 
@@ -14,98 +19,134 @@ export default function GroupBuyingHero() {
     e.preventDefault();
 
     await submitToSheet({
-      formName: "Group Buying Form",
+      formName: "Group Buying Inquiry",
       ...data,
     });
 
-    alert("✅ Registered Successfully!");
-
+    alert("✅ Thank you! Our team will contact you shortly.");
     setData({ name: "", phone: "", email: "", location: "" });
   };
 
   return (
-    <section className="py-28 bg-gradient-to-r from-[#0f4b40] via-[#0b6b5c] to-[#0f4b40] text-[#fffbba]">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+    <section className="relative py-32 bg-[#041f38] text-white overflow-hidden">
 
-        {/* Left Content */}
+      {/* Soft background glow */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#3d85c5]/20 blur-3xl rounded-full"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-[#9fc5e9]/20 blur-3xl rounded-full"></div>
+
+      <div className="relative max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+
+        {/* LEFT CONTENT */}
         <div>
-          <span className="inline-block bg-[#fffbba]/10 px-5 py-2 rounded-full text-sm mb-6">
-            Paid Live Webinar • Just ₹99 • Limited Seats
+
+          <span className="inline-flex items-center gap-2 bg-[#9fc5e9]/10 border border-[#9fc5e9]/30 px-6 py-2 rounded-full text-sm font-semibold mb-8">
+            <Users className="w-4 h-4 text-[#9fc5e9]" />
+            Exclusive Group Buying Model
           </span>
 
-          <h1 className="text-5xl leading-tight font-extrabold mb-6">
-            Buy Property at <span className="text-white">Bulk Discount</span><br />
-            Using Group Buying
+          <h1 className="text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+            Invest Together.
+            <br />
+            <span className="bg-gradient-to-r from-[#9fc5e9] to-[#3d85c5] bg-clip-text text-transparent">
+              Save More.
+            </span>
           </h1>
 
-          <p className="text-lg mb-7 text-[#fffbba]/90">
-            Learn how smart buyers are saving <b>₹10–25 Lakhs</b> by joining our
-            exclusive group buying model with real projects & live negotiation strategy.
+          <p className="text-xl text-[#cfe3f8] mb-10 max-w-xl">
+            Join a verified buyer group and unlock builder-level pricing,
+            lower risk exposure, and stronger negotiation power.
           </p>
 
-          <ul className="space-y-4 text-[#fffbba]/90 text-lg">
-            <li className="flex gap-3 items-center"><Calendar /> Live Demo + Q&A Session</li>
-            <li className="flex gap-3 items-center"><Users /> 100+ Buyers Already Joined</li>
-            <li className="flex gap-3 items-center"><Video /> Real Projects & Price Comparison</li>
-            <li className="flex gap-3 items-center"><Phone /> Direct Builder Interaction</li>
-            <li className="flex gap-3 items-center"><ShieldCheck /> Trusted & Transparent Process</li>
-          </ul>
+          <div className="grid sm:grid-cols-2 gap-6 text-[#cfe3f8] text-lg">
+            <Feature icon={<Building2 />} text="Premium Verified Projects" />
+            <Feature icon={<TrendingUp />} text="Better ROI Potential" />
+            <Feature icon={<Users />} text="Collective Buying Power" />
+            <Feature icon={<ShieldCheck />} text="Transparent & Secure Process" />
+          </div>
+
         </div>
 
-        {/* Right Form */}
-        <div className="bg-white text-gray-800 p-9 rounded-3xl shadow-2xl">
-          <h3 className="text-3xl font-bold mb-1 text-center text-[#0f4b40]">
-            Register for Webinar
+        {/* RIGHT FORM */}
+        <div className="bg-white text-gray-800 rounded-3xl shadow-2xl p-10">
+
+          <h3 className="text-2xl font-bold text-center text-[#073762] mb-4">
+            Join the Group Buying Program
           </h3>
-          <p className="text-center text-sm mb-5 text-gray-500">
-            Access Fee: <b>₹99 only</b> • Refundable if you don’t like the session
+
+          <p className="text-center text-sm mb-6 text-gray-500">
+            Our advisor will guide you through available projects.
           </p>
 
           <form className="space-y-4" onSubmit={handleSubmit}>
+
             <input
               placeholder="Full Name"
               value={data.name}
-              onChange={(e) => setData({ ...data, name: e.target.value })}
+              onChange={(e) =>
+                setData({ ...data, name: e.target.value })
+              }
               required
-              className="w-full border p-3 rounded-lg"
+              className="w-full border p-3 rounded-xl"
             />
 
             <input
               placeholder="Mobile Number"
               value={data.phone}
-              onChange={(e) => setData({ ...data, phone: e.target.value })}
-              className="w-full border p-3 rounded-lg"
+              onChange={(e) =>
+                setData({ ...data, phone: e.target.value })
+              }
+              required
+              className="w-full border p-3 rounded-xl"
             />
 
             <input
               placeholder="Email Address"
               value={data.email}
-              onChange={(e) => setData({ ...data, email: e.target.value })}
-              className="w-full border p-3 rounded-lg"
+              onChange={(e) =>
+                setData({ ...data, email: e.target.value })
+              }
+              required
+              className="w-full border p-3 rounded-xl"
             />
 
             <select
               value={data.location}
-              onChange={(e) => setData({ ...data, location: e.target.value })}
-              className="w-full border p-3 rounded-lg"
+              onChange={(e) =>
+                setData({ ...data, location: e.target.value })
+              }
+              className="w-full border p-3 rounded-xl"
             >
-              <option value="">Interested Location</option>
+              <option value="">Preferred Location</option>
               <option value="Mohali">Mohali</option>
               <option value="Chandigarh">Chandigarh</option>
               <option value="Kharar">Kharar</option>
               <option value="Zirakpur">Zirakpur</option>
             </select>
 
-            <button className="w-full bg-green-700 text-white py-3 rounded-lg">
-              Reserve Seat Free ✅
+            <button
+              className="w-full bg-gradient-to-r from-[#3d85c5] to-[#9fc5e9] text-[#041f38] font-bold py-4 rounded-xl hover:scale-105 transition"
+            >
+              Get Project Details →
             </button>
+
           </form>
-          <p className="text-xs text-gray-500 text-center mt-4">
-            Limited seats • Secure payment • Privacy protected • No spam
+
+          <p className="text-xs text-gray-500 text-center mt-6">
+            🔒 Privacy protected • No spam • Advisory support included
           </p>
+
         </div>
 
       </div>
     </section>
+  );
+}
+
+function Feature({ icon, text }: { icon: JSX.Element; text: string }) {
+  return (
+    <div className="flex items-center gap-3">
+      <div className="text-[#9fc5e9]">{icon}</div>
+      <span>{text}</span>
+    </div>
   );
 }
