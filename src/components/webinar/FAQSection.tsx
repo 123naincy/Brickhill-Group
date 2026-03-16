@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet-async";
+
 const faqs = [
   [
     "What is this webinar about?",
@@ -23,6 +25,23 @@ const faqs = [
 
 export default function FAQSection() {
   return (
+    <>
+      <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqs.map(([q, a]) => ({
+              "@type": "Question",
+              "name": q,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": a
+              }
+            }))
+          })}
+        </script>
+      </Helmet>
     <section className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]">
       <div className="max-w-4xl mx-auto px-6">
 
@@ -58,5 +77,6 @@ export default function FAQSection() {
 
       </div>
     </section>
+    </>
   );
 }

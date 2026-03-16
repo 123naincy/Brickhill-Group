@@ -1,9 +1,77 @@
 import { Link } from "react-router-dom";
 import { blogs } from "../data/blogs";
 import { Calendar, User } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function BlogPage() {
   return (
+    <>
+      <Helmet>
+
+        {/* Title */}
+        <title>
+          Real Estate Blog & Investment Insights | Brickhill Group
+        </title>
+
+        {/* Description */}
+        <meta
+          name="description"
+          content="Read the latest blogs from Brickhill Group about real estate investment trends, Gurugram property market insights, and commercial property opportunities."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="real estate blog India, property investment tips, Gurugram real estate trends, commercial property investment insights, Brickhill Group blog"
+        />
+
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Brickhill Group" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://www.brickhillgroup.com/blog"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.brickhillgroup.com/blog" />
+
+        <meta
+          property="og:title"
+          content="Real Estate Blog & Investment Insights | Brickhill Group"
+        />
+
+        <meta
+          property="og:description"
+          content="Explore real estate investment guides, market insights, and property trends from Brickhill Group."
+        />
+
+        <meta
+          property="og:image"
+          content="https://www.brickhillgroup.com/og-image.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Real Estate Blog | Brickhill Group"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Stay updated with real estate investment insights and Gurugram property trends."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://www.brickhillgroup.com/og-image.jpg"
+        />
+
+      </Helmet>
     <section className="min-h-screen bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb] py-16">
       <div className="max-w-7xl mx-auto px-6">
 
@@ -75,5 +143,6 @@ export default function BlogPage() {
 
       </div>
     </section>
+    </>
   );
 }

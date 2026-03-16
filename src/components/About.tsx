@@ -1,7 +1,67 @@
 import { Target, Eye, Award, Users } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 export default function About() {
   return (
+     <>
+      <Helmet>
+        {/* Title */}
+        <title>
+          About Brickhill Group | Real Estate Developers in Gurugram
+        </title>
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="Learn about Brickhill Group, a trusted real estate developer in Gurugram specializing in residential, commercial, industrial, and warehouse developments."
+        />
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="Brickhill Group, real estate developers Gurugram, property development company India, commercial real estate Gurugram, warehouse projects Gurugram"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Brickhill Group" />
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://www.brickhillgroup.com/about"
+        />
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.brickhillgroup.com/about" />
+        <meta
+          property="og:title"
+          content="About Brickhill Group | Real Estate Developers"
+        />
+
+        <meta
+          property="og:description"
+          content="Discover Brickhill Group's journey, mission, and vision in building premium real estate developments."
+        />
+        <meta
+          property="og:image"
+          content="https://www.brickhillgroup.com/og-image.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="About Brickhill Group | Real Estate Developers"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Explore Brickhill Group’s mission, vision and real estate expertise."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://www.brickhillgroup.com/og-image.jpg"
+        />
+
+      </Helmet>
     <section
       id="about"
       className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]"
@@ -102,5 +162,6 @@ export default function About() {
 
       </div>
     </section>
+    </>
   );
 }

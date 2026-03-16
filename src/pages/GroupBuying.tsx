@@ -1,6 +1,6 @@
 import { useMemo, useState } from "react";
 import rawData from "../data/group-buying-properties.json";
-
+import { Helmet } from "react-helmet-async";
 import { PropertyCard } from "../components/groupBuying/PropertyCard";
 import { PropertyModal } from "../components/groupBuying/PropertyModal";
 import GroupBuyingHero from "../components/groupBuying/GroupBuyingHero";
@@ -30,6 +30,73 @@ export default function GroupBuying() {
 
   return (
     <>
+    <Helmet>
+        {/* Title */}
+        <title>
+          Group Buying Property Investment | Brickhill Group
+        </title>
+
+        {/* Meta Description */}
+        <meta
+          name="description"
+          content="Invest in premium real estate through Brickhill Group's group buying model. Access residential, commercial, industrial and warehouse investment opportunities at builder-level pricing."
+        />
+
+        {/* Keywords */}
+        <meta
+          name="keywords"
+          content="group buying property India, real estate group investment, commercial property group buying, property investment platform India, Brickhill Group investments"
+        />
+
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Brickhill Group" />
+
+        {/* Canonical */}
+        <link
+          rel="canonical"
+          href="https://www.brickhillgroup.com/group-buying"
+        />
+
+        {/* Open Graph */}
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content="https://www.brickhillgroup.com/group-buying"
+        />
+
+        <meta
+          property="og:title"
+          content="Group Buying Real Estate Investment | Brickhill Group"
+        />
+
+        <meta
+          property="og:description"
+          content="Discover exclusive property investment opportunities through Brickhill Group's group buying platform."
+        />
+
+        <meta
+          property="og:image"
+          content="https://www.brickhillgroup.com/og-image.jpg"
+        />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+
+        <meta
+          name="twitter:title"
+          content="Group Buying Property Investment | Brickhill Group"
+        />
+
+        <meta
+          name="twitter:description"
+          content="Invest together and unlock builder-level property pricing through Brickhill Group's group buying platform."
+        />
+
+        <meta
+          name="twitter:image"
+          content="https://www.brickhillgroup.com/og-image.jpg"
+        />
+      </Helmet>
       <GroupBuyingHero />
       <div className="max-w-7xl mx-auto p-10">
         <h1 className="text-4xl font-bold mb-8">Group Buying Properties</h1>
