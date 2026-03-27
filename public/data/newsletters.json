@@ -1,0 +1,381 @@
+{
+  "newsletters": [
+    {
+      "id": "feb-2026",
+      "title": "Beyond Delhi NCR",
+      "date": "February 2026",
+      "volume": "Volume 134",
+      "coverImage": "first-page.png",
+      "logoImage": "go-boundary-logo.png",
+      "mostRead": [],
+      "sections": [
+        {
+          "sectionTitle": "",
+          "articles": [
+            {
+              "id": 1,
+              "title": "Oil Jumps on U.S. Iran Escalation Fears",
+              "image": "newsletter-second-image.png",
+              "content": "Oil prices moved sharply higher this week as markets priced in rising U.S. Iran tensions and the risk of disruption in the Strait of Hormuz, one of the world's most critical oil chokepoints. In recent trading, crude posted one of its strongest short bursts in months, with traders reacting to headlines around military and diplomatic moves, as well as the fragile state of negotiations. Beyond the immediate price spike, the bigger story is how quickly geopolitics re-enters inflation math. Even if supply is not disrupted, the risk premium can lift fuel costs and shipping rates. For importers across Asia, that can pressure trade balances and feed into domestic inflation, complicating central bank decisions. For India, sensitivity is two-fold. Higher crude directly raises the current account burden and can tighten fiscal room for subsidies. It can also add volatility to interest-rate expectations and the rupee."
+            },
+            {
+              "id": 2,
+              "title": "Europe Says Russia Shows No Tangible Signs Toward Peace in Ukraine",
+              "image": "summit.png",
+              "content": "Oil prices moved sharply higher this week as markets priced in rising U.S. Iran tensions and the risk of disruption in the Strait of Hormuz, one of the world's most critical oil chokepoints. In recent trading, crude posted one of its strongest short bursts in months, with traders reacting to headlines around military and diplomatic moves, as well as the fragile state of negotiations. Beyond the immediate price spike, the bigger story is how quickly geopolitics re-enters inflation math. Even if supply is not disrupted, the risk premium can lift fuel costs and shipping rates. For importers across Asia, that can pressure trade balances and feed into domestic inflation, complicating central bank decisions. For India, sensitivity is two-fold. Higher crude directly raises the current account burden and can tighten fiscal room for subsidies. It can also add volatility to interest-rate expectations and the rupee."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "WORLD 2.0",
+          "articles": [
+            {
+              "id": 3,
+              "title": "Union Budget 2026 27 Highlights: Manufacturing and Biopharma Push",
+              "image": "minister.png",
+              "content": "The Union Budget 2026 27 has placed manufacturing scaling at the center, including focus areas framed as strategic sectors. A notable announcement is Biopharma SHAKTI, backed by а multi-year outlay aimed at strengthening India as a global biopharma manufacturing hub. The broader pattern is that government is framing sector policy as export competitiveness strategy. Biopharma and advanced manufacturing are chosen not only for domestic needs, but also because supply chains in these sectors are being reorganized globally for resilience. For industry leaders, the opportunity is in aligning with regulated-market standards, clinical-grade manufacturing requirements, and global audit readiness. For startups and mid-sized firms, the constraint is access to capital and specialist talent. Investor confidence will be driven by how quickly projects translate into capacity and exports."
+            },
+            {
+              "id": 4,
+              "title": "India's Private Sector Growth Strengthens; Manufacturing Leads",
+              "image": "manufacturing-leads.png",
+              "content": "India's private sector activity accelerated in February, supported by a strong manufacturing pickup and steady services performance. The flash composite PMI rose to a three month high, while manufacturing output improved meaningfully, supported by new orders and resilient demand. This is strategically important because it suggests the industrial cycle is not only driven by government capex, but also by broader order pipelines. Faster hiring and improved business confidence indicate firms are investing into саpacity and delivery. Inflation pressures have also picked up, particularly in input costs, which can squeeze margins in price-sensitive segments."
+            },
+            {
+              "id": 5,
+              "title": "India Joins U.S. Led Pax Silica Tech Supply Chain Initiative",
+              "image": "supply-chain-initiative.png",
+              "content": "India has joined the U.S. led Pax Silica initiative, a partnership focused on secure technology supply chains spanning semiconductors, critical technologies, and advanced manufacturing. The announcement signals deeper alignment on technology resilience among participating nations. Supply chains are now governed by trust frameworks, not only cost curves. Being part of a trusted ecosystem can influence where fabs, packaging plants, and component ecosystems expand. It also affects procurement preferences for government and defence linked contracts. For India, this can translate into stronger technology investment pipelines, but also higher expectations around IP protection, export controls compliance, and cybersecurity standards. The commercial upside is large. The governance bar will rise in parallel."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "EDUCATION",
+          "articles": [
+            {
+              "id": 6,
+              "title": "Budget Signals Stronger Link Between Education, Skilling, and Jobs",
+              "image": "education-budget.jpg",
+              "content": "The latest budget-era sector analysis signals a stronger policy push toward measurable employability outcomes, particularly in high-growth domains such as artificial intelligence, industry-linked training, and modern service sectors. The emphasis reflects a strategic shift from broad education expansion to outcome-based skill development aligned with labour market demand. Experts say the move is timely. While India continues to benefit from a demographic advantage, skill mismatch remains a persistent constraint across industries. Many sectors report difficulty in hiring job-ready talent despite large numbers of graduates entering the workforce each year. The renewed focus creates opportunities for companies to design apprenticeship programs, co-develop certifications with educational institutions, and build micro-credential pathways tailored to specific industry needs."
+            },
+            {
+              "id": 7,
+              "title": "Students Stage Walkout to Protest Immigration Enforcement Policies",
+              "image": "student.jpg",
+              "content": "Hundreds of students walked out of their classrooms this week to protest actions by U.S. Immigration and Customs Enforcement (ICE), voicing frustration over what they describe as harsh and unfair immigration enforcement practices. Gathering outside their campuses with handmade signs and chants, the students said the demonstration was not about skipping school but about standing up for their communities. Many shared emotional accounts of friends and relatives living in fear of detention or deportation. Some spoke about classmates who abruptly stopped attending school after family members were taken into custody. For the protesters, the issue goes beyond politics. We're going to continue to fight. Something adults should've been doing all along,one student said, echoing a sentiment heard repeatedly throughout the rally. For those involved, remaining silent is no longer an option."
+            },
+            {
+              "id": 8,
+              "title": "Schools Organise Career Counselling Drives to Guide Students Future Choices",
+              "image": "school.jpg",
+              "content": "Schools and education bodies across the country have recently organised dedicated career counselling drives to help students make informed academic and professional decisions. The initiative aims to support students at a crucial stage when selecting streams after secondary school. Choosing between Science, Commerce, and Arts, along with emerging fields such as design, data science, and digital media, can often feel overwhelming. Through structured sessions, trained counsellors interacted with students to assess their interests, strengths, and long-term aspirations. The focus was on personalised guidance rather than steering students toward conventional or socially popular options. The drives included one-on-one counselling sessions, aptitude assessments, and interactive workshops. Beyond academics, students were encouraged to explore extracurricular activities and personal development opportunities."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "SPORTS",
+          "articles": [
+            {
+              "id": 9,
+              "title": "Pakistan Hockey in Crisis as PHF President Resigns After Australia Tour Row",
+              "image": "hockey.jpg",
+              "content": "Pakistan's hockey administration has plunged into fresh turmoil after a controversial tour of Australia reportedly left national players stranded due to alleged mismanagement. The fallout has led to the resignation of Tariq Bugti, president of the Pakistan Hockey Federation (PHF), intensifying concerns over the sport's declining state in the country. Reports claim members of the national team faced accommodation and financial difficulties during the overseas tour, with allegations that some players were left without proper arrangements. The incident triggered widespread outrage among fans and former players, who questioned how a national side could face such embarrassment abroad. Amid mounting criticism, Bugti stepped down on Thursday. However, shortly before resigning, he imposed a controversial two-year ban on national team captain Ammad Shakeel Butt."
+            },
+            {
+              "id": 10,
+              "title": "ISL Opening Weekend Delivers Goals, Drama and Familiar Heroes",
+              "image": "opening-weeks.jpg",
+              "content": "The opening weekend of the Indian Super League (ISL) delivered everything fans had hoped for goals, drama, and standout performances that have already set the tone for the season. One of the biggest talking points was the balance on display in the Kolkata derby between Mohun Bagan Super Giant and East Bengal FC. Traditionally fueled by emotion and history, the rivalry this time also looked evenly matched on the pitch. Both teams displayed tactical discipline and attacking intent, hinting at a fiercely competitive season ahead. Jamie Maclaren quickly reminded everyone of his pedigree. The striker's intelligent movement, perfectly timed runs, and composed finishing were classic hallmarks of his game sharp, efficient, and clinical in front of goal. If this weekend is any indication, the ISL season promises thrilling storylines and sustained excitement."
+            },
+            {
+              "id": 11,
+              "title": "New Delhi Marathon 2026 to Serve as Asian Games Qualifier",
+              "image": "marathon.jpg",
+              "content": "The 11th edition of the New Delhi Marathon will flag off from the iconic Jawaharlal Nehru Stadium on Sunday, bringing together elite athletes and thousands of running enthusiasts from across the country. Recognised by the Athletics Federation of India (AFI) as India's national marathon, the race is also a certified World Athletics event. This year's marathon carries added significance as it serves as a qualifying event for the Asian Games 2026 in Aichi-Nagoya, Japan. Athletes will be chasing the qualification standards of 2:15:04 for men and 2:31:52 for women. Among the headline contenders are defending champion Man Singh, who clocked 2:15:24 last year, Olympian Gopi T, and women's defending champion Bhagirathi Bisht, who won in 2:48:59. India's long-standing national records 2:12:00 by Shivnath Singh (1978) and 2:34:43 by OP Jaisha (2015) remain benchmarks for the country's distance runners."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "TECHNOLOGY",
+          "articles": [
+            {
+              "id": 12,
+              "title": "Micron Expands India Footprint With Gujarat Semiconductor Facility",
+              "image": "micron.jpg",
+              "content": "Micron has detailed a major investment in Gujarat for a semiconductor facility focused on memory assembly and testing. This back end capacity is a meaningful early step for India because it builds workforce and operational credibility while creating a supplier ecosystem. The logic is clear: global chip companies want diversified, trusted production networks. Assembly and testing can scale faster and can be a stepping stone toward higher value operations. For India, the benefit is not only jobs. It is integration into global production schedules where reliability matters. Follow-on investments often arrive once a location proves dependable. Execution risks include customs flow, power quality, vendor readiness, and skill depth. Managing these well is the difference between announcement and durable capacity."
+            },
+            {
+              "id": 13,
+              "title": "Galgotias Clarifies Stand on Prof. Neha Singh After Robo Dog Row",
+              "image": "robot-dog.jpg",
+              "content": "Amid the controversy at the India Al Impact Summit 2026 over a Chinese robotic dog displayed at its stall, Galgotias University issued a clarification regarding Assistant Professor Neha Singh. The university stated that Neha Singh has not been suspended following the incident. It described her as an ill-informed representativewho was not fully aware of the robot's technical origin when interacting with media personnel at the event. According to the institution, she was not officially authorised to address the press on behalf of the university and her remarks were made in enthusiasm during on-camera interactions. The controversy began after a robotic dog showcased at the university's stall was identified as the Unitree Go2, a commercially available robot developed by China-based Unitree Robotics."
+            },
+            {
+              "id": 14,
+              "title": "Adani Group to Invest $100 Billion in Renewable-Powered AI Data Centres",
+              "image": "adani-group.jpg",
+              "content": "Adani Group has announced plans to invest $100 billion by 2035 to build renewable energy-powered, Al-ready data centres across India, positioning itself at the heart of the country's fast-growing artificial intelligence infrastructure push. In a statement released Tuesday, flagship arm Adani Enterprises said the investment is expected to catalyse an additional $150 billion across allied sectors, including server manufacturing, advanced electrical infrastructure, and supporting technologies. Together, this could help create a $250 billion Al infrastructure ecosystem in India over the next decade. The move comes as India aggressively markets itself as a global Al infrastructure hub. Several global and domestic giants including Google, Amazon, and Reliance Industries have already pledged multi-billion-dollar investments in Indian data centres."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "Trending on Social-Media",
+          "articles": [
+            {
+              "id": 15,
+              "title": "",
+              "image": "pm-cares.jpg",
+              "content": "The Prime Minister's Office (PMO) has clarified that the PM CARES Fund is a private charitable trust and not a government fund. It stated that the corpus consists entirely of voluntary contributions from individuals and organisations, with no money drawn from the Consolidated Fund of India or the Union Budget. The PMO emphasized that PM CARES operates independently of the government's financial framework and is used for emergency and disaster relief purposes, including crises like the COVID-19 pandemic."
+            },
+            {
+              "id": 16,
+              "title": "",
+              "image": "delhi-boy.jpg",
+              "content": "A teenage boy in Delhi died after falling into an uncovered 20-foot-deep pit in his locality. The incident reportedly occurred when he accidentally slipped into the excavation site, which residents claim lacked proper barricading or warning signs. Locals alerted authorities, but the boy could not be saved despite rescue efforts. The tragedy has sparked outrage in the area, with demands for accountability. Police have registered a case and launched an investigation into possible negligence."
+            },
+            {
+              "id": 17,
+              "title": "",
+              "image": "slap-collapse.jpg",
+              "content": "Slab Collapse on Mumbai Metro Line-4 Kills One, Injures Three: A concrete parapet slab from the under-construction Mumbai Metropolitan Region Development Authority's Metro Line 4 collapsed in Mulund West, Mumbai, killing one person and injuring three others. The slab fell onto vehicles on LBS Marg, crushing an auto-rickshaw. Authorities arrested five individuals linked to the contractor and imposed heavy fines for safety lapses. A probe has been ordered, and safety audits across metro sites have been intensified."
+            },
+            {
+              "id": 18,
+              "title": "",
+              "image": "tata-play.jpg",
+              "content": "TATA AIA Life Insurance has launched a widespread outdoor campaign titled Protecting People of Chennai,displaying multiple billboards across Chennai and other major Indian cities. The campaign promotes life insurance awareness and financial protection for families, using strong visual messaging to reinforce trust and security. By localising its communication while maintaining a nationwide presence, the company aims to strengthen regional engagement and expand its footprint in India's competitive insurance market."
+            },
+            {
+              "id": 19,
+              "title": "",
+              "image": "bomb-making.jpg",
+              "content": "A suspected bomb-making attempt failed on a rooftop in Odisha, triggering an explosion that created panic in the area. The blast reportedly occurred while crude explosive materials were being assembled, leaving at least one person injured. Police and forensic teams reached the spot and secured the site. Authorities have launched an investigation to determine the motive and origin of the materials. Security has been tightened, and officials have promised strict action against those responsible."
+            },
+            {
+              "id": 20,
+              "title": "",
+              "image": "aaganwadi-cook.jpg",
+              "content": "An anganwadi cook tragically lost her life while saving nearly 20 specially-abled children from a deadly bee attack. The incident occurred when a swarm of bees suddenly descended on the centre, causing panic among the children. Showing remarkable courage, the cook rushed to shield and evacuate them to safety. While the children were rescued without serious harm, she sustained severe stings and later succumbed. The heartbreaking incident has drawn widespread tributes for her bravery and selfless sacrifice."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "ENTERTAINMENT",
+          "articles": [
+            {
+              "id": 21,
+              "title": "Bihar Bans Vulgar and Double-Meaning Songs in Public Spaces",
+              "image": "no-vulger-song.jpg",
+              "content": "The Bihar government has announced a ban on the public playing of vulgar and double-meaning songs across the state. The move aims to curb the use of explicit lyrics at public events, festivals, weddings, and on loudspeakers in marketplaces. Officials said the decision was taken following complaints from citizens about obscene Bhojpuri and other regional songs being played openly, often in the presence of women and children. Authorities have directed local administrations and police to strictly enforce the order and take action against violators. Under the new directive, organisers of public functions must ensure that songs played at events adhere to decency standards. Police have been empowered to stop performances and seize sound equipment if necessary. The decision has sparked mixed reactions. While some residents have welcomed the move as a step toward maintaining social decorum, others argue it may lead to subjective enforcement and concerns over artistic freedom."
+            },
+            {
+              "id": 22,
+              "title": "Priyanka Chopra Shines at 'The Bluff' Premiere with Nick Jonas Support",
+              "image": "priyanka-chopra.jpg",
+              "content": "Bollywood-born global star Priyanka Chopra turned heads at the world premiere of her latest film The Bluff, wearing a striking custom gown inspired by Bloody Mary armour.Accompanied by husband Nick Jonas, Chopra walked the red carpet with confidence, marking another milestone in her international career. Fans and fashion critics alike praised her bold styling choice, a fusion of avant-garde design and cinematic flair that perfectly matched the film's edgy tone. Social media buzzed with photographs and reactions, with many applauding her evolution as an actress and fashion icon on the global stage. The Bluff is anticipated to be a standout release this year, exploring intense themes and showcasing Chopra's dramatic range."
+            },
+            {
+              "id": 23,
+              "title": "'The Kerala Story 2' Faces Troubles Amid Controversy",
+              "image": "kerla-story-2.jpg",
+              "content": "The upcoming film The Kerala Story 2 has sparked significant controversy, dominating headlines across Bollywood and social media. Following the massive impact of its predecessor, the sequel faced pushback from critics and civic groups citing concerns over narrative choices, portrayal of communities, and broader cultural sensitivities. Industry analysts note the clash has reignited debates around creative freedom, censorship, and responsible storytelling in Indian cinema. Supporters of the film argue that artistic expression should not be curtailed, while detractors call for greater accountability in the portrayal of sensitive socio-political issues. Amid the uproar, several trade insiders are closely watching how distribution, box-office performance, and audience reception will be affected."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "REAL-ESTATE",
+          "articles": [
+            {
+              "id": 24,
+              "title": "Maharashtra Clears Land Acquisition for Key Expressway Corridor",
+              "image": "infrastructure.jpg",
+              "content": "The Maharashtra government has approved significant funding for land acquisition tied to a new access-controlled expressway corridor, signalling momentum for one of the state's key infrastructure pushes. The project aims to strengthen regional connectivity, lower logistics costs, and unlock development in under-served districts. Land acquisition is often the biggest bottleneck in large infrastructure projects. Clear financial approvals and budgetary backing are expected to accelerate execution timelines and boost contractor confidence. With funding clarity in place, authorities believe groundwork and tendering processes can move faster. Beyond faster travel, expressways typically trigger strong secondary economic effects. These include the emergence of industrial nodes, warehousing hubs, logistics parks, and expansion of service ecosystems along the corridor. Land values and real estate activity in adjoining areas also tend to see upward movement. Timeline slippages, legal disputes over land, and cost escalation could affect project viability if not managed efficiently."
+            },
+            {
+              "id": 25,
+              "title": "Bank of England Holds Rate at 3.75%, Signals Cautious Outlook",
+              "image": "england.jpg",
+              "content": "The Bank of England has kept its policy rate unchanged at 3.75 percent, reinforcing a wait-and-watch approach as inflation and growth trends continue to evolve. While the decіsion was widely expected, markets are closely analysing the tone of the central bank's commentary, where risk assessment often carries as much weight as the rate move itself. For global businesses, the U.K.'s rate trajectory influences sterling performance, borrowing costs, and investor portfolio flows. A steady rate can support short-term stability in financing conditions. However, if policymakers continue to flag persistent inflation risks, longer-term bond yields may remain elevated. The ripple effects extend beyond Britain. For emerging economies like India, higher-for-longer developed market rates can tighten global liquidity conditions"
+            },
+            {
+              "id": 26,
+              "title": "Message from Director's Desk",
+              "image": "director-desk.jpg",
+              "directorName": "SUMIT BHRIYA",
+              "directorRole": "Founder & CEO",
+              "content": "Migration today is increasingly driven by quality of life. In Delhi NCR, worsening air pollution, water contamination, and industrial waste have pushed families to reconsider long-term living choices. Health, sustainability, and cleaner environments are becoming top priorities. For investors, this shift signals opportunity. As people move toward better-planned and less congested regions, demand for residential developments and emerging corridors rises. Capital follows population movement. Livability is now a growth driver, and regions offering healthier ecosystems are positioned to become tomorrow's strongest investment destinations.When quality of life declines, migration becomes a strategy, not a setback. Growth follows those who choose healthier horizons."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "march-2026",
+      "title": "March 2026",
+      "date": "March 2026",
+      "volume": "Volume 135",
+      "coverImage": "march-card.jpg",
+      "logoImage": "logo.png",
+      "mostRead": [],
+      "sections": [
+        {
+          "sectionTitle": "",
+          "articles": [
+            {
+              "id": 1,
+              "title": "Understanding a Changing World Order Khan sir's POV with Raj Shamani",
+              "image": "world-war.png",
+              "content": "In recent times, discussions around global geopolitics have increasingly entered public discourse, reflecting a growing curiosity about the changing world order. A recent podcast featuring Khan Sir attempts to simplify complex international relations, highlighting tensions among major powers such as the United States, China,and Russia, while also examining India's position. The conversation suggests that the nature of global conflict is evolving. Rather than traditional warfare, competition is now driven by economic strength, technological ad- vancement, and strategic alliances. Issues like semiconductor supply chains, currency dominance, and re-gional influence are becoming central to global power dynamics. In this context, the United States continues to hold significant influence, while China is steadily expanding its reach, and Russia remains a disruptive force in ongoing conflicts. India, meanwhile, is presented as maintaining a balanced approach through strategic au-tonomy, engaging with multiple global players without firmly aligning with any single bloc. This positioning re-flects India's attempt to safeguard its national interests in an increasingly multipolar world. However, while such discussions help make geopolitics more accessible, they also risk oversimplifying complex realities."
+            },
+             {
+              "id": 2,
+              "title": "Kabul Hospital Airstrike Leaves Hundreds Dead, Escalating Regional Tensions",
+              "image": "kabul-hospital.png",
+              "content": "A deadly airstrike on a drug rehabilitation hospital in Kabul has reportedly left hundreds dead, intensifying tensions between Afghanistan and Pakistan. The strike, which occurred on March 16, targeted the Omid Ad-diction Treatment Hospital, with Afghan authorities claiming that nearly 400 people were killed and many more injured, most of them patients. The Afghan government has accused Pakistan of carrying out the attack, calling it a serious violation of international law. Pakistan, however, has denied the allegations, stating that its military operations were directed only at militant targets and not civilian facilities. The United Nations and several countries have condemned the attack and called for an independent investigation, stressing the need to protect medical facilities during conflicts. While casualty figures remain disputed, the attack has raised fears of further escalation in the region."
+            }
+          ]
+        },
+        {
+          "sectionTitle": "WORLD 2.0",
+          "articles": [
+            {
+              "id": 3,
+              "title": "India Retains Title as World's Fastest-Growing Major Economy",
+              "image": "economy.png",
+              "content": "India has once again emerged as the world's fast-est-growing major economy in early 2026, accord-ing to projections by the International Monetary Fund (IMF). Despite global uncertainties, the country continues to outperform both advanced and emerging economies, driven by strong do- mestic demand, increased infrastructure spend-ing, and rapid digital expansion. Key sectors such as manufacturing, technology, and services are fueling this growth, supported by initiatives like Make in India and advancements in digital public infrastructure. Platforms like UPI (Unified Pay-ments Interface) are setting global benchmarks by enabling seamless financial transactions and boosting grassroots economic activity. Rising startup innovation and steady foreign investment further strengthen India's economic outlook. How-ever, challenges such as inflation control, job creation, and global trade volatility remain."
+            },
+            {
+              "id": 4,
+              "title": "Red Sea Crisis Disrupts Global Trade Routes",
+              "image": "red-ship.png",
+              "content": "Global trade continues to face disruption in early 2026 as tensions in the Red Sea impact one of the world's most vital shipping corridors linking Europe and Asia via the Suez Canal. Due to security risks, major shipping companies are rerouting vessels around the Cape of Good Hope, significantly increasing transit time and transportation costs. This shift is affecting multiple industries, from energy to consumer goods, as delays in shipments of oil, electronics, and raw materials ripple across global markets. Trade analysts warn that these disruptions are adding pressure to already fragile supply chains, slowing recovery in the global economy."
+            },
+            {
+              "id": 5,
+              "title": "Global Space Exploration Enters a New Era of Collaboration",
+              "image": "global-space.png",
+              "content": "Global space exploration is entering a transformative phase in 2026, marked by increased collaboration between agencies like NASA and the European Space Agency. Joint efforts are driving ambitious missions focused on deep-space exploration and scientific advancement. A key highlight is the push to return humans to the Moon through programs like Artemis, alongside preparations for future missions to Mars. These initiatives aim to develop technologies for sustainable human presence beyond Earth. Private companies are also playing a crucial role, with commercial partnerships accelerating innovation, reducing costs, and expanding access to space. This shift reflects a move from traditional government-led missions to a more collaborative ecosystem."
+            }
+            ]
+        },
+         {
+          "sectionTitle": "EDUCATION",
+          "articles": [
+            {
+              "id": 6,
+              "title": "CBSE to Introduce Twice-Yearly Class 10 Board Exams from 2026, Dharmendra",
+              "image": "cbse-10th.png",
+              "content": "India's school education system is well prepared to conduct board examinations twice a year, Union Education Minister Dharmendra Pradhan said on Monday, high-lighting a major reform proposed by the Central Board of Secondary Education (CBSE). The move, which is expected to begin in 2026, aims to reduce exam-related stress among students while giving them more flexibility to improve their scores. Speaking at an education conclave organised by a media group in New Delhi, Pradhan stated that India's diverse and large education system already manages examinations conducted by more than 60 different school boards. According to him, this demonstrates that the country has the capacity and infrastructure needed to successfully implement such areform. According to the proposal, the 2026 Class 10 board exams will be conducted in two phases for around 2.66 million students across 84 subjects."
+            },
+            {
+              "id": 7,
+              "title": "From Stress to Success: Why Mental Health Support Is Key to Better Learning",
+              "image": "stress.png",
+              "content": "Every year as the board examination season approaches, a noticeable shift occurs in households across India. Entertainment is reduced, social gatherings are postponed, and dining tables often transform into study spaces. Board exams do not just affect students, they influence the routine of the entire family. Parents frequently adjust their schedules, stay up late to support their children, and share the emotional pressure that comes with this important academic phase. While the focus is often on discipline and preparation, one important issue usually remains less discussed: student stress. Recent findings highlight how serious the issue has become. The IC3 Student Suicide Aversion Report 2025 reveals that nearly one in five students rarely feel calm, motivated, or excited about their daily lives. Academic expectations, career concems, and heavy homework loads are among the biggest contributors to this pressure."
+            },
+            {
+              "id": 8,
+              "title": "From Access to Achievement: Literacy Rates Reach Historic High UNESCO",
+              "image": "literacy-day.png",
+              "content": "Global literacy rates have reached a historic high, according to a 2026 report by UNESCO, marking a major milestone in global education. Youth literacy (ages 15-24) has now surpassed 92% worldwide, driven by sustained investments in education, expanded access to primary schooling, and strong international collaboration. Significant gains have been recorded in regions like Sub-Saharan Africa and South Asia, which previously faced major educational barriers. A key highlight is the narrowing gender gap, with young women in many countries now matching or surpassing male literacy rates, an important step toward gender equality. The rise of digital and hybrid learning models, accelerated during the pandemic, has also improved access in remote areas. However, challenges persist, particularly in adult literacy and conflict-affected regions. Despite this, the overall trend remains positive, underscoring the impact of consistent global efforts toward achieving universal literacy."
+            }
+            ]
+          },
+          {
+          "sectionTitle": "SPORTS",
+          "articles": [
+            {
+              "id": 9,
+              "title": "India Drawn With Pakistan in High Volt. Pool for Hockey World Cup 2026",
+              "image": "hockey-first-image.png",
+              "content": "The stage is set for a thrilling showdown as the India men's national field hockey team has been grouped with arch-rivals Pakistan in the upcoming FIH Hockey World Cup. The tournament, to be jointly hosted by the Netherlands and Belgium, promises high-intensity action. As per the official draw held at Amsterdam's Wagener Stadium, India finds itself in Pool D alongside Pakistan, England, and Wales. This grouping has heightened excitement, especially for the much-anticipated India vs Pakistan clash, one of hockey's most historic and fiercely contested rivalries. Every encounter between the two nations carries immense emotional and competitive significance. Meanwhile, the Indian women's team has also been placed in Pool D in their respective competition, setting the stage for an equally competitive campaign."
+            },
+              {
+              "id": 10,
+              "title": "Iran Seeks Venue Change for World Cup Matches Amid Security Concerns",
+              "image": "world-cup.png",
+              "content": "Amid rising geopolitical tensions, Iran has initiated discussions with FIFA to shift its upcoming FIFA World Cup fixtures from the United States to Mexico. The move comes as concerns grow over the safety of the Iranian national team due to the ongoing US-Israel-Iran conflict. Officials from the Iranian football federation have reportedly begun negotiations with FIFA, seeking an alternative arrangement that would allow the team to participate in the tournament without traveling to the United States. The development was also confirmed by Iran's embassy in Mexico,indicating that diplomatic channels are actively involved in the process. Iran's football chief, Mehdi Taj, publicly expressed concerns regarding the team's security. In a statement shared online, he suggested that the current geopolitical environment makes it difficult to guarantee the safety of players and staff if they travel to the US."
+            },
+            {
+              "id": 11,
+              "title": "Football Returns to Delhi-Quietly, But Not Without Heart",
+              "image": "football.png",
+              "content": "After seven years without a top-tier football team, the sport quietly returned to Delhi as Sporting Club Delhi took the field at Jawaharlal Nehru Stadium. Unlike the high-energy days of Delhi Dynamos, when global stars like Alessandro Del Piero and Roberto Carlos drew crowds and excitement, this comeback was subdued, lacking hype but not significance. Rain, traffic, and a busy weekday could have kept fans away, offering the usual excuse to stay home, but many still turned up. Their presence reflected a lingering connection to football in a city where enthusiasm has faded over time. Indian football, once filled with promise and growing attention, has since faced setbacks, and Delhi has slipped out of the spotlight. Yet, this match marked a quiet but meaningful revival. Without the glamour of the past, it showed that while the noise may be gone,  the passion for the game in the capital still exists."
+            }
+            ]
+          }, {
+          "sectionTitle": "TECHNOLOGY",
+          "articles": [
+            {
+              "id": 12,
+              "title": "Police Escort Humanoid Robot After It Frightens Elderly Woman in Macau",
+              "image": "police.png",
+              "content": "An unusual incident involving a humanoid robot has gone viral on social media after the machine reportedly startled an elderly woman in Macau, briefly sending her to the hospital. The event occurred last Thursday near a residential complex in the Patane district, drawing attention both locally and online. According to reports, the woman was standing outside the building and looking at her mobile phone when she suddenly noticed a humanoid robot standing very close behind her. The unexpected encounter reportedly frightened her, causing panic and leading to a tense moment between the woman and the machine. Witnesses said the woman reacted angrily after realizing the robot was right behind her. The sudden shock was significant enough that she later required medical attention and was taken to a hospital as a precaution."
+            },
+              {
+              "id": 13,
+              "title": "What Is Solar Geoengineering? Truth Behind Delhi's 'Fake Rain' Claims",
+              "image": "solar.png",
+              "content": "Solar geoengineering, or Solar Radiation Management(SRM), is a scientific concept aimed at reducing global warming by reflecting a portion of sunlight back into space. Instead of cutting greenhouse gas emissions, it focuses on lowering the Earth's heat absorption by increasing its reflectivity (albedo). Recent unseasonal rain and a temperature drop in Delhi-NCR have sparked viral claims on social media linking the weather to climate experiments backed by Bill Gates. Some posts suggest aircraft are spraying particles to manipulate the atmosphere. However, experts say these claims are baseless. While scientists have proposed methods like stratospheric aerosol injection and marine cloud brightening, these remain theoretical and are not implemented on a large scale anywhere in the world,"
+            },
+            {
+              "id": 14,
+              "title": "Meta Scales Back Metaverse Plans as Horizon Worlds Shuts Down",
+              "image": "meta-verse.png",
+              "content": "Meta, led by Mark Zuckerberg, is stepping back from its ambitious metaverse vision, with plans to shut down the Horizon Worlds app on VR by June this year. The move follows layoffs within the company's Reality Labs division, which was central to its metaverse development. In 2021, Zuckerberg introduced the metaverse as the future of digital interaction, a virtual space where people could work, socialize, and live immersive experiences. His confidence in the idea was so strong that Facebook was rebranded as Meta, marking a historic shift in the company's direction. However, after investing billions of dollars over the past five years, the company is now pulling back. Reports, including claims from a former employee, suggest that internal management may have been disconnected from real-world user needs."
+            }
+            ]
+          },
+          {
+          "sectionTitle": "ENTERTAINMENT",
+          "articles": [
+            {
+              "id": 15,
+              "title": "Taylor Swift's Eras Tour Breaks Records and Redefines Global Music Industry",
+              "image": "taylor.png",
+              "content": "Global pop icon Taylor Swift is reshaping the music industry with her Eras Tour, now one of the highest-grossing tours in history as of early 2026. Spanning continents, the tour has sold out stadiums worldwide, delivering a major economic boost to host cities, often referred to as the Swift effect.From tourism to local businesses, the impact has been significant. Beyond its commercial success, the tour stands out for its high production value and storytelling. Each segment celebrates a different era of Swift's career, blending nostalgia with innovation and creating an emotionally immersive experience for fans. The tour has also driven massive growth in streaming, with Swift's music catalog witnessing a global surge. Her success highlights a key shift in the industry, where artists are evolving into powerful global brands influencing both culture and economy at scale."
+            },
+              {
+              "id": 16,
+              "title": "BTS Reflects on Identity and Prepares for Comeback in The Return",
+              "image": "bts.png",
+              "content": "Global K-pop sensation BTS is set for a powerful comeback, as revealed in the emotional trailer of their upcoming documentary BTS: The Return. Leader Kim Namjoon (RM) reflects on their humble beginnings, calling the group just country kids from South Korea,while hinting at an ongoing search for identity and purpose. Fellow member Kim Taehyung(V) shares a heartfelt moment, describing BTS ashis second family, emphasizing the deep bond between the seven members. The documentary, directed by Bao Nguyen, will premiere on Netflix on March 27 and follows the group's return after completing mandatory military service. Backed by HYBE, the film captures both personal and professional transitions."
+            },
+            {
+              "id": 17,
+              "title": "Dhurandhar 2 Ignites Box Office Revives Hope for Bollywood",
+              "image": "durendhar-2.png",
+              "content": "Mumbai - At a time when Bollywood has been struggling, Dhurandhar 2 has emerged as a much-needed game changer. Starring Ranveer Singh and directed by Aditya Dhar, the sequel has not only generated massive buzz but has also delivered a historic box office performance. The film opened with over ₹100 crore on Day 1 and crossed ₹200 crore within just two days, despite a slight dip on Day 2. Early trends suggest it is on track to cross ₹300 crore in its opening weekend, making it one of the fastest Hindi films to reach this milestone . Advance bookings and paid previews alone set new records, high-lighting strong audience anticipation . While the industry faced a slow start in 2026, this spy thriller has injected fresh momentum."
+            }
+            ]
+          },
+          {
+          "sectionTitle": "REAL-ESTATE",
+          "articles": [
+            {
+              "id": 18,
+              "title": "Industrial Growth Accelerates Around Noida International Airport as YEIDA Reports Surge in Allotments Greater Noida",
+              "image": "international-airport.png",
+              "content": "Industrial development around the upcoming Noida International Airport is picking up pace, with the Yamuna Expressway Industrial Development Authority (YEIDA) reporting a significant rise in plot allotments, lease deeds, and construction activities across the region. According to data released by YEIDA, the total number of industrial plots allotted has reached 3,113 as of March 13, 2026. This represents an increase of 54 additional plots compared with the figures recorded on March 31, 2025. While the rise in new allotments has been steady, officials say other indicators of industrial activity have grown at a much faster rate. One of the most notable in creases has been in the number of lease deeds executed. Over the past year, the figure rose sharply from 1,632 to 2,363, marking an addition of 731 agreements. Authorities say this reflects stronger investor participation and faster progress by companies moving ahead with their projects."
+            },
+            {
+              "id": 19,
+              "title": "LPG Supply Concerns May Increase Demand for PNG-Connected Homes in India",
+              "image": "lpg.png",
+              "content": "Growing concerns about the availability of cooking gas in India are beginning to influence conversations in the real estate sector. With uncertainty surrounding global energy supply  chains amid the ongoing US-Israel-Iran conflict, some property experts believe that apartments equipped with Piped Natural Gas connections could become more attractive to tenants and homebuyers if the situation continues. In recent weeks, fears of possible supply disruptions in Liquefied Petroleum Gas have intensified in parts of the country. Since LPG cylinders remain the primary cooking fuel for many households, any potential shortage or delay in supply has raised concerns among residents, especially in urban areas. Real estate brokers say that,for now, the presence of a PNG connection is not a decisive factor when people choose to rent or purchase a property."
+            },{
+              "id": 20,
+              "title": "Message from Director's Desk",
+              "image": "director-desk-message.png",
+              "directorName": "SUMIT BHRIYA",
+              "directorRole": "Founder & CEO",
+              "content": "As we progress through the first quarter of 2026, it is an appropriate time to reflect on the achievements and milestones across our organization. In an ever-evolving global landscape, adaptability, innovation, and collaboration remain central to our continued growth. We are committed to driving progress through business expansion, technological advancement, and meaningful contributions to society. This edition of our newsletter highlights key developments, including global industry trends, technological breakthroughs, notable achievements in arts and entertainment, and initiatives that exemplify creativity and resilience. These stories reinforce the importance of forward-thinking and collective effort in shaping a sustainable future. As we move ahead, we encourage all stakeholders to uphold integrity, embrace innovation, and pursue excellence in all endeavors. Together, we can continue to build a resilient, inclusive, and future-ready organization."
+            }
+          ]
+        }
+          
+      ]
+    }
+  ]
+}
+

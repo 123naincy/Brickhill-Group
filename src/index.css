@@ -340,3 +340,211 @@ footer a:hover {
   height: 4rem;
   object-fit: contain;
 }
+/* admin css */
+/* Layout */
+.admin-container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+/* LEFT PANEL */
+.admin-left {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* RIGHT PANEL */
+.admin-right {
+  width: 65%;
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  overflow-y: auto;
+}
+
+/* CARD */
+.admin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* HEADINGS */
+.admin-card h3 {
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #073762;
+}
+
+/* INPUTS */
+.admin-input,
+.admin-textarea,
+.admin-select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.admin-input:focus,
+.admin-textarea:focus {
+  border-color: #3d85c5;
+}
+
+/* BUTTON */
+.admin-btn {
+  background: linear-gradient(90deg, #073762, #3d85c5);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.admin-btn:hover {
+  transform: scale(1.05);
+}
+
+/* SECTION CARD */
+.section-item {
+  background: #f9fbff;
+  border: 1px solid #e0e6ed;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.admin-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.newsletter-card {
+  border: 1px solid #e0e6ed;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.admin-muted {
+  color: #6a7785;
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+
+.admin-hint {
+  color: #6a7785;
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.admin-error {
+  color: #b42318;
+  background: #fee4e2;
+  border: 1px solid #fecdca;
+  border-radius: 8px;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.admin-empty {
+  color: #6a7785;
+  margin: 0;
+}
+
+.admin-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.admin-btn-sm {
+  padding: 7px 10px;
+  font-size: 0.85rem;
+}
+
+.admin-btn-danger {
+  background: #b42318;
+}
+
+.admin-preview-image {
+  width: 100%;
+  border-radius: 10px;
+  margin: 8px 0;
+  object-fit: cover;
+}
+
+.admin-preview-card {
+  border: 1px solid #e0e6ed;
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.admin-preview-title {
+  margin-bottom: 18px;
+}
+
+.admin-section-title {
+  margin: 16px 0;
+}
+
+.section-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.drag-handle {
+  cursor: grab;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6a7785;
+}
+
+.section-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.ql-container {
+  min-height: 120px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+  .admin-container {
+    flex-direction: column;
+  }
+  .admin-left,
+  .admin-right {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .newsletter-image{
+    padding-top: 2rem !important;
+  }
+  .logo{
+    height: 4rem;
+  }
+  .number span{
+    font-size: 14px;
+    text-wrap: nowrap !important;
+  }
+}

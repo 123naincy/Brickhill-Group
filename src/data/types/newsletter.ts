@@ -3,6 +3,8 @@ export interface Article {
   title: string;
   image: string;
   content: string;
+  directorName?: string;
+  directorRole?: string;
 }
 
 export interface Section {
@@ -19,6 +21,9 @@ export interface Newsletter {
   id: string;
   title: string;
   date: string;
+  volume?: string;
+  coverImage?: string;
+  logoImage?: string;
   sections: Section[];   // ✅ This is correct
   mostRead: SidebarLink[];
 }

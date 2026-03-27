@@ -30,7 +30,8 @@ export default function App() {
           <Route path="/webinar" element={<WebinarPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/newsletter-card" element={<NewsletterCard />} />
-           <Route path="/newsletter/:id" element={<NewsletterDetail />} />
+          <Route path="/newsletter/:id" element={<NewsletterDetail />} />
+         
         </Routes>
 
         <Footer />
