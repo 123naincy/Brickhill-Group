@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { blogs } from "../data/blogs";
+import { blogs } from "../data/blog";
 import { Calendar, User } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 

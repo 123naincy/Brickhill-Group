@@ -100,86 +100,6 @@ a {
   transform: scale(1.06);
 }
 
-/* ================= SIDEBAR ================= */
-
-.left-sidebar,
-.right-sidebar {
-  position: sticky;
-  top: 120px;
-}
-
-.sidebar-box {
-  background: #ffffff;
-  padding: 20px;
-  margin-bottom: 25px;
-  border-radius: 16px;
-  box-shadow: var(--shadow-soft);
-}
-
-.sidebar-heading {
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: var(--primary-dark);
-  border-bottom: 2px solid rgba(159,197,233,0.3);
-  padding-bottom: 8px;
-}
-
-.sidebar-list {
-  list-style: none;
-  padding: 0;
-}
-
-.sidebar-list li {
-  margin-bottom: 10px;
-  font-size: 14px;
-}
-
-.sidebar-list li a {
-  color: var(--text-dark);
-  position: relative;
-}
-
-.sidebar-list li a::after {
-  content: "";
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: -2px;
-  left: 0;
-  background: var(--primary-light);
-  transition: 0.3s;
-}
-
-.sidebar-list li a:hover::after {
-  width: 100%;
-}
-
-/* ================= BUTTONS ================= */
-
-.download-btn {
-  background: linear-gradient(90deg,var(--primary-dark),var(--primary-light));
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 50px;
-  font-weight: 600;
-  transition: 0.3s ease;
-}
-
-.contact-btn {
-  background: var(--accent);
-  border: none;
-  padding: 12px;
-  border-radius: 50px;
-  font-weight: 600;
-  color: var(--primary-dark);
-}
-
-.download-btn:hover,
-.contact-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-soft);
-}
 
 /* ================= NEWSLETTER DETAIL ================= */
 
@@ -548,3 +468,17 @@ footer a:hover {
     text-wrap: nowrap !important;
   }
 }
+/* blogs */
+.blog-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin: 25px 0;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.blog-content h2 , a {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: Black !important;
+} 

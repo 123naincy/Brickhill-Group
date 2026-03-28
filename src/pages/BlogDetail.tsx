@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { blogs } from "../data/blogs";
+import { blogs } from "../data/blog";
 import ReactMarkdown from "react-markdown";
 import { useState } from "react";
 
@@ -53,7 +53,7 @@ export default function BlogDetail() {
           </p>
 
           {/* Markdown */}
-          <div className="prose prose-lg max-w-none prose-p:font-normal prose-img:rounded-xl prose-img:shadow-md">
+          <div className="prose prose-lg max-w-none prose-p:font-normal prose-img:rounded-xl prose-img:shadow-md blog-content">
             <ReactMarkdown>{blog.content}</ReactMarkdown>
           </div>
 
