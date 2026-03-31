@@ -1,12 +1,28 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 import { blogs } from "../data/blog";
 import ReactMarkdown from "react-markdown";
 import { useState } from "react";
+import { createSlug } from "../components/utils/slug";
 
 export default function BlogDetail() {
-  const { id } = useParams<{ id: string }>();
-  const blog = blogs.find((b) => b.id === Number(id));
+const { id, slug } = useParams<{ id: string; slug?: string }>();
+const blog = blogs.find((b) => b.id === Number(id));
 
+  if (!blog) {
+    return <h2 className="text-center mt-10">Blog Not Found ❌</h2>;
+  }
+
+  const correctSlug = createSlug(blog.title);
+
+  // 👉 agar slug missing hai
+  if (!slug) {
+    return <Navigate to={`/blog/${id}/${correctSlug}`} replace />;
+  }
+
+  // 👉 agar slug galat hai
+  if (slug !== correctSlug) {
+    return <Navigate to={`/blog/${id}/${correctSlug}`} replace />;
+  }
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -16,7 +32,6 @@ export default function BlogDetail() {
   if (!blog) {
     return <h2 className="text-center mt-10">Blog Not Found ❌</h2>;
   }
-
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* ✅ Hero Banner */}
@@ -44,7 +59,7 @@ export default function BlogDetail() {
 
       {/* ✅ Main Layout */}
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 lg:grid-cols-3 gap-10">
-        
+
         {/* ✅ Blog Content */}
         <article className="lg:col-span-2 bg-white rounded-3xl shadow-lg p-10">
           {/* Author */}
@@ -106,7 +121,6 @@ export default function BlogDetail() {
               }
               className="w-full border rounded-xl p-3 outline-none focus:border-[#FCAF2E]"
             />
-
             <input
               type="email"
               placeholder="Email Address"
@@ -116,7 +130,6 @@ export default function BlogDetail() {
               }
               className="w-full border rounded-xl p-3 outline-none focus:border-[#FCAF2E]"
             />
-
             <button
               type="submit"
               className="w-full bg-[#FCAF2E] text-black font-semibold py-3 rounded-xl hover:bg-black hover:text-white transition"
@@ -124,7 +137,6 @@ export default function BlogDetail() {
               Request Callback →
             </button>
           </form>
-
           <p className="text-xs text-gray-400 text-center mt-4">
             ✅ Trusted Advisors • ✅ No Spam • ✅ Free Site Visit
           </p>

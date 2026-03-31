@@ -33,14 +33,13 @@ Technology has also transformed how people interact with the real estate market.
 In conclusion, the real estate industry offers strong potential for growth and stability. By staying informed and working with a trusted [real estate company](https://brickhillgroup.com/projects), you can confidently navigate the market and achieve your property goals.
 `
   },
-   {
+  {
     id: 2,
     title: "How a Real Estate Realtor Provides Smart Real Estate Solutions",
     date: "March 27, 2026",
     author: "Admin",
     category: "Real Estate",
     image: BlogSecond,
-
     content: `## How a Real Estate Realtor Provides Smart Real Estate Solutions
 
 ![Real Estate Realtor](/assets/blog/blog-two-two.jpg)
@@ -64,14 +63,13 @@ Beyond buying and selling, a professional realtor offers long-term value. They p
 In conclusion, combining expert guidance with personalized [real estate solutions](https://kbdlandcorp.in) and efficient property searches makes your experience far more rewarding. Whether you're browsing listings or ready to make a move, partnering with a realtor is the smartest decision you can make in today’s competitive market.
 `
   },
-   {
+  {
     id: 3,
     title: "Why Real Estate India Is Booming in 2026",
     date: "March 27, 2026",
     author: "Admin",
     category: "Real Estate",
     image: BlogThird,
-
     content: `## Why Real Estate India Is Booming in 2026
 
 ![Real Estate India Growth](/assets/blog/blog-third-second.jpg)

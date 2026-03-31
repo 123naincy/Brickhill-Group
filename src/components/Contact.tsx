@@ -67,12 +67,6 @@ export default function Contact() {
           href="https://www.brickhillgroup.com/contact"
         />
         {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.brickhillgroup.com/contact"
-        />
-
         <meta
           property="og:title"
           content="Contact Brickhill Group | Real Estate Investment"
@@ -83,10 +77,7 @@ export default function Contact() {
           content="Get in touch with Brickhill Group to explore property investment opportunities in Gurugram."
         />
 
-        <meta
-          property="og:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+       
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -99,11 +90,6 @@ export default function Contact() {
         <meta
           name="twitter:description"
           content="Reach Brickhill Group for real estate investment opportunities in Gurugram."
-        />
-
-        <meta
-          name="twitter:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
         />
 
       </Helmet>
