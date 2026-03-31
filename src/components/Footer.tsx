@@ -85,7 +85,7 @@ export default function Footer() {
                   to="https://panipatindustrialplots.com/"
                   className="text-white/80 hover:text-[#9fc5e9] transition"
                 >
-                  Paanipat Industrial Plots
+                  Panipat Industrial Plots
                 </Link>
               </li>
 
