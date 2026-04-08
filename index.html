@@ -78,49 +78,152 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Structured Data: Real Estate Business -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "RealEstateAgent",
-    "name": "Brickhill Group",
-    "image": "https://www.brickhillgroup.com/logo.png",
-    "url": "https://www.brickhillgroup.com",
-    "telephone": "+91-XXXXXXXXXX",
-    "description": "Brickhill Group provides premium residential, commercial, industrial and warehouse investment opportunities in Gurugram through a unique group buying model.",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Gurugram",
-      "addressRegion": "Haryana",
-      "postalCode": "122001",
-      "addressCountry": "IN"
-    },
-    "areaServed": "India",
-    "priceRange": "$$$",
-    "sameAs": [
-      "https://www.linkedin.com/",
-      "https://www.facebook.com/",
-      "https://www.instagram.com/"
-    ]
-  }
-  </script>
-
-  <!-- Structured Data: Organization -->
-  <script type="application/ld+json">
-  {
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Brickhill Group",
-  "url": "https://www.brickhillgroup.com",
-  "logo": "https://www.brickhillgroup.com/logo.png",
-  "description": "Premium real estate investment and group buying platform in India.",
-  "foundingLocation": "Gurugram, India",
-  "sameAs": [
-    "https://www.facebook.com/",
-    "https://www.instagram.com/",
-    "https://www.linkedin.com/"
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://brickhillgroup.com/#organization",
+      "name": "Brickhill Group",
+      "url": "https://brickhillgroup.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://brickhillgroup.com/assets/logo-Z3TNQcFG.png"
+      },
+      "image": "https://brickhillgroup.com/assets/logo-Z3TNQcFG.png",
+      "description": "Brickhill Group is a diversified real estate and infrastructure company engaged in land acquisition, project development, construction, sales, and logistics solutions across India. With a strong presence in high-growth regions like Sindhudurg, Punjab, and NCR, the group focuses on creating high-value, future-ready developments. What sets Brickhill apart is its end-to-end control—from land to launch to sales—ensuring quality, trust, and strong investment returns.",
+      "email": "info@brickhillgroup.com",
+      "telephone": "+91-9910729093",
+      "sameAs": [
+        "https://www.linkedin.com/in/brickhill-landbase/",
+        "https://www.youtube.com/@goboundry"
+      ],
+      "department": [
+        {
+          "@type": "Organization",
+          "name": "Brickhill Landbase",
+          "description": "Residential & commercial project development"
+        },
+        {
+          "@type": "Organization",
+          "name": "Brickhill Realtors",
+          "description": "Sales, marketing & channel network"
+        },
+        {
+          "@type": "Organization",
+          "name": "Brickhill Infra",
+          "description": "Construction & land leasing"
+        },
+        {
+          "@type": "Organization",
+          "name": "Logi Prime",
+          "description": "Warehousing & logistics solutions"
+        },
+        {
+          "@type": "Organization",
+          "name": "BHL Studioz",
+          "description": "Media production, podcasts & brand content"
+        }
+      ]
+    },
+    {
+      "@type": "RealEstateDeveloper",
+      "@id": "https://brickhillgroup.com/#realestatedeveloper",
+      "name": "Brickhill Group",
+      "url": "https://brickhillgroup.com/",
+      "logo": "https://brickhillgroup.com/assets/logo-Z3TNQcFG.png",
+      "image": "https://brickhillgroup.com/assets/logo-Z3TNQcFG.png",
+      "description": "Brickhill Group develops premium residential and commercial real estate projects, backed by land acquisition, construction, project marketing, and infrastructure expertise.",
+      "telephone": "+91-9910729093",
+      "email": "info@brickhillgroup.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "DLF Corporate Greens, Tower 1 1604-1605",
+        "addressLocality": "Gurugram",
+        "addressRegion": "Haryana",
+        "postalCode": "122002",
+        "addressCountry": "IN"
+      },
+      "areaServed": [
+        {
+          "@type": "Country",
+          "name": "India"
+        },
+        {
+          "@type": "State",
+          "name": "Punjab"
+        },
+        {
+          "@type": "City",
+          "name": "Chandigarh"
+        },
+        {
+          "@type": "City",
+          "name": "Mohali"
+        },
+        {
+          "@type": "State",
+          "name": "Maharashtra"
+        },
+        {
+          "@type": "City",
+          "name": "Sindhudurg"
+        },
+        {
+          "@type": "Place",
+          "name": "Goa belt"
+        },
+        {
+          "@type": "Place",
+          "name": "NCR"
+        }
+      ],
+      "serviceType": [
+        "Land Acquisition & Land Banking",
+        "Residential Project Development",
+        "Commercial Project Development",
+        "Real Estate Sales & Marketing",
+        "Construction & Infrastructure Development",
+        "Warehousing & Logistics Solutions",
+        "Studio & Media Production"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/brickhill-landbase/",
+        "https://www.youtube.com/@goboundry"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://brickhillgroup.com/#website",
+      "url": "https://brickhillgroup.com/",
+      "name": "Brickhill Group",
+      "publisher": {
+        "@id": "https://brickhillgroup.com/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://brickhillgroup.com/#webpage",
+      "url": "https://brickhillgroup.com/",
+      "name": "Brickhill Group",
+      "isPartOf": {
+        "@id": "https://brickhillgroup.com/#website"
+      },
+      "about": {
+        "@id": "https://brickhillgroup.com/#organization"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://brickhillgroup.com/assets/logo-Z3TNQcFG.png"
+      },
+      "description": "Brickhill Group is a diversified real estate and infrastructure company delivering land acquisition, project development, construction, sales, and logistics solutions across India."
+    }
   ]
-  }
-  </script>
+}
+</script>
+
+
 
 </head>
 
