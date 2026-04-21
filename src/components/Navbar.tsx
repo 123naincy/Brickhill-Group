@@ -24,15 +24,26 @@ export default function Navbar() {
 
             {/* Email */}
             <div className="flex items-center gap-2 group cursor-pointer">
-              <Mail className="w-4 h-4 animate-pulse group-hover:scale-110 transition" />
-              <span className="text-white">info@brickhillgroup.com</span>
-            </div>
-
-            {/* Phone */}
-            <div className="flex items-center gap-2 group cursor-pointer number">
-              <Phone className="w-4 h-4 animate-bounce group-hover:scale-110 transition" />
-              <span className="text-white">+91-99107 29093</span>
-            </div>
+  <Mail className="w-4 h-4 animate-pulse group-hover:scale-110 transition" />
+  
+  <a 
+    href="mailto:info@brickhillgroup.com"
+    className="text-white"
+  >
+    info@brickhillgroup.com
+  </a>
+</div>
+         {/* Phone */}
+<div className="flex items-center gap-2 group cursor-pointer number">
+  <Phone className="w-4 h-4 animate-bounce group-hover:scale-110 transition" />
+  
+  <a 
+    href="tel:83959945524" 
+    className="text-white"
+  >
+    +91-83959 945524
+  </a>
+</div>
 
           </div>
 

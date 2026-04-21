@@ -111,15 +111,27 @@ export default function Footer() {
                 DLF Corporate Greens, Tower 1 1604-1605, Gurugram, Haryana, 122002
               </li>
 
-              <li className="flex items-center gap-2">
-                <Phone className="h-5 w-5 text-[#6fa8dd]" />
-                +91-8448220334
-              </li>
+             <li className="flex items-center gap-2">
+  <Phone className="h-5 w-5 text-[#6fa8dd]" />
+  
+  <a 
+    href="tel:83959945524" 
+    className="hover:underline"
+  >
+    +91-83959 945524
+  </a>
+</li>
 
-              <li className="flex items-center gap-2">
-                <Mail className="h-5 w-5 text-[#6fa8dd]" />
-                info@brickhillgroup.com
-              </li>
+             <li className="flex items-center gap-2">
+  <Mail className="h-5 w-5 text-[#6fa8dd]" />
+  
+  <a 
+    href="mailto:info@brickhillgroup.com" 
+    className="hover:underline"
+  >
+    info@brickhillgroup.com
+  </a>
+</li>
             </ul>
           </div>
 

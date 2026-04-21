@@ -117,51 +117,81 @@ export default function Contact() {
                 Contact Information
               </h3>
 
-              <div className="space-y-6">
-                {[
-                  {
-                    icon: MapPin,
-                    title: "Address",
-                    lines: [
-                      "DLF Corporate Greens, Tower 1 1604-1605, Gurugram, Haryana, 122002",
-                    ],
-                  },
-                  { icon: Phone, title: "Phone", lines: ["+91-8395994524"] },
-                  {
-                    icon: Mail,
-                    title: "Email",
-                    lines: [
-                      "info@brickhillgroup.com",
-                      "sales@brickhillgroup.com",
-                    ],
-                  },
-                  {
-                    icon: Clock,
-                    title: "Business Hours",
-                    lines: [
-                      "Mon - Fri: 9:00 AM - 6:00 PM",
-                      "Sat: 10:00 AM - 4:00 PM",
-                      "Sun: Closed",
-                    ],
-                  },
-                ].map((item, i) => (
-                  <div key={i} className="flex items-start">
-                    <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-[#0b5394] to-[#3d85c5] flex items-center justify-center shadow-md">
-                      <item.icon className="h-6 w-6 text-white" />
-                    </div>
-                    <div className="ml-4">
-                      <h4 className="font-semibold text-[#073762]">
-                        {item.title}
-                      </h4>
-                      {item.lines.map((line, idx) => (
-                        <p key={idx} className="text-neutral-600">
-                          {line}
-                        </p>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-              </div>
+             <div className="space-y-6">
+  {[
+    {
+      icon: MapPin,
+      title: "Address",
+      lines: [
+        "DLF Corporate Greens, Tower 1 1604-1605, Gurugram, Haryana, 122002",
+      ],
+    },
+    { icon: Phone, title: "Phone", lines: ["+91-8395994524"] },
+    {
+      icon: Mail,
+      title: "Email",
+      lines: [
+        "info@brickhillgroup.com",
+        "updates@brickhillgroup.com",
+      ],
+    },
+    {
+  icon: Clock,
+  title: "Business Hours",
+  lines: [
+    "Open 24 Hours",
+    "7 Days a Week",
+  ],
+    },
+  ].map((item, i) => (
+    <div key={i} className="flex items-start">
+      <div className="h-12 w-12 rounded-xl bg-gradient-to-r from-[#0b5394] to-[#3d85c5] flex items-center justify-center shadow-md">
+        <item.icon className="h-6 w-6 text-white" />
+      </div>
+
+      <div className="ml-4">
+        <h4 className="font-semibold text-[#073762]">
+          {item.title}
+        </h4>
+
+        {item.lines.map((line, idx) => {
+          // 👉 Phone clickable
+          if (item.title === "Phone") {
+            return (
+              <a
+                key={idx}
+                href={`tel:${line.replace(/\D/g, "")}`}
+                className="block text-neutral-600 hover:underline"
+              >
+                {line}
+              </a>
+            );
+          }
+
+          // 👉 Email clickable
+          if (item.title === "Email") {
+            return (
+              <a
+                key={idx}
+                href={`mailto:${line}`}
+                className="block text-neutral-600 hover:underline"
+              >
+                {line}
+              </a>
+            );
+          }
+
+          // 👉 Default (Address / Hours)
+          return (
+            <p key={idx} className="text-neutral-600">
+              {line}
+            </p>
+          );
+        })}
+      </div>
+    </div>
+  ))}
+</div>
 
               <img
                 src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&w=800"

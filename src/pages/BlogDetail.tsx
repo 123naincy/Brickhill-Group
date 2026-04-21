@@ -1,37 +1,42 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { blogs } from "../data/blog";
 import ReactMarkdown from "react-markdown";
 import { useState } from "react";
 import { createSlug } from "../components/utils/slug";
+import { submitToSheet } from "../components/utils/submitToSheet";
 
 export default function BlogDetail() {
-const { id, slug } = useParams<{ id: string; slug?: string }>();
-const blog = blogs.find((b) => b.id === Number(id));
+  const { slug } = useParams<{ slug: string }>();
+  const blog = blogs.find((b) => createSlug(b.title) === slug);
 
   if (!blog) {
     return <h2 className="text-center mt-10">Blog Not Found ❌</h2>;
   }
 
-  const correctSlug = createSlug(blog.title);
-
-  // 👉 agar slug missing hai
-  if (!slug) {
-    return <Navigate to={`/blog/${id}/${correctSlug}`} replace />;
-  }
-
-  // 👉 agar slug galat hai
-  if (slug !== correctSlug) {
-    return <Navigate to={`/blog/${id}/${correctSlug}`} replace />;
-  }
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
   });
 
-  if (!blog) {
-    return <h2 className="text-center mt-10">Blog Not Found ❌</h2>;
-  }
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    try {
+      await submitToSheet({
+        ...formData,
+        formName: "Blog Detail Consultation",
+      });
+      alert("Thank you! Our team will contact you soon.");
+      setFormData({ name: "", phone: "", email: "" });
+    } catch (error) {
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* ✅ Hero Banner */}
@@ -101,7 +106,7 @@ const blog = blogs.find((b) => b.id === Number(id));
             Fill details & our team will call you back.
           </p>
 
-          <form className="mt-6 space-y-4">
+          <form className="mt-6 space-y-4" onSubmit={handleSubmit}>
             <input
               type="text"
               placeholder="Full Name"
@@ -110,6 +115,7 @@ const blog = blogs.find((b) => b.id === Number(id));
                 setFormData({ ...formData, name: e.target.value })
               }
               className="w-full border rounded-xl p-3 outline-none focus:border-[#FCAF2E]"
+              required
             />
 
             <input
@@ -120,6 +126,7 @@ const blog = blogs.find((b) => b.id === Number(id));
                 setFormData({ ...formData, phone: e.target.value })
               }
               className="w-full border rounded-xl p-3 outline-none focus:border-[#FCAF2E]"
+              required
             />
             <input
               type="email"
@@ -129,12 +136,14 @@ const blog = blogs.find((b) => b.id === Number(id));
                 setFormData({ ...formData, email: e.target.value })
               }
               className="w-full border rounded-xl p-3 outline-none focus:border-[#FCAF2E]"
+              required
             />
             <button
               type="submit"
-              className="w-full bg-[#FCAF2E] text-black font-semibold py-3 rounded-xl hover:bg-black hover:text-white transition"
+              disabled={isSubmitting}
+              className="w-full bg-[#FCAF2E] text-black font-semibold py-3 rounded-xl hover:bg-black hover:text-white transition disabled:opacity-50"
             >
-              Request Callback →
+              {isSubmitting ? "Submitting..." : "Request Callback →"}
             </button>
           </form>
           <p className="text-xs text-gray-400 text-center mt-4">
