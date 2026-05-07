@@ -11,71 +11,124 @@ const WebinarPage = () => {
   return (
     <>
       <Helmet>
+  {/* Primary SEO */}
+  <title>
+    BHL Group Webinar | Real Estate, Infrastructure & Investment Opportunities India
+  </title>
 
-        {/* Title */}
-        <title>
-          Free Real Estate Investment Webinar | Gurugram Property Opportunities | Brickhill Group
-        </title>
+  <meta
+    name="title"
+    content="BHL Group Webinar | Real Estate, Infrastructure & Investment Opportunities India"
+  />
 
-        {/* Meta Description */}
-        <meta
-          name="description"
-          content="Join Brickhill Group's free real estate investment webinar and discover exclusive residential, commercial and warehouse opportunities in Gurugram through our group buying model."
-        />
+  <meta
+    name="description"
+    content="Join BHL Group webinars to explore luxury real estate investments, infrastructure developments, warehousing solutions, logistics opportunities, land banking, and high-growth investment strategies across India."
+  />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="real estate investment webinar, property investment webinar India, Gurugram real estate investment webinar, commercial property investment webinar, Brickhill Group webinar"
-        />
+  <meta
+    name="keywords"
+    content="BHL Group Webinar, Brickhill Group Webinar, Real Estate Webinar India, Property Investment Webinar, Luxury Real Estate India, Infrastructure Investment India, Warehousing Solutions India, Land Banking India, Goa Real Estate, Commercial Property Investment India"
+  />
 
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  />
 
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://www.brickhillgroup.com/webinar"
-        />
+  <meta
+    name="author"
+    content="BHL Group"
+  />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.brickhillgroup.com/webinar" />
+  <meta
+    name="language"
+    content="English"
+  />
 
-        <meta
-          property="og:title"
-          content="Free Real Estate Investment Webinar | Brickhill Group"
-        />
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://brickhillgroup.com/webinar"
+  />
 
-        <meta
-          property="og:description"
-          content="Learn how to invest in premium real estate projects in Gurugram through Brickhill Group's group buying investment model."
-        />
+  {/* Open Graph */}
+  <meta
+    property="og:type"
+    content="website"
+  />
 
-        <meta
-          property="og:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  <meta
+    property="og:url"
+    content="https://brickhillgroup.com/webinar"
+  />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    property="og:title"
+    content="BHL Group Webinar | Real Estate & Investment Opportunities"
+  />
 
-        <meta
-          name="twitter:title"
-          content="Free Real Estate Investment Webinar | Brickhill Group"
-        />
+  <meta
+    property="og:description"
+    content="Attend BHL Group webinars and discover premium real estate, infrastructure, warehousing, logistics, and investment opportunities across India."
+  />
 
-        <meta
-          name="twitter:description"
-          content="Register for our webinar to learn about high-return real estate investment opportunities in Gurugram."
-        />
+  <meta
+    property="og:image"
+    content="https://brickhillgroup.com/og-webinar.jpg"
+  />
 
-        <meta
-          name="twitter:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  <meta
+    property="og:site_name"
+    content="BHL Group"
+  />
 
-      </Helmet>
+  {/* Twitter SEO */}
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="BHL Group Webinar | Real Estate & Investment Insights"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Register for BHL Group webinars and learn about luxury real estate, infrastructure, warehousing, and investment trends across India."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://brickhillgroup.com/og-webinar.jpg"
+  />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Event",
+      name: "BHL Group Webinar",
+      url: "https://brickhillgroup.com/webinar",
+      description:
+        "Official webinar page of BHL Group featuring luxury real estate, infrastructure, warehousing, logistics, and investment opportunities across India.",
+      organizer: {
+        "@type": "Organization",
+        name: "BHL Group",
+        url: "https://brickhillgroup.com",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://brickhillgroup.com/logo.png",
+        },
+      },
+      eventAttendanceMode:
+        "https://schema.org/OnlineEventAttendanceMode",
+      eventStatus:
+        "https://schema.org/EventScheduled",
+    })}
+  </script>
+</Helmet>
 
       <Hero />
       <LearnSection />

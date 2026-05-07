@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import { useState } from "react";
 import { createSlug } from "../components/utils/slug";
 import { submitToSheet } from "../components/utils/submitToSheet";
-
+import { Helmet } from "react-helmet-async";
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
   const blog = blogs.find((b) => createSlug(b.title) === slug);
@@ -38,7 +38,120 @@ export default function BlogDetail() {
     }
   };
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <>
+    <Helmet>
+  {/* Primary SEO */}
+  <title>
+    {blog.title} | BHL Group
+  </title>
+
+  <meta
+    name="description"
+    content="Explore premium real estate insights, investment opportunities, infrastructure developments, luxury projects, warehousing, and market trends with BHL Group across India."
+  />
+
+  <meta
+    name="keywords"
+    content="BHL Group, Brickhill Group, Real Estate India, Property Investment, Luxury Real Estate, Land Banking India, Infrastructure Development, Warehousing Solutions, Goa Real Estate, Delhi NCR Projects, Investment Opportunities"
+  />
+
+  <meta
+    name="author"
+    content="BHL Group"
+  />
+
+  <meta
+    name="robots"
+    content="index, follow"
+  />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href={`https://brickhillgroup.com/blog/${slug}`}
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:type"
+    content="article"
+  />
+
+  <meta
+    property="og:title"
+    content={`${blog.title} | BHL Group`}
+  />
+
+  <meta
+    property="og:description"
+    content="Read expert insights on luxury real estate, land banking, infrastructure, logistics, and investment opportunities across India with BHL Group."
+  />
+
+  <meta
+    property="og:url"
+    content={`https://brickhillgroup.com/blog/${slug}`}
+  />
+
+  <meta
+    property="og:image"
+    content={blog.image}
+  />
+
+  <meta
+    property="og:site_name"
+    content="BHL Group"
+  />
+
+  {/* Twitter SEO */}
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content={`${blog.title} | BHL Group`}
+  />
+
+  <meta
+    name="twitter:description"
+    content="Explore premium real estate trends, infrastructure developments, and investment opportunities with BHL Group."
+  />
+
+  <meta
+    name="twitter:image"
+    content={blog.image}
+  />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      headline: blog.title,
+      image: blog.image,
+      author: {
+        "@type": "Organization",
+        name: "BHL Group",
+      },
+      publisher: {
+        "@type": "Organization",
+        name: "BHL Group",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://brickhillgroup.com/logo.png",
+        },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": `https://brickhillgroup.com/blog/${slug}`,
+      },
+      description:
+        "Explore luxury real estate, infrastructure, warehousing, land banking, and investment opportunities across India with BHL Group.",
+    })}
+  </script>
+</Helmet>
+<div className="bg-gray-50 min-h-screen">
       {/* ✅ Hero Banner */}
       <div className="relative w-full h-[420px]">
         <img
@@ -152,5 +265,7 @@ export default function BlogDetail() {
         </aside>
       </div>
     </div>
+    </>
+    
   );
 }

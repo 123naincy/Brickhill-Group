@@ -71,11 +71,112 @@ export default function NewsletterDetail() {
   return (
     <>
       <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content="Read Brickhill Group's newsletter." />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href={canonicalUrl} />
-      </Helmet>
+  {/* Primary SEO */}
+  <title>
+    {pageTitle} | BHL Group
+  </title>
+
+  <meta
+    name="description"
+    content="Explore the latest newsletters, luxury real estate insights, infrastructure updates, warehousing solutions, logistics trends, and investment opportunities across India with BHL Group."
+  />
+
+  <meta
+    name="keywords"
+    content="BHL Group Newsletter, Brickhill Group, Real Estate News India, Luxury Real Estate India, Infrastructure Development, Property Investment Insights, Warehousing Solutions India, Logistics Trends India, Land Banking India"
+  />
+
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  />
+
+  <meta
+    name="author"
+    content="BHL Group"
+  />
+
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href={canonicalUrl}
+  />
+
+  {/* Open Graph */}
+  <meta
+    property="og:type"
+    content="article"
+  />
+
+  <meta
+    property="og:title"
+    content={`${pageTitle} | BHL Group`}
+  />
+
+  <meta
+    property="og:description"
+    content="Read the latest BHL Group newsletter covering real estate, infrastructure, logistics, warehousing, and investment opportunities across India."
+  />
+
+  <meta
+    property="og:url"
+    content={canonicalUrl}
+  />
+
+  <meta
+    property="og:image"
+    content="https://brickhillgroup.com/og-newsletter.jpg"
+  />
+
+  <meta
+    property="og:site_name"
+    content="BHL Group"
+  />
+
+  {/* Twitter SEO */}
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content={`${pageTitle} | BHL Group`}
+  />
+
+  <meta
+    name="twitter:description"
+    content="Explore premium newsletters and investment insights from BHL Group."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://brickhillgroup.com/og-newsletter.jpg"
+  />
+
+  {/* Schema */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      headline: pageTitle,
+      description:
+        "Official newsletter from BHL Group featuring real estate, infrastructure, warehousing, and investment insights.",
+      publisher: {
+        "@type": "Organization",
+        name: "BHL Group",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://brickhillgroup.com/logo.png",
+        },
+      },
+      mainEntityOfPage: {
+        "@type": "WebPage",
+        "@id": canonicalUrl,
+      },
+    })}
+  </script>
+</Helmet>
 
       <Container fluid className="newspaper-wrapper">
         <Row className="justify-content-center">

@@ -101,7 +101,7 @@ export default function RightSidebar() {
       {/* CONTACT CTA */}
       <div className="sidebar-box text-center">
         <p className="fw-bold text-[#073762]">Invest Smartly</p>
-        <a href="tel:+91-83959945524">
+        <a href="tel:+91-7015018161">
           <button className="contact-btn w-100">
             Talk to Advisor
           </button>

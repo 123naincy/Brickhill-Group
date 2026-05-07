@@ -1,7 +1,17 @@
-import { Menu, X, Mail, CalendarDays, Users, Phone } from "lucide-react";
+import {
+  Menu,
+  X,
+  Mail,
+  CalendarDays,
+  Users,
+  Phone,
+} from "lucide-react";
+
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+
 import logo from "../assets/logo.png";
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,89 +24,150 @@ export default function Navbar() {
   ];
 
   return (
-    <header className="fixed w-full top-0 z-50 shadow-xl">
+    <header className="fixed top-0 left-0 w-full z-50">
+
       {/* ================= TOP BAR ================= */}
-      <div className="bg-[#073762] text-white text-sm">
-        <div className="max-w-7xl mx-auto px-6 flex justify-between items-center h-12">
+      <div className="bg-[#073762] text-white hidden lg:block topbar">
+        <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
 
-          {/* Left Animated Icons */}
-          <div className="flex items-center gap-6">
+          {/* Left */}
+          <div className="flex items-center gap-6 text-sm">
 
-            {/* Email */}
-            <div className="flex items-center gap-2 group cursor-pointer">
-  <Mail className="w-4 h-4 animate-pulse group-hover:scale-110 transition" />
-  
-  <a 
-    href="mailto:info@brickhillgroup.com"
-    className="text-white"
-  >
-    info@brickhillgroup.com
-  </a>
-</div>
-         {/* Phone */}
-<div className="flex items-center gap-2 group cursor-pointer number">
-  <Phone className="w-4 h-4 animate-bounce group-hover:scale-110 transition" />
-  
-  <a 
-    href="tel:83959945524" 
-    className="text-white"
-  >
-    +91-83959 945524
-  </a>
-</div>
+            <a
+              href="mailto:info@brickhillgroup.com"
+              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
+            >
+              <Mail className="w-4 h-4" />
+              info@brickhillgroup.com
+            </a>
 
+            <a
+              href="tel:+917015018161"
+              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
+            >
+              <Phone className="w-4 h-4" />
+              +91-7015018161
+            </a>
           </div>
 
-          {/* Right Important Links */}
-          <div className="flex items-center gap-6 font-medium">
+          {/* Right */}
+          <div className="flex items-center gap-6 text-sm font-medium">
 
             <Link
               to="/newsletter-card"
-              className="flex items-center gap-2 text-white hover:text-[#9fc5e9] transition"
+              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
             >
-              <Mail size={16} />
+              <Mail size={15} />
               Newsletter
             </Link>
 
             <Link
               to="/webinar"
-              className="flex items-center gap-2 text-white hover:text-[#9fc5e9] transition"
+              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
             >
-              <CalendarDays size={16} />
-              Join  Webinar
+              <CalendarDays size={15} />
+              Webinar
             </Link>
 
             <Link
               to="/group-buying"
-              className="flex items-center gap-2 text-white hover:text-[#9fc5e9] transition"
+              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
             >
-              <Users size={16} />
+              <Users size={15} />
               Group Buying
             </Link>
-
           </div>
         </div>
       </div>
+
       {/* ================= MAIN NAVBAR ================= */}
-      <nav className="bg-white border-b border-[#0b5394]/10">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="flex justify-between items-center h-20">
+      <nav className="bg-white shadow-lg border-b border-[#e5eef8]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+          <div className="flex items-center justify-between h-[78px]">
 
             {/* Logo */}
-            <Link to="/" className="logo">
-              <img src={logo} alt="Brickhill-group" className="img-fluid" />
+            <Link
+              to="/"
+              className="flex items-center"
+            >
+              <img
+                src={logo}
+                alt="BHL Group"
+                className="h-12 md:h-14 w-auto object-contain"
+              />
             </Link>
 
             {/* Desktop Menu */}
-            <div className="hidden md:flex items-center space-x-10">
+            <div className="hidden lg:flex items-center gap-10">
+
               {mainNav.map((item) => (
                 <NavLink
                   key={item.name}
                   to={item.path}
                   className={({ isActive }) =>
-                    `font-semibold tracking-wide transition ${isActive
-                      ? "text-[#0b5394] border-b-2 border-[#0b5394] pb-1"
+                    `relative font-semibold text-[15px] tracking-wide transition-all duration-300 ${isActive
+                      ? "text-[#0b5394]"
                       : "text-[#073762] hover:text-[#3d85c5]"
+                    }`
+                  }
+                >
+                  {({ isActive }) => (
+                    <div className="relative">
+                      {item.name}
+
+                      {isActive && (
+                        <span className="absolute left-0 -bottom-2 w-full h-[2px] bg-[#0b5394] rounded-full"></span>
+                      )}
+                    </div>
+                  )}
+                </NavLink>
+              ))}
+
+              {/* CTA */}
+              <Link
+                to="/contact"
+                className="bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition-all duration-300"
+              >
+                Contact Us
+              </Link>
+            </div>
+
+            {/* Mobile Toggle */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="lg:hidden text-[#073762]"
+            >
+              {isOpen ? (
+                <X size={30} />
+              ) : (
+                <Menu size={30} />
+              )}
+            </button>
+          </div>
+        </div>
+
+        {/* ================= MOBILE MENU ================= */}
+        <div
+          className={`lg:hidden overflow-hidden transition-all duration-500 ${isOpen
+              ? "max-h-[1000px] opacity-100"
+              : "max-h-0 opacity-0"
+            }`}
+        >
+          <div className="bg-white border-t border-[#edf3fa] shadow-xl">
+
+            {/* Menu Links */}
+            <div className="flex flex-col px-6 py-5">
+
+              {mainNav.map((item) => (
+                <NavLink
+                  key={item.name}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={({ isActive }) =>
+                    `py-4 border-b border-[#edf3fa] font-semibold transition ${isActive
+                      ? "text-[#0b5394]"
+                      : "text-[#073762]"
                     }`
                   }
                 >
@@ -104,23 +175,61 @@ export default function Navbar() {
                 </NavLink>
               ))}
 
-              {/* CTA */}
+              {/* Mobile CTA */}
               <Link
                 to="/contact"
-                className="ml-6 bg-gradient-to-r from-[#0b5394] to-[#3d85c5] text-white px-6 py-2 rounded-full font-bold hover:opacity-90 transition"
+                onClick={() => setIsOpen(false)}
+                className="mt-6 bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white text-center py-3 rounded-full font-semibold"
               >
                 Contact Us
               </Link>
             </div>
 
-            {/* Mobile Toggle */}
-            <div className="md:hidden">
-              <button
-                onClick={() => setIsOpen(!isOpen)}
-                className="text-[#0b5394]"
-              >
-                {isOpen ? <X /> : <Menu />}
-              </button>
+            {/* Mobile Top Links */}
+            <div className="border-t border-[#edf3fa] px-6 py-5 bg-[#f7fbff]">
+
+              <div className="flex flex-col gap-4 text-sm">
+
+                <a
+                  href="mailto:info@brickhillgroup.com"
+                  className="flex items-center gap-3 text-[#073762]"
+                >
+                  <Mail size={18} />
+                  info@brickhillgroup.com
+                </a>
+
+                <a
+                  href="tel:+917015018161"
+                  className="flex items-center gap-3 text-[#073762]"
+                >
+                  <Phone size={18} />
+                  +91-7015018161
+                </a>
+
+                <Link
+                  to="/newsletter-card"
+                  className="flex items-center gap-3 text-[#073762]"
+                >
+                  <Mail size={18} />
+                  Newsletter
+                </Link>
+
+                <Link
+                  to="/webinar"
+                  className="flex items-center gap-3 text-[#073762]"
+                >
+                  <CalendarDays size={18} />
+                  Webinar
+                </Link>
+
+                <Link
+                  to="/group-buying"
+                  className="flex items-center gap-3 text-[#073762]"
+                >
+                  <Users size={18} />
+                  Group Buying
+                </Link>
+              </div>
             </div>
           </div>
         </div>

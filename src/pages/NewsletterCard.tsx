@@ -27,71 +27,119 @@ export default function NewsletterCardsPage() {
   return (
     <>
       <Helmet>
+  {/* Primary SEO */}
+  <title>
+    BHL Group Newsletters | Real Estate, Infrastructure & Investment Insights
+  </title>
 
-        {/* Title */}
-        <title>
-          Real Estate Newsletters & Market Insights | Brickhill Group
-        </title>
+  <meta
+    name="title"
+    content="BHL Group Newsletters | Real Estate, Infrastructure & Investment Insights"
+  />
 
-        {/* Meta Description */}
-        <meta
-          name="description"
-          content="Explore Brickhill Group newsletters covering real estate market insights, property investment trends, and opportunities in Gurugram and Delhi NCR."
-        />
+  <meta
+    name="description"
+    content="Explore BHL Group newsletters covering luxury real estate, infrastructure developments, warehousing, logistics, land banking, and investment opportunities across India."
+  />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="real estate newsletter India, Gurugram property market updates, property investment insights, real estate trends India, Brickhill Group newsletter"
-        />
+  <meta
+    name="keywords"
+    content="BHL Group Newsletter, Brickhill Group News, Real Estate Newsletter India, Luxury Real Estate India, Property Investment Insights, Infrastructure Development India, Land Banking India, Warehousing Solutions India, Goa Real Estate, Delhi NCR Projects, Investment Opportunities India"
+  />
 
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  />
 
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://www.brickhillgroup.com/newsletter"
-        />
+  <meta
+    name="author"
+    content="BHL Group"
+  />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.brickhillgroup.com/newsletter" />
+  <meta
+    name="language"
+    content="English"
+  />
 
-        <meta
-          property="og:title"
-          content="Real Estate Newsletters | Brickhill Group"
-        />
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://brickhillgroup.com/newsletter"
+  />
 
-        <meta
-          property="og:description"
-          content="Stay updated with the latest property investment insights, Gurugram real estate trends, and market reports from Brickhill Group."
-        />
+  {/* Open Graph */}
+  <meta
+    property="og:type"
+    content="website"
+  />
 
-        <meta
-          property="og:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  <meta
+    property="og:url"
+    content="https://brickhillgroup.com/newsletter"
+  />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    property="og:title"
+    content="BHL Group Newsletters | Real Estate & Investment Insights"
+  />
 
-        <meta
-          name="twitter:title"
-          content="Real Estate Market Insights & Newsletters | Brickhill Group"
-        />
+  <meta
+    property="og:description"
+    content="Stay updated with luxury real estate trends, infrastructure projects, logistics solutions, and investment opportunities across India with BHL Group newsletters."
+  />
 
-        <meta
-          name="twitter:description"
-          content="Read the latest real estate newsletters and investment insights from Brickhill Group."
-        />
+  <meta
+    property="og:image"
+    content="https://brickhillgroup.com/og-newsletter.jpg"
+  />
 
-        <meta
-          name="twitter:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  <meta
+    property="og:site_name"
+    content="BHL Group"
+  />
 
-      </Helmet>
+  {/* Twitter SEO */}
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="BHL Group Newsletters | Real Estate & Investment Updates"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Read the latest newsletters from BHL Group covering luxury real estate, infrastructure, warehousing, logistics, and investment trends in India."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://brickhillgroup.com/og-newsletter.jpg"
+  />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "BHL Group Newsletters",
+      url: "https://brickhillgroup.com/newsletter",
+      description:
+        "Official newsletter page of BHL Group featuring real estate insights, infrastructure updates, warehousing solutions, logistics, and investment opportunities across India.",
+      publisher: {
+        "@type": "Organization",
+        name: "BHL Group",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://brickhillgroup.com/logo.png",
+        },
+      },
+    })}
+  </script>
+</Helmet>
 
       <div style={{ paddingTop: 70 }}>
         <NewsletterBreadcrumb />

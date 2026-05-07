@@ -4,74 +4,120 @@ import ProjectsSection from "../components/Projects";
 export default function Projects() {
   return (
     <>
-      <Helmet>
-        {/* Title */}
-        <title>
-          Real Estate Projects in Gurugram | Residential & Commercial | Brickhill Group
-        </title>
+     <Helmet>
+  {/* Primary SEO */}
+  <title>
+    BHL Group Projects | Luxury Real Estate, Infrastructure & Investment Projects India
+  </title>
 
-        {/* Meta Description */}
-        <meta
-          name="description"
-          content="Explore premium residential, commercial, industrial and warehouse real estate projects in Gurugram with Brickhill Group. Discover exclusive property investment opportunities through our group buying model."
-        />
+  <meta
+    name="title"
+    content="BHL Group Projects | Luxury Real Estate, Infrastructure & Investment Projects India"
+  />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="real estate projects Gurugram, residential projects Gurugram, commercial property Gurugram, industrial plots Gurugram, warehouse investment India, Brickhill Group projects"
-        />
+  <meta
+    name="description"
+    content="Explore premium BHL Group projects including luxury residential developments, commercial spaces, warehousing solutions, infrastructure projects, logistics hubs, and high-growth investment opportunities across India."
+  />
 
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+  <meta
+    name="keywords"
+    content="BHL Group Projects, Brickhill Group Projects, Luxury Real Estate India, Commercial Projects India, Infrastructure Development India, Warehousing Projects India, Logistics Parks India, Property Investment India, Goa Real Estate Projects, Delhi NCR Projects, Land Banking India"
+  />
 
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://www.brickhillgroup.com/projects"
-        />
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.brickhillgroup.com/projects"
-        />
+  <meta
+    name="author"
+    content="BHL Group"
+  />
 
-        <meta
-          property="og:title"
-          content="Premium Real Estate Projects in Gurugram | Brickhill Group"
-        />
+  <meta
+    name="language"
+    content="English"
+  />
 
-        <meta
-          property="og:description"
-          content="Browse Brickhill Group’s latest residential, commercial, industrial and warehouse projects in Gurugram and discover top investment opportunities."
-        />
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://brickhillgroup.com/projects"
+  />
 
-        <meta
-          property="og:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  {/* Open Graph */}
+  <meta
+    property="og:type"
+    content="website"
+  />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    property="og:url"
+    content="https://brickhillgroup.com/projects"
+  />
 
-        <meta
-          name="twitter:title"
-          content="Real Estate Projects in Gurugram | Brickhill Group"
-        />
+  <meta
+    property="og:title"
+    content="BHL Group Projects | Luxury Real Estate & Infrastructure Developments"
+  />
 
-        <meta
-          name="twitter:description"
-          content="Explore premium property investment projects with Brickhill Group in Gurugram."
-        />
+  <meta
+    property="og:description"
+    content="Discover premium residential, commercial, infrastructure, warehousing, and logistics projects by BHL Group across India."
+  />
 
-        <meta
-          name="twitter:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  <meta
+    property="og:image"
+    content="https://brickhillgroup.com/og-projects.jpg"
+  />
 
-      </Helmet>
+  <meta
+    property="og:site_name"
+    content="BHL Group"
+  />
+
+  {/* Twitter SEO */}
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="BHL Group Projects | Real Estate & Investment Opportunities"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Explore luxury real estate, warehousing, infrastructure, and commercial investment projects with BHL Group across India."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://brickhillgroup.com/og-projects.jpg"
+  />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "BHL Group Projects",
+      url: "https://brickhillgroup.com/projects",
+      description:
+        "Official projects page of BHL Group showcasing luxury real estate, infrastructure, warehousing, logistics, and investment developments across India.",
+      publisher: {
+        "@type": "Organization",
+        name: "BHL Group",
+        logo: {
+          "@type": "ImageObject",
+          url: "https://brickhillgroup.com/logo.png",
+        },
+      },
+    })}
+  </script>
+</Helmet>
 
       <div className="pt-24">
         <ProjectsSection />

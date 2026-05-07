@@ -5,68 +5,125 @@ export default function About() {
   return (
     <>
       <Helmet>
+  {/* Primary SEO */}
+  <title>
+    About BHL Group | Luxury Real Estate, Infrastructure & Investment Company India
+  </title>
 
-        {/* Title */}
-        <title>
-          About Brickhill Group | Real Estate Investment Experts in Gurugram
-        </title>
+  <meta
+    name="title"
+    content="About BHL Group | Luxury Real Estate, Infrastructure & Investment Company India"
+  />
 
-        {/* Meta Description */}
-        <meta
-          name="description"
-          content="Learn about Brickhill Group, a trusted real estate investment platform in Gurugram offering residential, commercial, industrial and warehouse opportunities through a unique group buying model."
-        />
+  <meta
+    name="description"
+    content="Learn about BHL Group, a leading real estate, infrastructure, logistics, warehousing, and investment company in India delivering luxury developments, strategic land banking, and future-ready business solutions."
+  />
 
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="about Brickhill Group, real estate developers Gurugram, property investment company India, group buying real estate, commercial property investment Gurugram"
-        />
+  <meta
+    name="keywords"
+    content="About BHL Group, Brickhill Group, Real Estate Company India, Luxury Real Estate India, Infrastructure Company India, Land Banking India, Warehousing Solutions India, Logistics Company India, Property Investment India, Commercial Real Estate India"
+  />
 
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+  <meta
+    name="robots"
+    content="index, follow, max-image-preview:large"
+  />
 
-        {/* Canonical */}
-        <link rel="canonical" href="https://www.brickhillgroup.com/about" />
+  <meta
+    name="author"
+    content="BHL Group"
+  />
 
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.brickhillgroup.com/about" />
+  <meta
+    name="language"
+    content="English"
+  />
 
-        <meta
-          property="og:title"
-          content="About Brickhill Group | Real Estate Investment Experts"
-        />
+  {/* Canonical */}
+  <link
+    rel="canonical"
+    href="https://brickhillgroup.com/about"
+  />
 
-        <meta
-          property="og:description"
-          content="Discover the story behind Brickhill Group and our mission to provide premium real estate investment opportunities through group buying."
-        />
+  {/* Open Graph */}
+  <meta
+    property="og:type"
+    content="website"
+  />
 
-        <meta
-          property="og:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  <meta
+    property="og:url"
+    content="https://brickhillgroup.com/about"
+  />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    property="og:title"
+    content="About BHL Group | Real Estate & Infrastructure Company"
+  />
 
-        <meta
-          name="twitter:title"
-          content="About Brickhill Group | Real Estate Investment Platform"
-        />
+  <meta
+    property="og:description"
+    content="Discover BHL Group’s vision, expertise, and commitment to luxury real estate, infrastructure, warehousing, logistics, and investment opportunities across India."
+  />
 
-        <meta
-          name="twitter:description"
-          content="Learn how Brickhill Group helps investors access premium real estate opportunities in Gurugram."
-        />
+  <meta
+    property="og:image"
+    content="https://brickhillgroup.com/og-about.jpg"
+  />
 
-        <meta
-          name="twitter:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
+  <meta
+    property="og:site_name"
+    content="BHL Group"
+  />
 
-      </Helmet>
+  {/* Twitter SEO */}
+  <meta
+    name="twitter:card"
+    content="summary_large_image"
+  />
+
+  <meta
+    name="twitter:title"
+    content="About BHL Group | Luxury Real Estate & Investment Company"
+  />
+
+  <meta
+    name="twitter:description"
+    content="Learn how BHL Group is shaping India’s real estate, infrastructure, logistics, and investment landscape with premium developments and strategic opportunities."
+  />
+
+  <meta
+    name="twitter:image"
+    content="https://brickhillgroup.com/og-about.jpg"
+  />
+
+  {/* Structured Data */}
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "BHL Group",
+      alternateName: "Brickhill Group",
+      url: "https://brickhillgroup.com",
+      logo: "https://brickhillgroup.com/logo.png",
+      description:
+        "BHL Group is a leading luxury real estate, infrastructure, logistics, warehousing, and investment company in India.",
+      sameAs: [
+        "https://www.linkedin.com/",
+        "https://www.instagram.com/",
+        "https://www.facebook.com/"
+      ],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+91-7389667262",
+        contactType: "customer service",
+        areaServed: "IN",
+        availableLanguage: ["English", "Hindi"]
+      }
+    })}
+  </script>
+</Helmet>
 
       <div className="pt-24">
         <AboutSection />

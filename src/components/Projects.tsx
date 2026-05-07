@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import projectsData from "../data/projects.json";
 import { MapPin, Square, Tag } from "lucide-react";
 import { Project } from "../types/Project";
-import { IMAGES } from "../assets/images";
+import { allImages, fallbackImage } from "../data/AllImages";
 
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -84,14 +84,9 @@ export default function Projects() {
                 {/* Image */}
                 <div className="relative h-64 overflow-hidden">
                   <img
-                    src={
-                      IMAGES.projects[
-                        project.featured_image as keyof typeof IMAGES.projects
-                      ] || IMAGES.common.placeholder
-                    }
-                    alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-                  />
+  src={allImages[project.featured_image] || fallbackImage}
+  alt={project.title}
+/>
 
                   {/* Badge */}
                   <div className="absolute top-4 right-4">

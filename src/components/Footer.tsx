@@ -115,10 +115,10 @@ export default function Footer() {
   <Phone className="h-5 w-5 text-[#6fa8dd]" />
   
   <a 
-    href="tel:83959945524" 
+    href="tel:7015018161" 
     className="hover:underline"
   >
-    +91-83959 945524
+    +91-7015018161
   </a>
 </li>
 

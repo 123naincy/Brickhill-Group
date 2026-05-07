@@ -6,7 +6,10 @@ import FeaturedProjects from "../components/home/FeaturedProjects";
 import Testimonials from "../components/home/Testimonials";
 import AboutSection from "../components/About";
 import BlogSection from "../components/Blog";
-
+import PopupForm from "../components/home/PopupForm"
+import BusinessTabs from "../components/home/BusinessTabs";
+import FloatingIcons from "../components/home/FloatingIcons";
+import FAQPage from "../components/home/FAQPage";
 
 const schema = {
   "@context": "https://schema.org",
@@ -21,78 +24,152 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        {/* Primary Meta */}
+        {/* Primary SEO */}
         <title>
-          Brickhill Group | Real Estate Investment & Group Buying in Gurugram
+          BHL Group | Luxury Real Estate, Infrastructure & Investment Company India
         </title>
 
         <meta
+          name="title"
+          content="BHL Group | Luxury Real Estate, Infrastructure & Investment Company India"
+        />
+
+        <meta
           name="description"
-          content="Brickhill Group offers premium residential, commercial, industrial and warehouse investment opportunities in Gurugram. Join our group buying real estate model and unlock builder-level pricing."
+          content="BHL Group is a leading real estate, infrastructure, logistics, and investment company in India offering luxury residential developments, land banking, warehousing solutions, commercial spaces, and premium investment opportunities."
         />
 
         <meta
           name="keywords"
-          content="Brickhill Group, real estate investment Gurugram, property investment Gurugram, group buying real estate India, commercial property investment India, warehouse investment India, industrial plots Gurugram, residential projects Gurugram"
+          content="BHL Group, Brickhill Group, Luxury Real Estate India, Property Investment India, Land Banking India, Real Estate Company India, Infrastructure Development India, Warehousing Solutions India, Commercial Property Investment, Goa Real Estate, Delhi NCR Projects, Luxury Villas India, Logistics Company India"
         />
 
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+        <meta
+          name="author"
+          content="BHL Group"
+        />
+
+        <meta
+          name="robots"
+          content="index, follow, max-image-preview:large"
+        />
+
+        <meta
+          name="language"
+          content="English"
+        />
+
+        <meta
+          name="revisit-after"
+          content="2 days"
+        />
 
         {/* Canonical */}
-        <link rel="canonical" href="https://www.brickhillgroup.com/" />
+        <link
+          rel="canonical"
+          href="https://brickhillgroup.com/"
+        />
 
         {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.brickhillgroup.com/" />
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+        <meta
+          property="og:url"
+          content="https://brickhillgroup.com/"
+        />
 
         <meta
           property="og:title"
-          content="Brickhill Group | Premium Real Estate Investment Opportunities"
+          content="BHL Group | Luxury Real Estate & Investment Opportunities"
         />
 
         <meta
           property="og:description"
-          content="Discover premium residential, commercial, industrial and warehouse investment opportunities in Gurugram with Brickhill Group's group buying investment model."
+          content="Explore luxury real estate developments, infrastructure projects, warehousing solutions, logistics, and investment opportunities across India with BHL Group."
         />
 
         <meta
           property="og:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
+          content="https://brickhillgroup.com/og-image.jpg"
         />
 
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          property="og:site_name"
+          content="BHL Group"
+        />
+
+        {/* Twitter SEO */}
+        <meta
+          name="twitter:card"
+          content="summary_large_image"
+        />
 
         <meta
           name="twitter:title"
-          content="Brickhill Group | Real Estate Investment Platform"
+          content="BHL Group | Luxury Real Estate & Infrastructure Company"
         />
 
         <meta
           name="twitter:description"
-          content="Join verified investor groups and unlock builder-level pricing with Brickhill Group."
+          content="Discover premium real estate, infrastructure, warehousing, and investment opportunities with BHL Group across India."
         />
 
         <meta
           name="twitter:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
+          content="https://brickhillgroup.com/og-image.jpg"
         />
 
         {/* Geo SEO */}
-        <meta name="geo.region" content="IN-HR" />
-        <meta name="geo.placename" content="Gurugram" />
-        <meta name="geo.position" content="28.4595;77.0266" />
-        <meta name="ICBM" content="28.4595, 77.0266" />
-       
+        <meta
+          name="geo.region"
+          content="IN"
+        />
+
+        <meta
+          name="geo.placename"
+          content="India"
+        />
+
+        {/* Schema Markup */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "BHL Group",
+            alternateName: "Brickhill Group",
+            url: "https://brickhillgroup.com",
+            logo: "https://brickhillgroup.com/assets/logo-Z3TNQcFG.png",
+            description:
+              "BHL Group is a leading luxury real estate, infrastructure, warehousing, logistics, and investment company in India.",
+            sameAs: [
+              "https://www.linkedin.com/",
+              "https://www.instagram.com/",
+              "https://www.facebook.com/"
+            ],
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+91-7015018161",
+              contactType: "customer service",
+              areaServed: "IN",
+              availableLanguage: ["English", "Hindi"]
+            }
+          })}
+        </script>
       </Helmet>
       <Hero />
+      <BusinessTabs />
+      <FloatingIcons />
+      <PopupForm />
       <AboutSection />
       <Services />
       <WhyChooseUs />
       <FeaturedProjects />
       <Testimonials />
       <BlogSection />
+      <FAQPage />
     </>
   );
 }

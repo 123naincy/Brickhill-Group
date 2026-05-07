@@ -105,7 +105,7 @@ export default function FeaturedProjects() {
         {/* CTA */}
         <div className="text-center">
           <a
-            href="#projects"
+            href="./projects"
             className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white font-semibold rounded-full shadow-xl hover:scale-105 transition duration-300"
           >
             View All Projects
