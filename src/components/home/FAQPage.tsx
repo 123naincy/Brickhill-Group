@@ -55,42 +55,6 @@ export default function FAQPage() {
 
   return (
     <>
-      <Helmet>
-        <title>
-          FAQs | BHL Group - Real Estate & Infrastructure
-        </title>
-
-        <meta
-          name="description"
-          content="Find answers to frequently asked questions about BHL Group, luxury real estate investments, infrastructure projects, warehousing solutions, and business operations across India."
-        />
-
-        <meta
-          name="keywords"
-          content="BHL Group FAQs, Brickhill Group FAQ, Real Estate Investment India, Luxury Real Estate India, Land Banking India"
-        />
-
-        <link
-          rel="canonical"
-          href="https://brickhillgroup.com/"
-        />
-
-        {/* FAQ Schema */}
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: faqs.map((faq) => ({
-              "@type": "Question",
-              name: faq.question,
-              acceptedAnswer: {
-                "@type": "Answer",
-                text: faq.answer,
-              },
-            })),
-          })}
-        </script>
-      </Helmet>
 
       <section className="bg-[#f7fbff] min-h-screen py-10">
         <div className="max-w-5xl mx-auto px-6">

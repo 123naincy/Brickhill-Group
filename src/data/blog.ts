@@ -1,13 +1,14 @@
 import EstateTrendsImg1 from "../../public/assets/blog/estate-trends.jpg";
 import BlogSecond from "../../public/assets/blog/blog-two-third.jpg";
 import BlogThird from "../../public/assets/blog/blog-third-first.jpg";
+import BlogForth from "../../public/assets/blog/indian-real-estate-wealth-creator.png";
 export const blogs = [
   {
     id: 1,
     title: "Real Estate Trends Shaping the Future of Property Investment",
-    date: "March 27, 2026",
-    author: "Admin",
-    category: "Real Estate",
+    date: "April 03, 2026",
+    author: "Mrs. Divyanshi Agrawal",
+    category: "Bank Officer - Aditya Birla Finance",
     image: EstateTrendsImg1,
 
     content: `## Real Estate Trends Shaping the Future of Property Investment
@@ -36,9 +37,9 @@ In conclusion, the real estate industry offers strong potential for growth and s
   {
     id: 2,
     title: "How a Real Estate Realtor Provides Smart Real Estate Solutions",
-    date: "March 27, 2026",
-    author: "Admin",
-    category: "Real Estate",
+    date: "March 15, 2026",
+    author: "Mr. Shivam Sharma",
+    category: "Software Engineer",
     image: BlogSecond,
     content: `## How a Real Estate Realtor Provides Smart Real Estate Solutions
 
@@ -67,8 +68,8 @@ In conclusion, combining expert guidance with personalized [real estate solution
     id: 3,
     title: "Why Real Estate India Is Booming in 2026",
     date: "March 27, 2026",
-    author: "Admin",
-    category: "Real Estate",
+    author: "Mrs. Swati Chauhan",
+    category: "Real Estate Agent",
     image: BlogThird,
     content: `## Why Real Estate India Is Booming in 2026
 
@@ -91,6 +92,38 @@ Technology is another key factor driving change. Online platforms allow users to
 ![Future Growth](/assets/blog/blog-third-four.jpg)
 
 Looking ahead, [real estate india](https://kbdlandcorp.in) is expected to grow steadily with the rise of smart homes and eco-friendly developments. As demand continues to increase, real estate property will remain a valuable asset for both buyers and investors.
+`
+  },
+   {
+    id: 4,
+    title: "Indian Real Estate: The Next Big Wealth Creator",
+    date: "May 22, 2026",
+    author: "Mr. Sumit Bhriya",
+    category: "Ceo & Founder - BHL Group",
+    image: BlogForth,
+    content: `## Indian Real Estate: The Next Big Wealth Creator
+
+![Real Estate India Growth](/assets/blog/skylines-rising.png)
+
+Considering the ongoing geopolitical disturbances across the world, [Indian real estate](https://www.brickhillandbase.com/) may receive a significant boost in the coming years due to several strong macroeconomic factors. One of the biggest reasons is currency depreciation. A weakening rupee acts like a major advantage for [NRI investors](https://www.brickhillandbase.com/sindhudurg) earning in dollars, pounds, dirhams, or other stronger foreign currencies. Because of this currency benefit, Indian real estate becomes increasingly attractive to overseas investors during periods of rupee weakness. NRIs often see [Indian property](https://www.brickhillandbase.com/sindhudurg) as both an emotional and financial investment. On one hand, it keeps them connected to their roots, while on the other, it provides exposure to one of the fastest-growing economies in the world.
+
+![Demand for Property](/assets/blog/nri's.png)
+
+Another major reason is the uncertainty in [financial markets.](https://brickhillgroup.com/blog) Stocks and financial assets become highly volatile during wars, oil shocks, and currency crises. In comparison, [real estate](https://brickhillgroup.com/) continues to provide utility, [rental income,](https://brickhillgroup.com/blog) and tangible ownership. Whether it is a [house, plot, office, warehouse, farmhouse,](https://brickhillgroup.com/projects) or land parcel, property retains practical value regardless of market sentiment. People may stop spending on luxuries during uncertain times, but they will always need homes, businesses will continue requiring offices and [warehouses,](https://thelogiprime.com/) and cities will keep expanding.
+
+![Government Policies](/assets/blog/office-zones.png)
+
+Construction costs are also expected to rise sharply in the coming years. [Real estate development](https://www.brickhillandbase.com/) depends heavily on steel, cement, fuel, transportation, machinery, and labour. As the rupee weakens and inflation rises, developers are likely to launch [projects](https://brickhillgroup.com/projects) at higher prices. This automatically increases the value of existing properties in good locations, pushing [real estate](https://www.brickhillandbase.com/) prices upward over time.
+
+![Technology in Real Estate](/assets/blog/pushing-real-estate.png)
+
+At the same time, holding large amounts of cash is becoming risky because [inflation](https://brickhillgroup.com/blog) continuously reduces the purchasing power of money. [Real estate,](https://www.brickhillandbase.com/) being a [hard asset,](https://thelogiprime.com/) offers both financial and psychological security during uncertain periods.
+
+![Future Growth](/assets/blog/money.png)
+
+Although not every location will perform equally, [tier-2 cities, tier-3 cities,](https://brickhillgroup.com/group-buying) and emerging [developing areas](https://www.brickhillandbase.com/sindhudurg) may become the biggest wealth creators in the coming decade.
+
+Happy investing 😊
 `
   }
 ];

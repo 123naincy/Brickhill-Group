@@ -117,7 +117,6 @@ export default function Blog() {
         <h1 className="sr-only">
           BHL Group Blog - Real Estate & Investment Insights
         </h1>
-
         <BlogSection />
       </main>
     </>
