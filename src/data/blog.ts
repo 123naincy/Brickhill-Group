@@ -96,12 +96,12 @@ Looking ahead, [real estate india](https://kbdlandcorp.in) is expected to grow s
   },
    {
     id: 4,
-    title: "Indian Real Estate: The Next Big Wealth Creator",
+    title: "Why Indian Real Estate Could Be the Next Big Wealth Creator in India",
     date: "May 22, 2026",
     author: "Mr. Sumit Bhriya",
     category: "Ceo & Founder - BHL Group",
     image: BlogForth,
-    content: `## Indian Real Estate: The Next Big Wealth Creator
+    content: `## Why Indian Real Estate Could Be the Next Big Wealth Creator in India
 
 ![Real Estate India Growth](/assets/blog/skylines-rising.png)
 
