@@ -15,26 +15,26 @@ export default function BenefitsSection() {
       <Helmet>
         {/* Primary Meta */}
         <title>
-          Real Estate Investment Webinar | Learn Group Buying Strategy | Brickhill Group
+          Real Estate Investment Webinar | Learn Group Buying Strategy | BHL Group
         </title>
 
         <meta
           name="title"
-          content="Real Estate Investment Webinar | Learn Group Buying Strategy | Brickhill Group"
+          content="Real Estate Investment Webinar | Learn Group Buying Strategy | BHL Group"
         />
 
         <meta
           name="description"
-          content="Join Brickhill Group’s real estate investment webinar to learn how group buying helps investors access premium residential, commercial and warehouse properties at builder-level pricing."
+          content="Join BHL Group’s real estate investment webinar to learn how group buying helps investors access premium residential, commercial and warehouse properties at builder-level pricing."
         />
 
         <meta
           name="keywords"
-          content="real estate investment webinar, property investment webinar India, group buying real estate webinar, Gurugram property investment webinar, Brickhill Group webinar"
+          content="real estate investment webinar, property investment webinar India, group buying real estate webinar, Gurugram property investment webinar, BHL Group webinar"
         />
 
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+        <meta name="author" content="BHL Group" />
 
         {/* Canonical */}
         <link
@@ -54,12 +54,12 @@ export default function BenefitsSection() {
 
         <meta
           property="og:title"
-          content="Real Estate Investment Webinar | Brickhill Group"
+          content="Real Estate Investment Webinar | BHL Group"
         />
 
         <meta
           property="og:description"
-          content="Discover how investors access premium property opportunities through group buying. Join Brickhill Group's real estate investment webinar."
+          content="Discover how investors access premium property opportunities through group buying. Join BHL Group's real estate investment webinar."
         />
 
         <meta
@@ -67,14 +67,14 @@ export default function BenefitsSection() {
           content="https://www.brickhillgroup.com/og-image.jpg"
         />
 
-        <meta property="og:site_name" content="Brickhill Group" />
+        <meta property="og:site_name" content="BHL Group" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
 
         <meta
           name="twitter:title"
-          content="Real Estate Investment Webinar | Brickhill Group"
+          content="Real Estate Investment Webinar | BHL Group"
         />
 
         <meta
@@ -98,7 +98,7 @@ export default function BenefitsSection() {
             "eventStatus": "https://schema.org/EventScheduled",
             "organizer": {
               "@type": "Organization",
-              "name": "Brickhill Group",
+              "name": "BHL Group",
               "url": "https://www.brickhillgroup.com"
             }
           })}

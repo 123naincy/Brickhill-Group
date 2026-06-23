@@ -28,7 +28,7 @@ const WebinarPage = () => {
 
   <meta
     name="keywords"
-    content="BHL Group Webinar, Brickhill Group Webinar, Real Estate Webinar India, Property Investment Webinar, Luxury Real Estate India, Infrastructure Investment India, Warehousing Solutions India, Land Banking India, Goa Real Estate, Commercial Property Investment India"
+    content="BHL Group Webinar, BHL Group Webinar, Real Estate Webinar India, Property Investment Webinar, Luxury Real Estate India, Infrastructure Investment India, Warehousing Solutions India, Land Banking India, Goa Real Estate, Commercial Property Investment India"
   />
 
   <meta

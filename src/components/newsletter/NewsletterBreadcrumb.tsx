@@ -94,7 +94,7 @@ export default function NewsletterBreadcrumb() {
       {/* Description */}
       <p className="mt-3 text-light" style={{ maxWidth: "700px", margin: "0 auto" }}>
         Explore the latest real estate trends, premium project updates,
-        investment insights, and market intelligence curated by Brickhill Group.
+        investment insights, and market intelligence curated by BHL Group.
       </p>
 
       {/* CTA */}

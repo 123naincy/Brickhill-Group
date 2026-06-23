@@ -22,7 +22,7 @@ export default function Blog() {
 
         <meta
           name="keywords"
-          content="BHL Group, Brickhill Group, BHL Group Blog, Real Estate Blog India, Luxury Real Estate India, Property Investment India, Land Banking India, Brickhill Realtors, Brickhill Infra, Logi Prime, BHL Studioz, Goa Real Estate, Infrastructure Company India, Warehousing Solutions India, Real Estate Market Trends"
+          content="BHL Group, BHL Group, BHL Group Blog, Real Estate Blog India, Luxury Real Estate India, Property Investment India, Land Banking India, BHLRealtors, BHLInfra, Logi Prime, BHL Studioz, Goa Real Estate, Infrastructure Company India, Warehousing Solutions India, Real Estate Market Trends"
         />
 
         <meta name="author" content="BHL Group" />

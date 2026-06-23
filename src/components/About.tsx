@@ -7,20 +7,20 @@ export default function About() {
       <Helmet>
         {/* Title */}
         <title>
-          About Brickhill Group | Real Estate Developers in Gurugram
+          About BHL Group | Real Estate Developers in Gurugram
         </title>
         {/* Meta Description */}
         <meta
           name="description"
-          content="Learn about Brickhill Group, a trusted real estate developer in Gurugram specializing in residential, commercial, industrial, and warehouse developments."
+          content="Learn about BHL Group, a trusted real estate developer in Gurugram specializing in residential, commercial, industrial, and warehouse developments."
         />
         {/* Keywords */}
         <meta
           name="keywords"
-          content="Brickhill Group, real estate developers Gurugram, property development company India, commercial real estate Gurugram, warehouse projects Gurugram"
+          content="BHL Group, real estate developers Gurugram, property development company India, commercial real estate Gurugram, warehouse projects Gurugram"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+        <meta name="author" content="BHL Group" />
         {/* Canonical */}
         <link
           rel="canonical"
@@ -31,12 +31,12 @@ export default function About() {
         <meta property="og:url" content="https://www.brickhillgroup.com/about" />
         <meta
           property="og:title"
-          content="About Brickhill Group | Real Estate Developers"
+          content="About BHL Group | Real Estate Developers"
         />
 
         <meta
           property="og:description"
-          content="Discover Brickhill Group's journey, mission, and vision in building premium real estate developments."
+          content="Discover BHL Group's journey, mission, and vision in building premium real estate developments."
         />
         <meta
           property="og:image"
@@ -48,12 +48,12 @@ export default function About() {
 
         <meta
           name="twitter:title"
-          content="About Brickhill Group | Real Estate Developers"
+          content="About BHL Group | Real Estate Developers"
         />
 
         <meta
           name="twitter:description"
-          content="Explore Brickhill Group’s mission, vision and real estate expertise."
+          content="Explore BHL Group’s mission, vision and real estate expertise."
         />
 
         <meta
@@ -72,27 +72,20 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
             <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-6">
-              About Brickhill Group
+              About BHL Group
             </h2>
 
-            <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-              Brickhill Group is a trusted real estate developer with over a decade of experience across residential, commercial, industrial, and warehousing projects.
-            </p>
-
-            <p className="text-lg text-neutral-700 mb-6 leading-relaxed">
-              We believe real estate is more than construction — it is about building spaces where businesses grow and communities thrive.
-            </p>
-
             <p className="text-lg text-neutral-700 leading-relaxed">
-              Driven by a clear vision and a strong professional team, Brickhill Group continues to raise industry standards.
-            </p>
+  BHL Group is a trusted real estate brand with over a decade of expertise in delivering residential, commercial, industrial, warehousing, and innovative lifestyle developments, including BHL Studioz. We believe real estate is more than just building structures it is about creating valuable spaces where businesses grow, communities thrive, and modern lifestyles evolve. Driven by innovation, strategic vision, transparency, and a commitment to excellence, BHL Group continues to set new industry benchmarks by developing future-ready spaces that inspire trust, growth, and long-term value.
+</p>
+            
           </div>
 
           {/* Image */}
           <div className="relative">
             <img
               src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="Brickhill Group Office"
+              alt="BHL Group Office"
               className="rounded-2xl shadow-xl"
             />
 

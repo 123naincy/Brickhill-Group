@@ -19,7 +19,7 @@ export const allImages: Record<string, string> = {
   kbdPlaza,
   himalayanCity,
   yashHomes,
-Goa,
+  Goa,
   // reuse images (optional)
   kbdPlaza21: kbdPlaza,
   kbdHimalayanCity2: himalayanCity,

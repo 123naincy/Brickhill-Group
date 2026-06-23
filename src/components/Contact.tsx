@@ -47,20 +47,20 @@ export default function Contact() {
       <Helmet>
         {/* Title */}
         <title>
-          Contact Brickhill Group | Real Estate Investment Experts in Gurugram
+          Contact BHL Group | Real Estate Investment Experts in Gurugram
         </title>
         {/* Meta Description */}
         <meta
           name="description"
-          content="Contact Brickhill Group for premium real estate investment opportunities in Gurugram. Reach our team for residential, commercial, industrial and warehouse property inquiries."
+          content="Contact BHL Group for premium real estate investment opportunities in Gurugram. Reach our team for residential, commercial, industrial and warehouse property inquiries."
         />
         {/* Keywords */}
         <meta
           name="keywords"
-          content="Brickhill Group contact, real estate developers Gurugram, property investment Gurugram contact, commercial property Gurugram contact"
+          content="BHL Group contact, real estate developers Gurugram, property investment Gurugram contact, commercial property Gurugram contact"
         />
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+        <meta name="author" content="BHL Group" />
         {/* Canonical */}
         <link
           rel="canonical"
@@ -69,12 +69,12 @@ export default function Contact() {
         {/* Open Graph */}
         <meta
           property="og:title"
-          content="Contact Brickhill Group | Real Estate Investment"
+          content="Contact BHL Group | Real Estate Investment"
         />
 
         <meta
           property="og:description"
-          content="Get in touch with Brickhill Group to explore property investment opportunities in Gurugram."
+          content="Get in touch with BHL Group to explore property investment opportunities in Gurugram."
         />
 
        
@@ -84,12 +84,12 @@ export default function Contact() {
 
         <meta
           name="twitter:title"
-          content="Contact Brickhill Group | Real Estate Experts"
+          content="Contact BHL Group | Real Estate Experts"
         />
 
         <meta
           name="twitter:description"
-          content="Reach Brickhill Group for real estate investment opportunities in Gurugram."
+          content="Reach BHL Group for real estate investment opportunities in Gurugram."
         />
 
       </Helmet>

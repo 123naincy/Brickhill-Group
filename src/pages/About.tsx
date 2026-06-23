@@ -22,7 +22,7 @@ export default function About() {
 
   <meta
     name="keywords"
-    content="About BHL Group, Brickhill Group, Real Estate Company India, Luxury Real Estate India, Infrastructure Company India, Land Banking India, Warehousing Solutions India, Logistics Company India, Property Investment India, Commercial Real Estate India"
+    content="About BHL Group, BHL Group, Real Estate Company India, Luxury Real Estate India, Infrastructure Company India, Land Banking India, Warehousing Solutions India, Logistics Company India, Property Investment India, Commercial Real Estate India"
   />
 
   <meta
@@ -104,7 +104,7 @@ export default function About() {
       "@context": "https://schema.org",
       "@type": "Organization",
       name: "BHL Group",
-      alternateName: "Brickhill Group",
+      alternateName: "BHL Group",
       url: "https://brickhillgroup.com",
       logo: "https://brickhillgroup.com/logo.png",
       description:

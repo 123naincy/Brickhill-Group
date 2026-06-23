@@ -33,23 +33,23 @@ export default function GroupBuying() {
     <Helmet>
         {/* Title */}
         <title>
-          Group Buying Property Investment | Brickhill Group
+          Group Buying Property Investment | BHL Group
         </title>
 
         {/* Meta Description */}
         <meta
           name="description"
-          content="Invest in premium real estate through Brickhill Group's group buying model. Access residential, commercial, industrial and warehouse investment opportunities at builder-level pricing."
+          content="Invest in premium real estate through BHL Group's group buying model. Access residential, commercial, industrial and warehouse investment opportunities at builder-level pricing."
         />
 
         {/* Keywords */}
         <meta
           name="keywords"
-          content="group buying property India, real estate group investment, commercial property group buying, property investment platform India, Brickhill Group investments"
+          content="group buying property India, real estate group investment, commercial property group buying, property investment platform India, BHL Group investments"
         />
 
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+        <meta name="author" content="BHL Group" />
 
         {/* Canonical */}
         <link
@@ -66,12 +66,12 @@ export default function GroupBuying() {
 
         <meta
           property="og:title"
-          content="Group Buying Real Estate Investment | Brickhill Group"
+          content="Group Buying Real Estate Investment | BHL Group"
         />
 
         <meta
           property="og:description"
-          content="Discover exclusive property investment opportunities through Brickhill Group's group buying platform."
+          content="Discover exclusive property investment opportunities through BHL Group's group buying platform."
         />
 
         <meta
@@ -84,12 +84,12 @@ export default function GroupBuying() {
 
         <meta
           name="twitter:title"
-          content="Group Buying Property Investment | Brickhill Group"
+          content="Group Buying Property Investment | BHL Group"
         />
 
         <meta
           name="twitter:description"
-          content="Invest together and unlock builder-level property pricing through Brickhill Group's group buying platform."
+          content="Invest together and unlock builder-level property pricing through BHL Group's group buying platform."
         />
 
         <meta

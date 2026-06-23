@@ -10,23 +10,23 @@ export default function BlogPage() {
       <Helmet>
         {/* Title */}
         <title>
-          Real Estate Blog & Investment Insights | Brickhill Group
+          Real Estate Blog & Investment Insights | BHL Group
         </title>
 
         {/* Description */}
         <meta
           name="description"
-          content="Read the latest blogs from Brickhill Group about real estate investment trends, Gurugram property market insights, and commercial property opportunities."
+          content="Read the latest blogs from BHL Group about real estate investment trends, Gurugram property market insights, and commercial property opportunities."
         />
 
         {/* Keywords */}
         <meta
           name="keywords"
-          content="real estate blog India, property investment tips, Gurugram real estate trends, commercial property investment insights, Brickhill Group blog"
+          content="real estate blog India, property investment tips, Gurugram real estate trends, commercial property investment insights, BHL Group blog"
         />
 
         <meta name="robots" content="index, follow" />
-        <meta name="author" content="Brickhill Group" />
+        <meta name="author" content="BHL Group" />
 
         {/* Canonical */}
         <link
@@ -40,12 +40,12 @@ export default function BlogPage() {
 
         <meta
           property="og:title"
-          content="Real Estate Blog & Investment Insights | Brickhill Group"
+          content="Real Estate Blog & Investment Insights | BHL Group"
         />
 
         <meta
           property="og:description"
-          content="Explore real estate investment guides, market insights, and property trends from Brickhill Group."
+          content="Explore real estate investment guides, market insights, and property trends from BHL Group."
         />
 
         <meta
@@ -58,7 +58,7 @@ export default function BlogPage() {
 
         <meta
           name="twitter:title"
-          content="Real Estate Blog | Brickhill Group"
+          content="Real Estate Blog | BHL Group"
         />
 
         <meta
@@ -81,7 +81,7 @@ export default function BlogPage() {
             </h1>
             <p className="text-lg text-neutral-600 mt-3 max-w-2xl mx-auto">
               Stay updated with real estate investment trends, market news, and
-              property insights from Brickhill Group.
+              property insights from BHL Group.
             </p>
           </div>
 

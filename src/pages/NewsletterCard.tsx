@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import NewsletterCardItem from "../components/newsletter/NewsletterCardItem";
 import Feb from "../assets/newsletter/first-page.png";
 import march from "../assets/newsletter/march-card.jpg";
-import april from "../assets/newsletter/april-cover.jpg"
+import june from "../assets/newsletter/card.png"
 const cards = [
   {
     title: "Beyond Delhi NCR",
@@ -17,9 +17,9 @@ const cards = [
     to: "/newsletter/march-2026",
   },
    {
-    title: "April-2026",
-    imageUrl: april,
-    to: "/newsletter/april-2026",
+    title: "The Global Purse",
+    imageUrl: june,
+    to: "/newsletter/the-global-purse",
   },
 ];
 
@@ -27,7 +27,6 @@ export default function NewsletterCardsPage() {
   return (
     <>
       <Helmet>
-  {/* Primary SEO */}
   <title>
     BHL Group Newsletters | Real Estate, Infrastructure & Investment Insights
   </title>
@@ -44,7 +43,7 @@ export default function NewsletterCardsPage() {
 
   <meta
     name="keywords"
-    content="BHL Group Newsletter, Brickhill Group News, Real Estate Newsletter India, Luxury Real Estate India, Property Investment Insights, Infrastructure Development India, Land Banking India, Warehousing Solutions India, Goa Real Estate, Delhi NCR Projects, Investment Opportunities India"
+    content="BHL Group Newsletter, BHL Group News, Real Estate Newsletter India, Luxury Real Estate India, Property Investment Insights, Infrastructure Development India, Land Banking India, Warehousing Solutions India, Goa Real Estate, Delhi NCR Projects, Investment Opportunities India"
   />
 
   <meta

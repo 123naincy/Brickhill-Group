@@ -29,7 +29,10 @@ export default function NewsletterDetail() {
         }
 
         const json = (await res.json()) as { newsletters: Newsletter[] };
-        const found = json.newsletters.find((n) => n.id === id);
+        const normalizedId = id?.toLowerCase() ?? "";
+        const found = json.newsletters.find(
+          (n) => n.id.toLowerCase() === normalizedId
+        );
 
         if (!cancelled) {
           if (!found) {
@@ -61,8 +64,8 @@ export default function NewsletterDetail() {
   }, [id]);
 
   const pageTitle = newsletter
-    ? `${newsletter.title}: ${newsletter.date} | Brickhill Group Newsletter`
-    : "Brickhill Group Newsletter";
+    ? `${newsletter.title}: ${newsletter.date} | BHL Group Newsletter`
+    : "BHL Group Newsletter";
 
   const canonicalUrl = id
     ? `https://brickhillgroup.com/newsletter/${id}`
@@ -83,7 +86,7 @@ export default function NewsletterDetail() {
 
   <meta
     name="keywords"
-    content="BHL Group Newsletter, Brickhill Group, Real Estate News India, Luxury Real Estate India, Infrastructure Development, Property Investment Insights, Warehousing Solutions India, Logistics Trends India, Land Banking India"
+    content="BHL Group Newsletter, BHL Group, Real Estate News India, Luxury Real Estate India, Infrastructure Development, Property Investment Insights, Warehousing Solutions India, Logistics Trends India, Land Banking India"
   />
 
   <meta

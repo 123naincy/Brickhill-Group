@@ -17,7 +17,7 @@ export default function Contact() {
 
         <meta
           name="keywords"
-          content="Contact BHL Group, Brickhill Group Contact, Real Estate Company India, Property Investment Consultation, Luxury Real Estate India, Land Banking India, Infrastructure Development Company, Warehousing Solutions India, Real Estate Experts"
+          content="Contact BHL Group, BHL Group Contact, Real Estate Company India, Property Investment Consultation, Luxury Real Estate India, Land Banking India, Infrastructure Development Company, Warehousing Solutions India, Real Estate Experts"
         />
 
         <meta

@@ -77,7 +77,7 @@ export default function DynamicNewsletterDetailPage({
         <img
           src={getImageUrl(newsletter.coverImage)}
           alt="newsletter cover"
-          className="newsletter-image img-fluid mb-4"
+          className="newsletter-image img-fluid mb-4 mt-5"
         />
       ) : null}
 
@@ -100,7 +100,7 @@ export default function DynamicNewsletterDetailPage({
         {/* CENTER TITLE */}
         <Col md={9}>
           <h1
-            className="fw-bold newsletter-title mb-1"
+            className="fw-bold newsletter-title"
             style={{
               background: "linear-gradient(90deg,#073762,#3d85c5)",
               WebkitBackgroundClip: "text",

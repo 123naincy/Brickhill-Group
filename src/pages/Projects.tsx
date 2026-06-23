@@ -22,7 +22,7 @@ export default function Projects() {
 
   <meta
     name="keywords"
-    content="BHL Group Projects, Brickhill Group Projects, Luxury Real Estate India, Commercial Projects India, Infrastructure Development India, Warehousing Projects India, Logistics Parks India, Property Investment India, Goa Real Estate Projects, Delhi NCR Projects, Land Banking India"
+    content="BHL Group Projects, BHL Group Projects, Luxury Real Estate India, Commercial Projects India, Infrastructure Development India, Warehousing Projects India, Logistics Parks India, Property Investment India, Goa Real Estate Projects, Delhi NCR Projects, Land Banking India"
   />
 
   <meta

@@ -5,6 +5,7 @@ import {
   CalendarDays,
   Users,
   Phone,
+  Newspaper
 } from "lucide-react";
 
 import { useState } from "react";
@@ -27,59 +28,46 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50">
 
       {/* ================= TOP BAR ================= */}
-      <div className="bg-[#073762] text-white hidden lg:block topbar">
-        <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between">
+     <div className="bg-[#073762] hidden lg:block">
+  <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between text-white">
 
-          {/* Left */}
-          <div className="flex items-center gap-6 text-sm">
+    <div className="flex items-center gap-6 text-sm">
+      <a
+        href="mailto:info@brickhillgroup.com"
+        className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
+      >
+        <Mail className="w-4 h-4 text-white" />
+        info@brickhillgroup.com
+      </a>
 
-            <a
-              href="mailto:info@brickhillgroup.com"
-              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
-            >
-              <Mail className="w-4 h-4" />
-              info@brickhillgroup.com
-            </a>
+      <a
+        href="tel:+917252993033"
+        className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
+      >
+        <Phone className="w-4 h-4 text-white" />
+        +91-7252993033
+      </a>
+    </div>
 
-            <a
-              href="tel:+917015018161"
-              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
-            >
-              <Phone className="w-4 h-4" />
-              +91-7015018161
-            </a>
-          </div>
+    <div className="flex items-center gap-6 text-sm font-medium">
+      <Link to="/newsletter-card" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
+        <Mail size={15} className="text-white" />
+        Newsletter
+      </Link>
 
-          {/* Right */}
-          <div className="flex items-center gap-6 text-sm font-medium">
+      <Link to="/webinar" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
+        <CalendarDays size={15} className="text-white" />
+        Webinar
+      </Link>
 
-            <Link
-              to="/newsletter-card"
-              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
-            >
-              <Mail size={15} />
-              Newsletter
-            </Link>
+      <Link to="/group-buying" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
+        <Users size={15} className="text-white" />
+        Group Buying
+      </Link>
+    </div>
 
-            <Link
-              to="/webinar"
-              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
-            >
-              <CalendarDays size={15} />
-              Webinar
-            </Link>
-
-            <Link
-              to="/group-buying"
-              className="flex items-center gap-2 hover:text-[#9fc5e9] transition"
-            >
-              <Users size={15} />
-              Group Buying
-            </Link>
-          </div>
-        </div>
-      </div>
-
+  </div>
+</div>
       {/* ================= MAIN NAVBAR ================= */}
       <nav className="bg-white shadow-lg border-b border-[#e5eef8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -150,8 +138,8 @@ export default function Navbar() {
         {/* ================= MOBILE MENU ================= */}
         <div
           className={`lg:hidden overflow-hidden transition-all duration-500 ${isOpen
-              ? "max-h-[1000px] opacity-100"
-              : "max-h-0 opacity-0"
+            ? "max-h-[1000px] opacity-100"
+            : "max-h-0 opacity-0"
             }`}
         >
           <div className="bg-white border-t border-[#edf3fa] shadow-xl">
@@ -199,11 +187,11 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="tel:+917015018161"
+                  href="tel:+917252993033"
                   className="flex items-center gap-3 text-[#073762]"
                 >
                   <Phone size={18} />
-                  +91-7015018161
+                  +91-7252993033
                 </a>
 
                 <Link

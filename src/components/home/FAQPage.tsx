@@ -22,15 +22,15 @@ const faqs = [
   },
 
   {
-    question: "What services does Brickhill Realtors provide?",
+    question: "What services does BHLRealtors provide?",
     answer:
-      "Brickhill Realtors specializes in land banking, strategic land acquisition, property advisory, investment consulting, and identifying high-growth real estate opportunities across emerging locations in India.",
+      "BHLRealtors specializes in land banking, strategic land acquisition, property advisory, investment consulting, and identifying high-growth real estate opportunities across emerging locations in India.",
   },
 
   {
-    question: "What is Brickhill Infra known for?",
+    question: "What is BHLInfra known for?",
     answer:
-      "Brickhill Infra is known for delivering high-quality infrastructure and construction solutions for residential, commercial, and mixed-use real estate developments with a focus on timely execution and superior build quality.",
+      "BHLInfra is known for delivering high-quality infrastructure and construction solutions for residential, commercial, and mixed-use real estate developments with a focus on timely execution and superior build quality.",
   },
 
   {

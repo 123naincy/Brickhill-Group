@@ -52,7 +52,7 @@ export default function BlogDetail() {
 
   <meta
     name="keywords"
-    content="BHL Group, Brickhill Group, Real Estate India, Property Investment, Luxury Real Estate, Land Banking India, Infrastructure Development, Warehousing Solutions, Goa Real Estate, Delhi NCR Projects, Investment Opportunities"
+    content="BHL Group, BHL Group, Real Estate India, Property Investment, Luxury Real Estate, Land Banking India, Infrastructure Development, Warehousing Solutions, Goa Real Estate, Delhi NCR Projects, Investment Opportunities"
   />
 
   <meta

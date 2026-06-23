@@ -39,7 +39,7 @@ const tabsData = [
     image:
       logi,
     description:
-      "Logi Prime is a key company of the Brickhill Group, specializing in pan-India warehousing and integrated logistics solutions. The company supports supply chains by providing modern, scalable, and strategically located warehousing infrastructure tailored to the needs of manufacturers, distributors, and e-commerce players. With a focus on efficiency, reliability, and future-ready logistics, Logi Prime enables seamless movement and storage of goods across India.",
+      "Logi Prime is a key company of the BHL Group, specializing in pan-India warehousing and integrated logistics solutions. The company supports supply chains by providing modern, scalable, and strategically located warehousing infrastructure tailored to the needs of manufacturers, distributors, and e-commerce players. With a focus on efficiency, reliability, and future-ready logistics, Logi Prime enables seamless movement and storage of goods across India.",
   },
 
   {
@@ -48,7 +48,7 @@ const tabsData = [
     image:
       studio,
     description:
-      "BHL Studioz is the creative and digital innovation arm of the Brickhill Group, focused on branding, content production, digital marketing, and modern media solutions. The company helps businesses build strong digital identities through creative storytelling, performance marketing, social media campaigns, and premium visual production. With a vision to blend creativity with strategy, BHL Studioz empowers brands to grow, engage audiences, and create lasting impact in the digital world.",
+      "BHL Studioz is the creative and digital innovation arm of the BHL Group, focused on branding, content production, digital marketing, and modern media solutions. The company helps businesses build strong digital identities through creative storytelling, performance marketing, social media campaigns, and premium visual production. With a vision to blend creativity with strategy, BHL Studioz empowers brands to grow, engage audiences, and create lasting impact in the digital world.",
   },
 ];
 

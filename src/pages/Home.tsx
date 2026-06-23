@@ -14,9 +14,9 @@ import FAQPage from "../components/home/FAQPage";
 const schema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "Brickhill Group",
+  "name": "BHL Group",
   "url": "https://www.brickhillgroup.com/",
-  "description": "Brickhill Group offers premium residential, commercial, industrial and warehouse investment opportunities in Gurugram.",
+  "description": "BHL Group offers premium residential, commercial, industrial and warehouse investment opportunities in Gurugram.",
 };
 
 export default function Home() {
@@ -41,7 +41,7 @@ export default function Home() {
 
         <meta
           name="keywords"
-          content="BHL Group, Brickhill Group, Luxury Real Estate India, Property Investment India, Land Banking India, Real Estate Company India, Infrastructure Development India, Warehousing Solutions India, Commercial Property Investment, Goa Real Estate, Delhi NCR Projects, Luxury Villas India, Logistics Company India"
+          content="BHL Group, BHL Group, Luxury Real Estate India, Property Investment India, Land Banking India, Real Estate Company India, Infrastructure Development India, Warehousing Solutions India, Commercial Property Investment, Goa Real Estate, Delhi NCR Projects, Luxury Villas India, Logistics Company India"
         />
 
         <meta
@@ -139,7 +139,7 @@ export default function Home() {
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "BHL Group",
-            alternateName: "Brickhill Group",
+            alternateName: "BHL Group",
             url: "https://brickhillgroup.com",
             logo: "https://brickhillgroup.com/assets/logo-Z3TNQcFG.png",
             description:
@@ -151,7 +151,7 @@ export default function Home() {
             ],
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+91-7015018161",
+              telephone: "+91-7252993033",
               contactType: "customer service",
               areaServed: "IN",
               availableLanguage: ["English", "Hindi"]

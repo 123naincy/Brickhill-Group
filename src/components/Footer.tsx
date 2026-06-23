@@ -115,10 +115,10 @@ export default function Footer() {
   <Phone className="h-5 w-5 text-[#6fa8dd]" />
   
   <a 
-    href="tel:7015018161" 
+    href="tel:7252993033" 
     className="hover:underline"
   >
-    +91-7015018161
+    +91-7252993033
   </a>
 </li>
 
@@ -138,7 +138,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-[#9fc5e9]/30 mt-10 pt-6 text-center text-sm text-white/70">
-          © {currentYear} Brickhill Group. All rights reserved.
+          © {currentYear} BHL Group. All rights reserved.
         </div>
       </div>
     </footer>

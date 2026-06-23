@@ -17,7 +17,7 @@ export default function GalleryPage() {
 
         <meta
           name="keywords"
-          content="BHL Group Gallery, Brickhill Group Projects, Luxury Real Estate India, Infrastructure Projects India, Warehousing Solutions, Property Development Gallery, Goa Real Estate, Delhi NCR Projects, Commercial Real Estate India"
+          content="BHL Group Gallery, BHL Group Projects, Luxury Real Estate India, Infrastructure Projects India, Warehousing Solutions, Property Development Gallery, Goa Real Estate, Delhi NCR Projects, Commercial Real Estate India"
         />
 
         <meta

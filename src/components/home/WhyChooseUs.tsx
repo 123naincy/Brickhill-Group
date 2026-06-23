@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
               WebkitTextFillColor: "transparent",
             }}
           >
-            Why Choose Brickhill Group
+            Why Choose BHL Group
           </h2>
 
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">

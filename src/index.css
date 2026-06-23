@@ -689,3 +689,15 @@ a {
 header .topbar {
   color: #fff !important;
 }
+.left-sidebar{
+  position:sticky;
+  top:2rem;
+  left:0;
+ width:250px
+}
+.right-sidebar{
+  position:sticky;
+  top:2rem;
+  right:0;
+ width:250px
+}

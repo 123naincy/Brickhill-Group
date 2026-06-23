@@ -45,7 +45,7 @@ export default function RightSidebar() {
     <div className="right-sidebar">
 
       {/* TOP AD */}
-      <div className="sidebar-box ad-box text-center">
+      <div className="sidebar-box ad-box text-center mt-20 pt-5">
         <small className="ad-label">ADVERTISEMENT</small>
         <img
           src={add}
@@ -101,7 +101,7 @@ export default function RightSidebar() {
       {/* CONTACT CTA */}
       <div className="sidebar-box text-center">
         <p className="fw-bold text-[#073762]">Invest Smartly</p>
-        <a href="tel:+91-7015018161">
+        <a href="tel:+91-7252993033">
           <button className="contact-btn w-100">
             Talk to Advisor
           </button>
