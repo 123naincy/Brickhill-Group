@@ -1,65 +1,53 @@
-import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import poster from "../../assets/slider-one.png";
 
-// Banner Images
-import slide1 from "../../assets/slider-one.jpeg";
-
-const slides = [slide1];
+const HERO_VIDEO = "/videos/hero.mp4";
 
 export default function Hero() {
-  const [current, setCurrent] = useState(0);
-
-  // Auto Slider
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % slides.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, []);
+  const navigate = useNavigate();
 
   return (
     <section className="relative w-full h-[70vh] md:h-screen overflow-hidden">
-      
-      {/* Slides */}
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          className={`absolute inset-0 transition-all duration-1000 ${
-            index === current
-              ? "opacity-100 scale-100 z-10"
-              : "opacity-0 scale-105 z-0"
-          }`}
-        >
-          <img
-            src={slide}
-            alt={`BHL Group Banner ${index + 1}`}
-            className="
-              w-full
-              h-full
-              object-cover
-              object-center
-              md:object-center
-            "
-          />
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        poster={poster}
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        <source src={HERO_VIDEO} type="video/mp4" />
+      </video>
+
+      <div className="absolute inset-0 bg-black/45" />
+      <div className="absolute inset-0 z-20 flex items-center justify-center text-center px-6">
+        <div className="max-w-5xl">
+          <h1 className="hero-title hero-animate hero-animate-1 mt-5">
+           Experience Luxury Living
+            <br />
+         Amidst Nature 
+          </h1>
+
+          <p className="hero-subtitle hero-animate hero-animate-2">
+            Discover premium villa plots near Goa, thoughtfully crafted for luxury living, serene holiday homes, and exceptional long-term investment.
+          </p>
+
+          <div className="hero-buttons hero-animate hero-animate-3">
+            <button
+              onClick={() => navigate("/contact")}
+              className="hero-btn-primary"
+            >
+              Book Site Visit
+            </button>
+
+            <button
+              onClick={() => navigate("/contact")}
+              className="hero-btn-secondary"
+            >
+              Enquire Now
+            </button>
+          </div>
         </div>
-      ))}
-
-      {/* Optional Dark Overlay */}
-      
-
-      {/* dots Navigation */}
-      <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
-        {slides.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`transition-all duration-300 rounded-full ${
-              current === index
-                ? "w-8 h-3 bg-white"
-                : "w-3 h-3 bg-white/50"
-            }`}
-          />
-        ))}
       </div>
     </section>
   );

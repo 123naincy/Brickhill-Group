@@ -151,7 +151,7 @@ export default function Home() {
             ],
             contactPoint: {
               "@type": "ContactPoint",
-              telephone: "+91-7252993033",
+              telephone: "+91-9910729150",
               contactType: "customer service",
               areaServed: "IN",
               availableLanguage: ["English", "Hindi"]

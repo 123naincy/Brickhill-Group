@@ -41,11 +41,11 @@ export default function Navbar() {
       </a>
 
       <a
-        href="tel:+917252993033"
+        href="tel:+919910729150"
         className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
       >
         <Phone className="w-4 h-4 text-white" />
-        +91-7252993033
+        +91-9910729150
       </a>
     </div>
 
@@ -187,11 +187,11 @@ export default function Navbar() {
                 </a>
 
                 <a
-                  href="tel:+917252993033"
+                  href="tel:+919910729150"
                   className="flex items-center gap-3 text-[#073762]"
                 >
                   <Phone size={18} />
-                  +91-7252993033
+                  +91-9910729150
                 </a>
 
                 <Link

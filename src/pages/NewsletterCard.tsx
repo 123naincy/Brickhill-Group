@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import NewsletterCardItem from "../components/newsletter/NewsletterCardItem";
 import Feb from "../assets/newsletter/first-page.png";
 import march from "../assets/newsletter/march-card.jpg";
+import may from "../assets/newsletter/world-transition.png";
 import june from "../assets/newsletter/card.png"
 const cards = [
   {
@@ -15,6 +16,11 @@ const cards = [
     title: "March-2026",
     imageUrl: march,
     to: "/newsletter/march-2026",
+  },
+  {
+    title: "The World in Transition",
+    imageUrl: may,
+    to: "/newsletter/the-world-in-transition",
   },
    {
     title: "The Global Purse",

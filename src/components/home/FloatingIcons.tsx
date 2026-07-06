@@ -5,7 +5,7 @@ const FloatingIcons: React.FC = () => {
   return (
     <>
       <a
-        href="https://wa.me/918448220334"
+        href="https://wa.me/919910729150"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"
