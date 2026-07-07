@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "../components/home/Hero";
+import LogoSlider from "../components/home/LogoSlider";
 import Services from "../components/home/Services";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import FeaturedProjects from "../components/home/FeaturedProjects";
@@ -170,6 +171,7 @@ export default function Home() {
       <Testimonials />
       <BlogSection />
       <FAQPage />
+       <LogoSlider />
     </>
   );
 }
