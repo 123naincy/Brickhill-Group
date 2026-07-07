@@ -498,7 +498,7 @@ footer a:hover {
 }
 
 .blog-content h2,
-a {
+.blog-content a {
   font-weight: bold;
   color: Black !important;
 }
@@ -729,8 +729,10 @@ header .topbar {
 }
 
 .hero-btn-primary {
+  display: inline-block;
+  text-decoration: none;
   background: Linear-gradient(90deg, var(--primary-dark), var(--primary-light));
-  color: #fff;
+  color: #ffffff !important;
   font-weight: 700;
   font-size: 0.95rem;
   padding: 14px 28px;
@@ -743,11 +745,14 @@ header .topbar {
 .hero-btn-primary:hover {
   background: Linear-gradient(90deg, var(--primary-light), var(--primary-dark));
   transform: translateY(-2px);
+  color: #ffffff !important;
 }
 
 .hero-btn-secondary {
+  display: inline-block;
+  text-decoration: none;
   background: transparent;
-  color: #fff;
+  color: #ffffff !important;
   font-weight: 600;
   font-size: 0.95rem;
   padding: 13px 28px;
@@ -760,6 +765,7 @@ header .topbar {
 .hero-btn-secondary:hover {
   background: rgba(255, 255, 255, 0.12);
   transform: translateY(-2px);
+  color: #ffffff !important;
 }
 
 .hero-animate {
