@@ -9,7 +9,6 @@ import AboutSection from "../components/About";
 import BlogSection from "../components/Blog";
 import PopupForm from "../components/home/PopupForm"
 import BusinessTabs from "../components/home/BusinessTabs";
-import FloatingIcons from "../components/home/FloatingIcons";
 import FAQPage from "../components/home/FAQPage";
 
 const schema = {
@@ -162,7 +161,6 @@ export default function Home() {
       </Helmet>
       <Hero />
       <BusinessTabs />
-      <FloatingIcons />
       <PopupForm />
       <AboutSection />
       <Services />

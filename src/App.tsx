@@ -13,6 +13,7 @@ import GalleryPage from "./pages/Gallery";
 import BlogDetail from "./pages/BlogDetail";
 import NewsletterCard from "./pages/NewsletterCard";
 import NewsletterDetail from "./pages/NewsletterDetail";
+import FloatingIcons from "./components/home/FloatingIcons";
 export default function App() {
   return (
     <BrowserRouter>
@@ -34,6 +35,7 @@ export default function App() {
         </Routes>
 
         <Footer />
+        <FloatingIcons />
       </div>
     </BrowserRouter>
   );
