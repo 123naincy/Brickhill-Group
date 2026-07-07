@@ -23,9 +23,9 @@ const cards = [
     to: "/newsletter/the-world-in-transition",
   },
    {
-    title: "The Global Purse",
+    title: "The Global Pulse",
     imageUrl: june,
-    to: "/newsletter/the-global-purse",
+    to: "/newsletter/the-global-pulse",
   },
 ];
 
