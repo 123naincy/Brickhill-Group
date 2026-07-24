@@ -1,19 +1,38 @@
 import { useEffect, useState } from "react";
 import { submitToSheet } from "../utils/submitToSheet";
 
+const STORAGE_KEY = "bhl_popup_dismissed";
+const OPEN_DELAY_MS = 12000;
+
 export default function AutoPopupForm() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    message: "", // ✅ added
+    message: "",
   });
 
   useEffect(() => {
-    setIsOpen(true);
+    try {
+      if (sessionStorage.getItem(STORAGE_KEY) === "1") return;
+    } catch {
+      // sessionStorage may be unavailable
+    }
+
+    const timer = window.setTimeout(() => setIsOpen(true), OPEN_DELAY_MS);
+    return () => window.clearTimeout(timer);
   }, []);
+
+  const dismiss = () => {
+    setIsOpen(false);
+    try {
+      sessionStorage.setItem(STORAGE_KEY, "1");
+    } catch {
+      // ignore
+    }
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -23,51 +42,59 @@ export default function AutoPopupForm() {
       [e.target.name]: e.target.value,
     });
   };
-const [loading, setLoading] = useState(false);
+
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
+    e.preventDefault();
+    setLoading(true);
 
-  setLoading(true); // ✅ start loader
+    try {
+      await submitToSheet({
+        formName: "Popup Lead Form",
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        message: formData.message,
+      });
 
-  try {
-    await submitToSheet({
-      formName: "Popup Lead Form",
-      name: formData.name,
-      email: formData.email,
-      phone: formData.phone,
-      message: formData.message,
-    });
-
-    alert("Form submitted successfully ✅");
-
-    setIsOpen(false);
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-
-  } catch (error) {
-    console.error(error);
-    alert("Something went wrong ❌");
-  } finally {
-    setLoading(false); // ✅ stop loader
-  }
-};
+      alert("Form submitted successfully ✅");
+      dismiss();
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong ❌");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   if (!isOpen) return null;
 
   return (
-    <div style={overlayStyle}>
+    <div
+      style={overlayStyle}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="popup-contact-title"
+      onClick={(e) => {
+        if (e.target === e.currentTarget) dismiss();
+      }}
+    >
       <div style={popupStyle}>
-        
-        {/* Close */}
-        <button onClick={() => setIsOpen(false)} style={closeBtn}>
+        <button
+          type="button"
+          onClick={dismiss}
+          style={closeBtn}
+          aria-label="Close contact form"
+        >
           ✖
         </button>
 
-        <h2>Contact Us</h2>
+        <h2 id="popup-contact-title">Contact Us</h2>
 
         <form onSubmit={handleSubmit}>
           <input
@@ -100,7 +127,6 @@ const [loading, setLoading] = useState(false);
             style={inputStyle}
           />
 
-          {/* ✅ Message Box */}
           <textarea
             name="message"
             placeholder="Your Message"
@@ -111,15 +137,14 @@ const [loading, setLoading] = useState(false);
           />
 
           <button type="submit" style={submitBtn} disabled={loading}>
-  {loading ? "Submitting..." : "Submit"}
-</button>
+            {loading ? "Submitting..." : "Submit"}
+          </button>
         </form>
       </div>
     </div>
   );
 }
 
-/* Styles */
 const overlayStyle: React.CSSProperties = {
   position: "fixed",
   top: 0,

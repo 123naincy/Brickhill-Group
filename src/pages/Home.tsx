@@ -11,14 +11,6 @@ import PopupForm from "../components/home/PopupForm"
 import BusinessTabs from "../components/home/BusinessTabs";
 import FAQPage from "../components/home/FAQPage";
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "BHL Group",
-  "url": "https://www.brickhillgroup.com/",
-  "description": "BHL Group offers premium residential, commercial, industrial and warehouse investment opportunities in Gurugram.",
-};
-
 export default function Home() {
 
   return (

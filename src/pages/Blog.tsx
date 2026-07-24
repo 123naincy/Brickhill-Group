@@ -114,10 +114,7 @@ export default function Blog() {
       </Helmet>
 
       <main className="pt-24">
-        <h1 className="sr-only">
-          BHL Group Blog - Real Estate & Investment Insights
-        </h1>
-        <BlogSection />
+        <BlogSection isPage />
       </main>
     </>
   );

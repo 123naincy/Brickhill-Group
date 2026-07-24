@@ -62,6 +62,8 @@ export default function FeaturedProjects() {
                     src={imageSrc}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                    loading="lazy"
+                    decoding="async"
                   />
 
                   <span className="absolute top-4 right-4 bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white px-4 py-1 rounded-full text-sm capitalize shadow">

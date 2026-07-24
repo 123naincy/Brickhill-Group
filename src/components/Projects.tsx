@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import projectsData from "../data/projects.json";
-import { MapPin, Square, Tag } from "lucide-react";
+import { MapPin, Square, Tag, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Project } from "../types/Project";
 import { allImages, fallbackImage } from "../data/AllImages";
 
@@ -82,11 +83,14 @@ export default function Projects() {
                 className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-[#9fc5e9]/30 hover:-translate-y-2"
               >
                 {/* Image */}
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-64 overflow-hidden bg-[#eaf3fb]">
                   <img
-  src={allImages[project.featured_image] || fallbackImage}
-  alt={project.title}
-/>
+                    src={allImages[project.featured_image] || fallbackImage}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                    loading="lazy"
+                    decoding="async"
+                  />
 
                   {/* Badge */}
                   <div className="absolute top-4 right-4">
@@ -122,6 +126,16 @@ export default function Projects() {
                         <Tag className="h-4 w-4 mr-2 text-[#3d85c5]" />
                         <span className="text-sm">{project.price_range}</span>
                       </div>
+                    )}
+
+                    {project.page_url && (
+                      <Link
+                        to={project.page_url}
+                        className="inline-flex items-center gap-2 mt-4 text-[#3d85c5] font-semibold hover:text-[#073762] transition"
+                      >
+                        View Project Details
+                        <ArrowRight className="w-4 h-4" />
+                      </Link>
                     )}
                   </div>
                 </div>
