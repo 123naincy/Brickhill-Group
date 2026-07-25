@@ -87,31 +87,69 @@ a {
 
 /* ================= NEWSLETTER CARD ================= */
 
-.nl-card {
+.newsletter-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
   border-radius: 16px;
-  overflow: hidden;
-  transition: 0.3s ease;
+  cursor: pointer;
+  margin-top: 2rem;
 }
 
-.nl-card:hover {
-  transform: translateY(-6px);
-  box-shadow: var(--shadow-soft);
-}
-
-.nl-image-wrap {
-  height: 240px;
-  overflow: hidden;
-}
-
-.nl-image {
+.newsletter-img {
+  width: 100%;
+  height: 320px;
   object-fit: cover;
-  transition: 0.4s ease;
+  display: block;
+  transition: transform 0.5s ease;
 }
 
-.nl-card:hover .nl-image {
-  transform: scale(1.06);
+/* Overlay */
+.newsletter-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.4s ease;
 }
 
+/* Hover Effects */
+.newsletter-card:hover .newsletter-overlay {
+  opacity: 1;
+}
+
+.newsletter-card:hover .newsletter-img {
+  transform: scale(1.08);
+}
+
+/* Button */
+.newsletter-btn {
+  background: #ffffff;
+  color: #000;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.newsletter-btn:hover {
+  background: #d4af37;
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.newsletter-btn i {
+  transition: transform 0.3s ease;
+}
+
+.newsletter-btn:hover i {
+  transform: translateX(5px);
+}
 
 /* ================= NEWSLETTER DETAIL ================= */
 
@@ -366,7 +404,7 @@ footer a:hover {
   gap: 10px;
 }
 
-.newsletter-card {
+.admin-list .newsletter-card {
   border: 1px solid #e0e6ed;
   border-radius: 12px;
   padding: 12px;
@@ -1193,3 +1231,242 @@ header .topbar {
   }
 }
 
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+}
+
+.heading{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.heading h1{
+    font-size:46px;
+    margin-bottom:15px;
+}
+
+.heading p{
+    color:#666;
+}
+
+.newsletter-page {
+    padding-top: 120px;
+}
+
+.newsletter-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:35px;
+}
+.newsletter-card{
+    display:block;
+    text-decoration:none !important;
+    color:#073762 !important;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+    cursor:pointer;
+    transition:.4s;
+}
+
+.newsletter-card:hover{
+    transform:translateY(-10px);
+    color:#073762 !important;
+}
+
+.newsletter-card img{
+    width:100%;
+    height:360px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:25px;
+}
+
+.card-content span{
+    color:#c59d5f;
+    font-weight:600;
+}
+
+.card-content h3{
+    margin:12px 0;
+}
+
+.card-content p{
+    color:#666;
+    line-height:1.6;
+}
+
+.card-content button,
+.read-now-btn{
+    display:inline-block;
+    margin-top:20px;
+    border:none;
+    background:#c59d5f;
+    color:#fff;
+    padding:12px 25px;
+    border-radius:40px;
+    font-weight:600;
+}
+.flipbook-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    min-height: 500px;
+}
+
+.flipbook-container .flipbook {
+    margin: 0 auto;
+}
+
+.book-page {
+    width: 100%;
+    height: 100%;
+    background: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.page-number {
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    background: white;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.loading {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: #073762;
+    gap: 0.75rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.loading-hint {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.pdf-fallback-link,
+.pdf-open-btn {
+    color: #3d85c5 !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline !important;
+}
+
+.pdf-open-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border: 1px solid #3d85c5;
+    border-radius: 999px;
+    text-decoration: none !important;
+    white-space: nowrap;
+}
+
+.pdf-simple-viewer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.pdf-simple-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pdf-simple-controls button {
+    border: none;
+    background: #073762;
+    color: #fff;
+    padding: 0.65rem 1.25rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.pdf-simple-controls button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.pdf-simple-controls span {
+    color: #073762;
+    font-weight: 600;
+}
+
+.viewer-mode-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 1rem 1.5rem 0;
+}
+
+.viewer-mode-toggle button {
+    border: 1px solid #3d85c5;
+    background: #fff;
+    color: #073762;
+    padding: 0.55rem 1.1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.viewer-mode-toggle button.active {
+    background: #073762;
+    border-color: #073762;
+    color: #fff;
+}
+
+.flipbook-wrapper {
+    width: 100%;
+}
+
+.viewer-page {
+    background: #f4f8fc;
+    min-height: 100vh;
+    padding-bottom: 3rem;
+}
+
+.viewer-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    .viewer-header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}

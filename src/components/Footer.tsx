@@ -52,7 +52,7 @@ export default function Footer() {
               <li><a href="/about" className="hover:text-[#9fc5e9] transition">About Us</a></li>
               <li><a href="/group-buying" className="hover:text-[#9fc5e9] transition">Group Buying</a></li>
               <li><a href="/blog" className="hover:text-[#9fc5e9] transition">Blog</a></li>
-              <li><a href="/newsletter-card" className="hover:text-[#9fc5e9] transition">Newsletter</a></li>
+              <li><a href="/newsletter" className="hover:text-[#9fc5e9] transition">Newsletter</a></li>
             </ul>
           </div>
 

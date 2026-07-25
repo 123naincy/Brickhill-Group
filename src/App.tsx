@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -11,9 +11,9 @@ import GroupBuying from "./pages/GroupBuying";
 import WebinarPage from "./pages/WebinarPage";
 import GalleryPage from "./pages/Gallery";
 import BlogDetail from "./pages/BlogDetail";
-import NewsletterCard from "./pages/NewsletterCard";
-import NewsletterDetail from "./pages/NewsletterDetail";
 import FloatingIcons from "./components/home/FloatingIcons";
+import Newsletter from "./pages/Newsletter";
+import NewsletterViewer from "./pages/NewsletterViewer";
 export default function App() {
   return (
     <BrowserRouter>
@@ -29,9 +29,9 @@ export default function App() {
           <Route path="/group-buying" element={<GroupBuying />} />
           <Route path="/webinar" element={<WebinarPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
-          <Route path="/newsletter-card" element={<NewsletterCard />} />
-          <Route path="/newsletter/:id" element={<NewsletterDetail />} />
-
+          <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/newsletter/:id" element={<NewsletterViewer />} />
+          <Route path="/newsletter-card" element={<Navigate to="/newsletter" replace />} />
         </Routes>
 
         <Footer />

@@ -1,6 +1,6 @@
 import infra from "../assets/logos/BHL-Infra.png";
 import Landbase from "../assets/logos/BHL-Landbase-Logo-B.png";
-import goBoundaryLogo from "../assets/newsletter/go-boundary-logo.png";
+import goBoundaryLogo from "../assets/logos/go-boundary-logo.png";
 import realtorsLogo from "../assets/logos/BHL-Realtors.png";
 import Newsletter from "../assets/logos/BHL-Newsletter.png";
 import Studioz from "../assets/logos/BHL-Studioz.png";

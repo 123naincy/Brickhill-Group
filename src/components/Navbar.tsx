@@ -50,7 +50,7 @@ export default function Navbar() {
     </div>
 
     <div className="flex items-center gap-6 text-sm font-medium">
-      <Link to="/newsletter-card" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
+      <Link to="/newsletter" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
         <Mail size={15} className="text-white" />
         Newsletter
       </Link>
@@ -195,7 +195,7 @@ export default function Navbar() {
                 </a>
 
                 <Link
-                  to="/newsletter-card"
+                  to="/newsletter"
                   className="flex items-center gap-3 text-[#073762]"
                 >
                   <Mail size={18} />
