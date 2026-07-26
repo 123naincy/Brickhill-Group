@@ -15,13 +15,11 @@ const FlipBook = ({ pdf }: Props) => {
   const [numPages, setNumPages] = useState(0);
   const [error, setError] = useState("");
   const [progress, setProgress] = useState(0);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [viewMode, setViewMode] = useState<"pages" | "book">("pages");
+ 
 
   const handleLoadSuccess = useCallback(({ numPages: total }: { numPages: number }) => {
     setNumPages(total);
     setError("");
-    setCurrentPage(1);
   }, []);
 
   const handleLoadError = useCallback(() => {
@@ -32,12 +30,10 @@ const FlipBook = ({ pdf }: Props) => {
     setNumPages(0);
     setError("");
     setProgress(0);
-    setCurrentPage(1);
-    setViewMode("pages");
+   
   }, [pdf]);
 
-  const goPrev = () => setCurrentPage((page) => Math.max(1, page - 1));
-  const goNext = () => setCurrentPage((page) => Math.min(numPages, page + 1));
+  
 
   return (
     <div className="flipbook-wrapper">
@@ -67,48 +63,9 @@ const FlipBook = ({ pdf }: Props) => {
       >
         {numPages > 0 && (
           <>
-            <div className="viewer-mode-toggle">
-              <button
-                type="button"
-                className={viewMode === "pages" ? "active" : ""}
-                onClick={() => setViewMode("pages")}
-              >
-                Page View
-              </button>
-              <button
-                type="button"
-                className={viewMode === "book" ? "active" : ""}
-                onClick={() => setViewMode("book")}
-              >
-                Flipbook View
-              </button>
-            </div>
+           
 
-            {viewMode === "pages" ? (
-              <div className="pdf-simple-viewer">
-                <Page
-                  pageNumber={currentPage}
-                  width={Math.min(PAGE_WIDTH * 1.5, 720)}
-                  renderTextLayer={false}
-                  renderAnnotationLayer={false}
-                />
-                <div className="pdf-simple-controls">
-                  <button type="button" onClick={goPrev} disabled={currentPage <= 1}>
-                    Previous
-                  </button>
-                  <span>
-                    Page {currentPage} of {numPages}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={goNext}
-                    disabled={currentPage >= numPages}
-                  >
-                    Next
-                  </button>
-                </div>
-              </div>
-            ) : (
+           {numPages > 0 && (
               <div className="flipbook-container">
                 <HTMLFlipBook
                   key={`${pdf}-${numPages}`}

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import poster from "../../assets/slider-one.png";
+
 
 const HERO_VIDEO = "/videos/hero.mp4";
 const PHONE = "+919910729150";
@@ -12,7 +12,6 @@ export default function Hero() {
         muted
         loop
         playsInline
-        poster={poster}
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src={HERO_VIDEO} type="video/mp4" />
