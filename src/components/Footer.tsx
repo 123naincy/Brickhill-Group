@@ -3,15 +3,36 @@ import {
   Phone,
   MapPin,
   Facebook,
-  Twitter,
   Instagram,
   Linkedin,
+  Youtube,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Logo from "../assets/footer-logo.png";
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-
+const socialLinks = [
+  {
+    icon: Facebook,
+    url: "https://www.facebook.com/profile.php?id=100088910250148",
+    label: "Facebook",
+  },
+  {
+    icon: Youtube,
+    url: "https://www.youtube.com/@goboundry",
+    label: "YouTube",
+  },
+  {
+    icon: Instagram,
+    url: "https://www.instagram.com/brickhill__/",
+    label: "Instagram",
+  },
+  {
+    icon: Linkedin,
+    url: "https://www.linkedin.com/company/bhlgroups/?viewAsMember=true",
+    label: "LinkedIn",
+  },
+];
   return (
     <footer className="bg-gradient-to-r from-[#073762] via-[#0b5394] to-[#073762] text-white">
       <div className="max-w-7xl mx-auto px-6 py-14">
@@ -30,17 +51,20 @@ export default function Footer() {
               Building dreams, creating landmarks. Your trusted partner in premium real estate investments.
             </p>
 
-            <div className="flex space-x-5">
-              {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-                <a
-                  key={i}
-                  href="#"
-                  className="text-[#9fc5e9] hover:text-white hover:scale-110 transition duration-300"
-                >
-                  <Icon className="h-5 w-5" />
-                </a>
-              ))}
-            </div>
+           <div className="flex space-x-5">
+  {socialLinks.map(({ icon: Icon, url, label }) => (
+    <a
+      key={label}
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label={label}
+      className="text-[#9fc5e9] hover:text-white hover:scale-110 transition duration-300"
+    >
+      <Icon className="h-5 w-5" />
+    </a>
+  ))}
+</div>
           </div>
 
           {/* Quick Links */}
