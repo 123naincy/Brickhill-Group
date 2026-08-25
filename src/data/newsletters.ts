@@ -10,6 +10,15 @@ export interface Newsletter {
 
 export const newsletters: Newsletter[] = [
   {
+    id: 5,
+    month: "August",
+    year: 2026,
+    title: "A Month Of Big Shift",
+    description: "Business, technology, sports, and real estate updates from BHL Group.",
+    cover: "/covers/August-cover.jpg",
+    pdf: "/newsletters/August.pdf",
+  },
+  {
     id: 1,
     month: "March",
     year: 2026,
