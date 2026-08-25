@@ -9,23 +9,23 @@ export interface Newsletter {
 }
 
 export const newsletters: Newsletter[] = [
-  {
+   {
     id: 1,
-    month: "March",
+    month: "August",
     year: 2026,
-    title: "GoBoundry Newsletter — March 2026",
+    title: "A Month Of Big Shift",
     description: "Business, technology, sports, and real estate updates from BHL Group.",
-    cover: "/assets/march-cover.png",
-    pdf: "/newsletters/March.pdf",
+    cover: "/assets/August-cover.png",
+    pdf: "/newsletters/August.pdf",
   },
   {
     id: 2,
-    month: "April",
+    month: "July",
     year: 2026,
-    title: "BHL Newsletter — April 2026",
+    title: "Nation First — July 2026",
     description: "Business, technology, sports, and real estate updates from BHL Group.",
-    cover: "/assets/april-cover.png",
-    pdf: "/newsletters/April.pdf",
+    cover: "/assets/july-cover.png",
+    pdf: "/newsletters/July.pdf",
   },
   {
     id: 3,
@@ -36,13 +36,22 @@ export const newsletters: Newsletter[] = [
     cover: "/assets/june-cover.png",
     pdf: "/newsletters/June.pdf",
   },
-  {
+ {
     id: 4,
-    month: "July",
+    month: "April",
     year: 2026,
-    title: "Nation First — July 2026",
+    title: "BHL Newsletter — April 2026",
     description: "Business, technology, sports, and real estate updates from BHL Group.",
-    cover: "/assets/july-cover.png",
-    pdf: "/newsletters/July.pdf",
+    cover: "/assets/april-cover.png",
+    pdf: "/newsletters/April.pdf",
+  },
+  {
+    id: 5,
+    month: "March",
+    year: 2026,
+    title: "GoBoundry Newsletter — March 2026",
+    description: "Business, technology, sports, and real estate updates from BHL Group.",
+    cover: "/assets/march-cover.png",
+    pdf: "/newsletters/March.pdf",
   },
 ];
