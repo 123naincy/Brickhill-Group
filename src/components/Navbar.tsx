@@ -20,6 +20,7 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
+    { name: "Arayana", path: "/arayana" },
     { name: "Blog", path: "/blog" },
     { name: "Gallery", path: "/gallery" },
   ];
@@ -28,46 +29,46 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 w-full z-50">
 
       {/* ================= TOP BAR ================= */}
-     <div className="bg-[#073762] hidden lg:block">
-  <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between text-white">
+      <div className="bg-[#073762] hidden lg:block">
+        <div className="max-w-7xl mx-auto px-6 h-12 flex items-center justify-between text-white">
 
-    <div className="flex items-center gap-6 text-sm">
-      <a
-        href="mailto:info@brickhillgroup.com"
-        className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
-      >
-        <Mail className="w-4 h-4 text-white" />
-        info@brickhillgroup.com
-      </a>
+          <div className="flex items-center gap-6 text-sm">
+            <a
+              href="mailto:info@brickhillgroup.com"
+              className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
+            >
+              <Mail className="w-4 h-4 text-white" />
+              info@brickhillgroup.com
+            </a>
 
-      <a
-        href="tel:+919910729150"
-        className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
-      >
-        <Phone className="w-4 h-4 text-white" />
-        +91-9910729150
-      </a>
-    </div>
+            <a
+              href="tel:+919910729150"
+              className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
+            >
+              <Phone className="w-4 h-4 text-white" />
+              +91-9910729150
+            </a>
+          </div>
 
-    <div className="flex items-center gap-6 text-sm font-medium">
-      <Link to="/newsletter" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
-        <Mail size={15} className="text-white" />
-        Newsletter
-      </Link>
+          <div className="flex items-center gap-6 text-sm font-medium">
+            <Link to="/newsletter" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
+              <Mail size={15} className="text-white" />
+              Newsletter
+            </Link>
 
-      <Link to="/webinar" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
-        <CalendarDays size={15} className="text-white" />
-        Webinar
-      </Link>
+            <Link to="/webinar" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
+              <CalendarDays size={15} className="text-white" />
+              Webinar
+            </Link>
 
-      <Link to="/group-buying" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
-        <Users size={15} className="text-white" />
-        Group Buying
-      </Link>
-    </div>
+            <Link to="/group-buying" className="flex items-center gap-2 text-white hover:text-[#9fc5e9]">
+              <Users size={15} className="text-white" />
+              Group Buying
+            </Link>
+          </div>
 
-  </div>
-</div>
+        </div>
+      </div>
       {/* ================= MAIN NAVBAR ================= */}
       <nav className="bg-white shadow-lg border-b border-[#e5eef8]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">

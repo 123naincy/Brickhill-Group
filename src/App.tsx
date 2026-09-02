@@ -14,6 +14,8 @@ import BlogDetail from "./pages/BlogDetail";
 import FloatingIcons from "./components/home/FloatingIcons";
 import Newsletter from "./pages/Newsletter";
 import NewsletterViewer from "./pages/NewsletterViewer";
+import ArayanaPage from "./pages/Arayana";
+
 export default function App() {
   return (
     <BrowserRouter>
@@ -30,6 +32,7 @@ export default function App() {
           <Route path="/webinar" element={<WebinarPage />} />
           <Route path="/gallery" element={<GalleryPage />} />
           <Route path="/newsletter" element={<Newsletter />} />
+          <Route path="/arayana" element={<ArayanaPage />} />
           <Route path="/newsletter/:id" element={<NewsletterViewer />} />
           <Route path="/newsletter-card" element={<Navigate to="/newsletter" replace />} />
         </Routes>
