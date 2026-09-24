@@ -27,7 +27,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-subtitle hero-animate hero-animate-2">
-            Discover premium villa plots near Goa, thoughtfully crafted for luxury living, serene holiday homes, and exceptional long-term investment.
+            Discover premium villa Residential plots, near Goa, thoughtfully crafted for luxury living, serene holiday homes, and exceptional long-term investment.
           </p>
 
           <div className="hero-buttons hero-animate hero-animate-3">

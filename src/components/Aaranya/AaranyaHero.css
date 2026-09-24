@@ -1,9 +1,9 @@
 /* =====================================================
-   ARAYANA HERO
+   Aaranya HERO
    BHL BLUE + WHITE DESIGN
 ===================================================== */
 
-.arayana-hero-wrapper {
+.Aaranya-hero-wrapper {
   width: 100%;
   padding: 18px 20px 25px;
   background: #f5f8fb;
@@ -14,7 +14,7 @@
    MAIN WHITE CARD
 ===================================================== */
 
-.arayana-hero-card {
+.Aaranya-hero-card {
   position: relative;
   width: 100%;
   max-width: 1500px;
@@ -30,7 +30,7 @@
    NAVIGATION
 ===================================================== */
 
-.arayana-hero-nav {
+.Aaranya-hero-nav {
   height: 68px;
   padding: 0 16px 0 18px;
   display: flex;
@@ -45,14 +45,14 @@
    LOGO
 ===================================================== */
 
-.arayana-logo {
+.Aaranya-logo {
   display: flex;
   align-items: center;
   gap: 10px;
   min-width: 190px;
 }
 
-.arayana-logo-mark {
+.Aaranya-logo-mark {
   width: 40px;
   height: 40px;
   display: flex;
@@ -65,7 +65,7 @@
   font-size: 23px;
 }
 
-.arayana-logo-text strong {
+.Aaranya-logo-text strong {
   display: block;
   color: #0d416c;
   font-family: Georgia, serif;
@@ -73,7 +73,7 @@
   letter-spacing: 3px;
 }
 
-.arayana-logo-text span {
+.Aaranya-logo-text span {
   display: block;
   margin-top: 1px;
   color: #7c8b98;
@@ -86,13 +86,13 @@
    NAV LINKS
 ===================================================== */
 
-.arayana-nav-links {
+.Aaranya-nav-links {
   display: flex;
   align-items: center;
   gap: 28px;
 }
 
-.arayana-nav-links a {
+.Aaranya-nav-links a {
   position: relative;
   color: #163f60;
   text-decoration: none;
@@ -101,7 +101,7 @@
   transition: 0.3s ease;
 }
 
-.arayana-nav-links a::after {
+.Aaranya-nav-links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -112,11 +112,11 @@
   transition: 0.3s ease;
 }
 
-.arayana-nav-links a:hover {
+.Aaranya-nav-links a:hover {
   color: #2879b5;
 }
 
-.arayana-nav-links a:hover::after {
+.Aaranya-nav-links a:hover::after {
   width: 100%;
 }
 
@@ -125,7 +125,7 @@
    CONTACT BUTTON
 ===================================================== */
 
-.arayana-contact-btn {
+.Aaranya-contact-btn {
   display: flex;
   align-items: center;
   gap: 7px;
@@ -149,7 +149,7 @@
   transition: 0.35s ease;
 }
 
-.arayana-contact-btn:hover {
+.Aaranya-contact-btn:hover {
   transform: translateY(-2px);
 
   box-shadow:
@@ -161,7 +161,7 @@
    HERO IMAGE
 ===================================================== */
 
-.arayana-hero-image {
+.Aaranya-hero-image {
   position: relative;
 
   height: calc(100vh - 150px);
@@ -174,7 +174,7 @@
   border-radius: 22px;
 }
 
-.arayana-hero-image > img {
+.Aaranya-hero-image > img {
   width: 100%;
   height: 100%;
 
@@ -183,10 +183,10 @@
 
   transform: scale(1.04);
 
-  animation: arayanaHeroZoom 10s ease-out forwards;
+  animation: AaranyaHeroZoom 10s ease-out forwards;
 }
 
-@keyframes arayanaHeroZoom {
+@keyframes AaranyaHeroZoom {
   from {
     transform: scale(1.1);
   }
@@ -201,7 +201,7 @@
    IMAGE OVERLAY
 ===================================================== */
 
-.arayana-image-overlay {
+.Aaranya-image-overlay {
   position: absolute;
   inset: 0;
 
@@ -226,7 +226,7 @@
    MAIN CONTENT
 ===================================================== */
 
-.arayana-content {
+.Aaranya-content {
   position: absolute;
 
   z-index: 3;
@@ -244,7 +244,7 @@
    LOCATION BADGE
 ===================================================== */
 
-.arayana-location-badge {
+.Aaranya-location-badge {
   display: inline-flex;
   align-items: center;
 
@@ -276,7 +276,7 @@
    KICKER
 ===================================================== */
 
-.arayana-kicker {
+.Aaranya-kicker {
   margin: 0 0 12px;
 
   color: #b8d9ee;
@@ -293,7 +293,7 @@
    MAIN HEADING
 ===================================================== */
 
-.arayana-content h1 {
+.Aaranya-content h1 {
   margin: 0;
 
   color: #ffffff;
@@ -312,7 +312,7 @@
   letter-spacing: -2px;
 }
 
-.arayana-content h1 em {
+.Aaranya-content h1 em {
   color: #8fc6e9;
 
   font-weight: 400;
@@ -323,7 +323,7 @@
    DESCRIPTION
 ===================================================== */
 
-.arayana-description {
+.Aaranya-description {
   max-width: 430px;
 
   margin: 25px 0;
@@ -340,7 +340,7 @@
    BUTTONS
 ===================================================== */
 
-.arayana-buttons {
+.Aaranya-buttons {
   display: flex;
 
   align-items: center;
@@ -351,7 +351,7 @@
 
 /* Primary Button */
 
-.arayana-primary-btn {
+.Aaranya-primary-btn {
   display: inline-flex;
 
   align-items: center;
@@ -375,13 +375,13 @@
   transition: 0.35s ease;
 }
 
-.arayana-primary-btn:hover {
+.Aaranya-primary-btn:hover {
   transform: translateY(-3px);
 
   color: #0d416c;
 }
 
-.arayana-btn-icon {
+.Aaranya-btn-icon {
   width: 38px;
   height: 38px;
 
@@ -397,7 +397,7 @@
   transition: 0.35s ease;
 }
 
-.arayana-primary-btn:hover .arayana-btn-icon {
+.Aaranya-primary-btn:hover .Aaranya-btn-icon {
   background: #2879b5;
 
   transform: rotate(45deg);
@@ -406,7 +406,7 @@
 
 /* Secondary Button */
 
-.arayana-secondary-btn {
+.Aaranya-secondary-btn {
   color: #ffffff;
 
   text-decoration: none;
@@ -424,7 +424,7 @@
   transition: 0.3s ease;
 }
 
-.arayana-secondary-btn:hover {
+.Aaranya-secondary-btn:hover {
   color: #74b7e8;
 
   border-color: #74b7e8;
@@ -435,7 +435,7 @@
    FLOATING CARD
 ===================================================== */
 
-.arayana-floating-card {
+.Aaranya-floating-card {
   position: absolute;
 
   z-index: 4;
@@ -500,7 +500,7 @@
 
 /* Floating Card Heading */
 
-.arayana-floating-card h3 {
+.Aaranya-floating-card h3 {
   margin: 0;
 
   color: #123f62;
@@ -517,7 +517,7 @@
 
 /* Floating Card Description */
 
-.arayana-floating-card p {
+.Aaranya-floating-card p {
   margin: 13px 0 17px;
 
   color: #70818e;
@@ -530,7 +530,7 @@
 
 /* Floating Card Link */
 
-.arayana-floating-card a {
+.Aaranya-floating-card a {
   color: #0d416c;
 
   text-decoration: none;
@@ -544,7 +544,7 @@
   text-transform: uppercase;
 }
 
-.arayana-floating-card a::after {
+.Aaranya-floating-card a::after {
   content: " →";
 
   color: #3287c5;
@@ -557,15 +557,15 @@
 
 @media (max-width: 1000px) {
 
-  .arayana-nav-links {
+  .Aaranya-nav-links {
     display: none;
   }
 
-  .arayana-content {
+  .Aaranya-content {
     width: 60%;
   }
 
-  .arayana-floating-card {
+  .Aaranya-floating-card {
     width: 210px;
   }
 
@@ -578,54 +578,54 @@
 
 @media (max-width: 767px) {
 
-  .arayana-hero-wrapper {
+  .Aaranya-hero-wrapper {
     padding: 8px;
   }
 
 
-  .arayana-hero-card {
+  .Aaranya-hero-card {
     padding: 7px;
 
     border-radius: 18px;
   }
 
 
-  .arayana-hero-nav {
+  .Aaranya-hero-nav {
     height: 60px;
 
     padding: 0 7px;
   }
 
 
-  .arayana-logo {
+  .Aaranya-logo {
     min-width: auto;
   }
 
 
-  .arayana-logo-mark {
+  .Aaranya-logo-mark {
     width: 34px;
     height: 34px;
   }
 
 
-  .arayana-logo-text strong {
+  .Aaranya-logo-text strong {
     font-size: 13px;
   }
 
 
-  .arayana-logo-text span {
+  .Aaranya-logo-text span {
     font-size: 6px;
   }
 
 
-  .arayana-contact-btn {
+  .Aaranya-contact-btn {
     padding: 10px 13px;
 
     font-size: 8px;
   }
 
 
-  .arayana-hero-image {
+  .Aaranya-hero-image {
     height: 720px;
 
     min-height: 0;
@@ -634,7 +634,7 @@
   }
 
 
-  .arayana-image-overlay {
+  .Aaranya-image-overlay {
     background:
       linear-gradient(
         180deg,
@@ -644,7 +644,7 @@
   }
 
 
-  .arayana-content {
+  .Aaranya-content {
     left: 20px;
     right: 20px;
 
@@ -656,26 +656,26 @@
   }
 
 
-  .arayana-location-badge {
+  .Aaranya-location-badge {
     font-size: 7px;
   }
 
 
-  .arayana-kicker {
+  .Aaranya-kicker {
     font-size: 7px;
 
     letter-spacing: 3px;
   }
 
 
-  .arayana-content h1 {
+  .Aaranya-content h1 {
     font-size: clamp(52px, 17vw, 82px);
 
     letter-spacing: -1px;
   }
 
 
-  .arayana-description {
+  .Aaranya-description {
     font-size: 11px;
 
     max-width: 320px;
@@ -684,7 +684,7 @@
   }
 
 
-  .arayana-buttons {
+  .Aaranya-buttons {
     flex-direction: column;
 
     align-items: flex-start;
@@ -693,18 +693,18 @@
   }
 
 
-  .arayana-primary-btn {
+  .Aaranya-primary-btn {
     font-size: 8px;
   }
 
 
-  .arayana-btn-icon {
+  .Aaranya-btn-icon {
     width: 36px;
     height: 36px;
   }
 
 
-  .arayana-floating-card {
+  .Aaranya-floating-card {
     right: 20px;
     bottom: 20px;
 
@@ -714,17 +714,17 @@
   }
 
 
-  .arayana-floating-card h3 {
+  .Aaranya-floating-card h3 {
     font-size: 20px;
   }
 
 }
 /* =====================================================
-   ARAYANA PHASES
+   Aaranya PHASES
    BHL BLUE / WHITE
 ===================================================== */
 
-.arayana-phases {
+.Aaranya-phases {
   width: 100%;
   padding: 2rem 0;
   background: #f5f8fb;
@@ -736,7 +736,7 @@
    SECTION HEADER
 ===================================================== */
 
-.arayana-phases-header {
+.Aaranya-phases-header {
   max-width: 1200px;
   margin: 0 auto 55px;
 
@@ -747,7 +747,7 @@
   align-items: end;
 }
 
-.arayana-section-label {
+.Aaranya-section-label {
   display: block;
 
   margin-bottom: 14px;
@@ -759,7 +759,7 @@
   letter-spacing: 2.5px;
 }
 
-.arayana-phases-heading h2 {
+.Aaranya-phases-heading h2 {
   margin: 0;
 
   color: #0d416c;
@@ -776,12 +776,12 @@
   line-height: 1;
 }
 
-.arayana-phases-heading h2 em {
+.Aaranya-phases-heading h2 em {
   color: #3184c1;
   font-weight: 400;
 }
 
-.arayana-phases-intro {
+.Aaranya-phases-intro {
   color: #718596;
   font-size: 16px;
   font-weight: 400;
@@ -793,7 +793,7 @@
    PHASE CARD
 ===================================================== */
 
-.arayana-phase {
+.Aaranya-phase {
   max-width: 1400px;
   margin: 0 auto 35px;
 
@@ -817,7 +817,7 @@
    PHASE IMAGE
 ===================================================== */
 
-.arayana-phase-image {
+.Aaranya-phase-image {
   position: relative;
 
   min-height: 550px;
@@ -825,7 +825,7 @@
   overflow: hidden;
 }
 
-.arayana-phase-image img {
+.Aaranya-phase-image img {
   width: 100%;
   height: 100%;
 
@@ -834,7 +834,7 @@
   transition: transform 0.8s ease;
 }
 
-.arayana-phase:hover .arayana-phase-image img {
+.Aaranya-phase:hover .Aaranya-phase-image img {
   transform: scale(1.04);
 }
 
@@ -909,7 +909,7 @@
    CONTENT
 ===================================================== */
 
-.arayana-phase-content {
+.Aaranya-phase-content {
   padding: 42px 48px 32px;
 
   display: flex;
@@ -1328,11 +1328,11 @@
 
 @media (max-width: 1000px) {
 
-  .arayana-phases {
+  .Aaranya-phases {
     padding: 75px 4%;
   }
 
-  .arayana-phases-header {
+  .Aaranya-phases-header {
     grid-template-columns: 1fr;
 
     gap: 20px;
@@ -1340,21 +1340,21 @@
     margin-bottom: 40px;
   }
 
-  .arayana-phase {
+  .Aaranya-phase {
     grid-template-columns: 1fr;
 
     min-height: auto;
   }
 
-  .arayana-phase-image {
+  .Aaranya-phase-image {
     min-height: 430px;
   }
 
-  .phase-two .arayana-phase-content {
+  .phase-two .Aaranya-phase-content {
     order: 1;
   }
 
-  .phase-two .arayana-phase-image {
+  .phase-two .Aaranya-phase-image {
     order: 2;
   }
 }
@@ -1366,39 +1366,39 @@
 
 @media (max-width: 767px) {
 
-  .arayana-phases {
+  .Aaranya-phases {
     padding: 65px 16px;
   }
 
-  .arayana-phases-header {
+  .Aaranya-phases-header {
     margin-bottom: 30px;
 
     gap: 16px;
   }
 
-  .arayana-section-label {
+  .Aaranya-section-label {
     font-size: 6.5px;
 
     letter-spacing: 1.8px;
   }
 
-  .arayana-phases-heading h2 {
+  .Aaranya-phases-heading h2 {
     font-size: 38px;
   }
 
-  .arayana-phases-intro {
+  .Aaranya-phases-intro {
     font-size: 10.5px;
 
     line-height: 1.7;
   }
 
-  .arayana-phase {
+  .Aaranya-phase {
     margin-bottom: 22px;
 
     border-radius: 18px;
   }
 
-  .arayana-phase-image {
+  .Aaranya-phase-image {
     min-height: 310px;
   }
 
@@ -1418,7 +1418,7 @@
     padding: 6px 9px;
   }
 
-  .arayana-phase-content {
+  .Aaranya-phase-content {
     padding: 28px 20px 22px;
   }
 
@@ -1497,19 +1497,19 @@
     font-size: 7px;
   }
 
-  .phase-two .arayana-phase-content {
+  .phase-two .Aaranya-phase-content {
     order: 1;
   }
 
-  .phase-two .arayana-phase-image {
+  .phase-two .Aaranya-phase-image {
     order: 2;
   }
 }
 /* =====================================================
-   ARAYANA LIFESTYLE
+   Aaranya LIFESTYLE
 ===================================================== */
 
-.arayana-lifestyle {
+.Aaranya-lifestyle {
   position: relative;
 
   width: 100%;
@@ -1536,8 +1536,8 @@
    BACKGROUND DETAIL
 ===================================================== */
 
-.arayana-lifestyle::before {
-  content: "ARAYANA";
+.Aaranya-lifestyle::before {
+  content: "Aaranya";
 
   position: absolute;
 
@@ -1861,7 +1861,7 @@
 
 @media (max-width: 1000px) {
 
-  .arayana-lifestyle {
+  .Aaranya-lifestyle {
     padding: 80px 5%;
 
     grid-template-columns: 1fr 1fr;
@@ -1888,7 +1888,7 @@
 
 @media (max-width: 767px) {
 
-  .arayana-lifestyle {
+  .Aaranya-lifestyle {
     padding: 70px 20px;
 
     display: flex;
@@ -1898,7 +1898,7 @@
     gap: 35px;
   }
 
-  .arayana-lifestyle::before {
+  .Aaranya-lifestyle::before {
     font-size: 90px;
 
     bottom: -20px;
@@ -1984,10 +1984,10 @@
 }
 
 /* =====================================================
-   ARAYANA AMENITIES
+   Aaranya AMENITIES
 ===================================================== */
 
-.arayana-amenities {
+.Aaranya-amenities {
   width: 100%;
   padding: 100px 6.5% 90px;
 
@@ -2419,7 +2419,7 @@
 
 @media (max-width: 1000px) {
 
-  .arayana-amenities {
+  .Aaranya-amenities {
     padding: 80px 5%;
   }
 
@@ -2441,7 +2441,7 @@
 
 @media (max-width: 767px) {
 
-  .arayana-amenities {
+  .Aaranya-amenities {
     padding: 65px 16px 70px;
   }
 
@@ -2554,11 +2554,11 @@
 
 }
 /* =====================================================
-   ARAYANA RESIDENCES
+   Aaranya RESIDENCES
 ===================================================== */
 
-.arayana-residences {
-  padding: 105px 7% 100px;
+.Aaranya-residences {
+  padding: 2rem 7% 100px;
 
   background: #ffffff;
 
@@ -2929,11 +2929,10 @@
 
 .residence-tabs {
   display: grid;
-
   grid-template-columns:
     repeat(4, 1fr);
-
   gap: 10px;
+  margin-bottom:1rem;
 }
 
 .residence-tabs button {
@@ -3039,7 +3038,7 @@
 
 @media (max-width: 1000px) {
 
-  .arayana-residences {
+  .Aaranya-residences {
     padding: 80px 5%;
   }
 
@@ -3077,7 +3076,7 @@
 
 @media (max-width: 767px) {
 
-  .arayana-residences {
+  .Aaranya-residences {
     padding: 65px 18px 75px;
   }
 
@@ -3167,13 +3166,13 @@
 
 }
 /* =====================================================
-   ARAYANA GALLERY
+   Aaranya GALLERY
 ===================================================== */
 
-.arayana-gallery {
+.Aaranya-gallery {
   width: 100%;
 
-  padding: 105px 7% 95px;
+  padding: 0px 7% 95px;
 
   background: #ffffff;
 
@@ -3628,7 +3627,7 @@
 
 @media (max-width: 1000px) {
 
-  .arayana-gallery {
+  .Aaranya-gallery {
     padding: 80px 5%;
   }
 
@@ -3653,7 +3652,7 @@
 
 @media (max-width: 767px) {
 
-  .arayana-gallery {
+  .Aaranya-gallery {
     padding: 65px 16px 70px;
   }
 
@@ -3785,10 +3784,10 @@
 
 }
 /* =====================================================
-   ARAYANA CONTACT
+   Aaranya CONTACT
 ===================================================== */
 
-.arayana-contact {
+.Aaranya-contact {
   position: relative;
 
   padding: 100px 7% 30px;
@@ -4107,7 +4106,7 @@
    FORM
 ===================================================== */
 
-.arayana-form {
+.Aaranya-form {
   padding-top: 24px;
 }
 
@@ -4360,7 +4359,7 @@
 
 @media (max-width: 1000px) {
 
-  .arayana-contact {
+  .Aaranya-contact {
     padding: 80px 5% 30px;
   }
 
@@ -4383,7 +4382,7 @@
 
 @media (max-width: 767px) {
 
-  .arayana-contact {
+  .Aaranya-contact {
     padding: 65px 18px 25px;
   }
 
@@ -4463,848 +4462,678 @@
 
 }
 /* =====================================================
-   LOCATION
+   AARANYA LOCATION SECTION
 ===================================================== */
 
-.arayana-location {
-  max-width: 1500px;
+.Aaranya-location {
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 96px 5.5% 0;
-  color: #163f60;
+  padding: 110px 60px 0;
+
+  display: grid;
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 70px;
+
+  background: #f7f6f2;
+  color: #17231f;
 }
+
+
+/* =====================================================
+   LEFT CONTENT
+===================================================== */
 
 .location-content {
-  display: grid;
-  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
-  gap: 72px;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;
 }
 
-.location-label,
-.location-highlight > div > span,
-.location-bottom-item > span {
-  display: block;
-  color: #3184c1;
-  font-size: 9px;
-  font-weight: 800;
-  letter-spacing: 1.8px;
+.location-label {
+  display: inline-block;
+
+  margin-bottom: 22px;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+
+  color: #8a7351;
 }
 
 .location-content h2 {
-  margin: 18px 0 20px;
-  color: #0d416c;
-  font-family: Georgia, serif;
-  font-size: clamp(38px, 4vw, 62px);
-  font-weight: 400;
-  line-height: 1.05;
+  margin: 0;
+
+  font-size: clamp(48px, 5vw, 76px);
+  line-height: 0.98;
+  font-weight: 500;
+  letter-spacing: -2.5px;
+
+  color: #18231f;
 }
 
 .location-content h2 em {
-  color: #287454;
-  font-style: italic;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .location-intro {
-  max-width: 430px;
-  margin: 0 0 30px;
-  color: #647b89;
+  max-width: 500px;
+
+  margin: 30px 0 35px;
+
   font-size: 15px;
   line-height: 1.8;
+  color: #65706a;
 }
+
+
+/* =====================================================
+   HIGHLIGHT
+===================================================== */
 
 .location-highlight {
   display: flex;
-  gap: 14px;
-  max-width: 460px;
-  padding: 18px 0;
-  border-top: 1px solid #dce7ed;
-  border-bottom: 1px solid #dce7ed;
+  align-items: flex-start;
+  gap: 17px;
+
+  max-width: 510px;
+
+  padding: 22px 0;
+
+  border-top: 1px solid rgba(23, 35, 31, 0.12);
+  border-bottom: 1px solid rgba(23, 35, 31, 0.12);
 }
 
 .location-highlight-icon {
-  width: 42px;
-  height: 42px;
-  flex: 0 0 auto;
-  display: grid;
-  place-items: center;
-  border-radius: 50%;
-  background: #e9f6fb;
-  color: #3184c1;
-}
+  flex-shrink: 0;
 
-.location-highlight strong {
-  display: block;
-  margin: 6px 0 5px;
-  color: #0d416c;
-  font-family: Georgia, serif;
-  font-size: 20px;
-  font-weight: 400;
-}
+  width: 45px;
+  height: 45px;
 
-.location-highlight p {
-  margin: 0;
-  color: #718590;
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.location-cta,
-.location-bottom-action a {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  gap: 10px;
-  color: #0d416c;
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-decoration: none;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e9e4d8;
+  color: #8b7044;
 }
+
+.location-highlight-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-highlight-content > span {
+  margin-bottom: 5px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #8a7351;
+}
+
+.location-highlight-content strong {
+  margin-bottom: 6px;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  color: #1d2a25;
+}
+
+.location-highlight-content p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.6;
+
+  color: #707973;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
 
 .location-cta {
-  margin-top: 28px;
+  width: fit-content;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-top: 32px;
+  padding: 13px 7px;
+
+  color: #18231f;
+  text-decoration: none;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+
+  border-bottom: 1px solid #8a7351;
+
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
 }
 
 .location-cta span {
-  display: grid;
-  width: 32px;
-  height: 32px;
-  place-items: center;
-  border-radius: 50%;
-  background: #0d416c;
-  color: #ffffff;
-}
+  width: 31px;
+  height: 31px;
 
-.location-bottom {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 24px;
-  margin-top: 26px;
-  padding: 24px 0 40px;
-  border-top: 1px solid #dce7ed;
-}
-
-.location-bottom-item > span {
-  margin-bottom: 8px;
-  color: #8797a1;
-  font-size: 8px;
-  letter-spacing: 1.2px;
-}
-
-.location-bottom-item strong {
-  color: #0d416c;
-  font-family: Georgia, serif;
-  font-size: 16px;
-  font-weight: 400;
-}
-
-.location-bottom-action {
   display: flex;
-  align-items: end;
-  justify-content: end;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #18231f;
+  color: #fff;
+
+  transition: transform 0.3s ease;
 }
+
+.location-cta:hover {
+  gap: 18px;
+  color: #8a7351;
+}
+
+.location-cta:hover span {
+  transform: rotate(45deg);
+}
+
 
 /* =====================================================
-   LOCATION MAP
+   LOCATION VIDEO
 ===================================================== */
 
-.location-map {
+.location-video {
   position: relative;
 
-  height: 520px;
+  width: 100%;
+  min-height: 650px;
 
   overflow: hidden;
 
   border-radius: 26px;
 
-  border: 1px solid #dce7ed;
+  background: #18231f;
 
-  background:
-    linear-gradient(
-      135deg,
-      #e9f6fb 0%,
-      #f8fbfc 45%,
-      #eaf4ed 100%
-    );
-
-  box-shadow:
-    0 18px 45px rgba(13, 65, 108, .08);
+  isolation: isolate;
 }
 
 
-/* Grid */
+/* Video */
 
-.map-grid {
+.location-video-element {
   position: absolute;
-
-  inset: 0;
-
-  opacity: .25;
-
-  background-image:
-    linear-gradient(
-      rgba(49,132,193,.08) 1px,
-      transparent 1px
-    ),
-    linear-gradient(
-      90deg,
-      rgba(49,132,193,.08) 1px,
-      transparent 1px
-    );
-
-  background-size: 42px 42px;
-}
-
-
-/* =====================================================
-   LAND SHAPE
-===================================================== */
-
-.map-land-shape {
-  position: absolute;
-
-  right: -100px;
-  top: -70px;
-
-  width: 76%;
-  height: 680px;
-
-  border-radius: 48% 0 0 50%;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(205,232,211,.75),
-      rgba(239,246,227,.75)
-    );
-
-  transform: rotate(-6deg);
-}
-
-
-/* =====================================================
-   SEA LABEL
-===================================================== */
-
-.arabian-sea-label {
-  position: absolute;
-
-  left: 35px;
-  top: 48%;
-
-  color: rgba(13,65,108,.22);
-
-  font-family: Georgia, serif;
-
-  font-size: 10px;
-
-  letter-spacing: 4px;
-
-  transform: rotate(-90deg);
-}
-
-
-/* =====================================================
-   ROUTES
-===================================================== */
-
-.map-route {
-  position: absolute;
-
   inset: 0;
 
   width: 100%;
   height: 100%;
 
-  z-index: 3;
+  object-fit: cover;
 
-  pointer-events: none;
+  z-index: -2;
+
+  transform: scale(1.01);
+
+  transition: transform 1.2s ease;
 }
 
-
-.route-main {
-  fill: none;
-
-  stroke: #0d416c;
-
-  stroke-width: 3;
-
-  stroke-linecap: round;
-
-  stroke-dasharray: 9 8;
-
-  animation: mapRouteMove 6s linear infinite;
-}
-
-
-.route-coastal {
-  fill: none;
-
-  stroke: #3184c1;
-
-  stroke-width: 2.5;
-
-  stroke-linecap: round;
-
-  stroke-dasharray: 7 7;
-
-  animation: mapRouteMove 7s linear infinite;
-}
-
-
-.route-secondary {
-  fill: none;
-
-  stroke: #7fb5d0;
-
-  stroke-width: 2;
-
-  stroke-linecap: round;
-
-  stroke-dasharray: 5 8;
-}
-
-
-@keyframes mapRouteMove {
-  to {
-    stroke-dashoffset: -100;
-  }
+.location-video:hover .location-video-element {
+  transform: scale(1.045);
 }
 
 
 /* =====================================================
-   MAP POINT
+   VIDEO OVERLAY
 ===================================================== */
 
-.map-point {
+.location-video-overlay {
   position: absolute;
+  inset: 0;
 
-  z-index: 6;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(8, 18, 15, 0.55) 0%,
+      rgba(8, 18, 15, 0.05) 40%,
+      rgba(8, 18, 15, 0.75) 100%
+    );
 
-  display: flex;
-
-  align-items: center;
-
-  gap: 8px;
+  z-index: -1;
 }
 
 
 /* =====================================================
-   POINT ICON
+   VIDEO TOP
 ===================================================== */
 
-.map-point-icon {
-  width: 34px;
-  height: 34px;
-
-  flex-shrink: 0;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: #ffffff;
-
-  border: 3px solid #ffffff;
-
-  box-shadow:
-    0 6px 18px rgba(13,65,108,.16);
-}
-
-
-.map-point-icon.airport {
-  background: #3184c1;
-
-  color: #ffffff;
-}
-
-
-.map-point-icon.beach {
-  background: #278fa9;
-
-  color: #ffffff;
-}
-
-
-.map-point-icon.place {
-  background: #e9f5ef;
-
-  color: #287454;
-
-  border: 2px solid #ffffff;
-}
-
-
-/* =====================================================
-   LABEL
-===================================================== */
-
-.map-point-label {
-  padding: 7px 10px;
-
-  background: rgba(255,255,255,.92);
-
-  border: 1px solid #dce6ec;
-
-  border-radius: 8px;
-
-  box-shadow:
-    0 6px 18px rgba(13,65,108,.08);
-}
-
-
-.map-point-label strong {
-  display: block;
-
-  color: #0d416c;
-
-  font-size: 7px;
-
-  font-weight: 800;
-
-  letter-spacing: .7px;
-
-  white-space: nowrap;
-}
-
-
-.map-point-label span {
-  display: block;
-
-  margin-top: 2px;
-
-  color: #8595a0;
-
-  font-size: 4.8px;
-
-  font-weight: 700;
-
-  letter-spacing: .8px;
-
-  white-space: nowrap;
-}
-
-
-/* =====================================================
-   POSITIONS
-===================================================== */
-
-.map-mopa {
-  top: 50px;
-  right: 45px;
-}
-
-
-.map-arayana {
-  left: 42%;
-  top: 52%;
-
-  transform: translate(-50%, -50%);
-}
-
-
-.map-shiroda {
-  left: 8%;
-  top: 58%;
-}
-
-
-.map-redi {
-  left: 14%;
-  top: 75%;
-}
-
-
-.map-nirvade {
-  left: 24%;
-  top: 35%;
-}
-
-
-.map-vengurla {
-  left: 28%;
-  top: 84%;
-}
-
-
-/* =====================================================
-   ARAYANA MAIN PIN
-===================================================== */
-
-.arayana-main-pin {
-  position: relative;
-
-  z-index: 3;
-
-  width: 52px;
-  height: 52px;
-
-  flex-shrink: 0;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: #0d416c;
-
-  color: #ffffff;
-
-  border: 4px solid #ffffff;
-
-  box-shadow:
-    0 12px 30px rgba(13,65,108,.28);
-}
-
-
-/* Pulse */
-
-.arayana-pulse {
+.location-video-top {
   position: absolute;
+  top: 25px;
+  left: 25px;
+  right: 25px;
 
-  left: -15px;
-
-  width: 82px;
-  height: 82px;
-
-  border-radius: 50%;
-
-  border: 1px solid rgba(49,132,193,.45);
-
-  animation: arayanaMapPulse 2.4s ease-out infinite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.location-video-badge {
+  display: flex;
+  align-items: center;
+  gap: 9px;
 
-@keyframes arayanaMapPulse {
-
-  0% {
-    transform: scale(.55);
-    opacity: .8;
-  }
-
-  100% {
-    transform: scale(1.25);
-    opacity: 0;
-  }
-
-}
-
-
-/* =====================================================
-   ARAYANA LABEL
-===================================================== */
-
-.arayana-map-label {
   padding: 9px 13px;
 
-  background: rgba(255,255,255,.96);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 30px;
 
-  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.09);
+  backdrop-filter: blur(10px);
 
-  box-shadow:
-    0 8px 22px rgba(13,65,108,.14);
-}
+  color: #fff;
 
-
-.arayana-map-label > span {
-  display: block;
-
-  margin-bottom: 2px;
-
-  color: #3184c1;
-
-  font-size: 5px;
-
-  font-weight: 800;
-
-  letter-spacing: 1.3px;
-}
-
-
-.arayana-map-label strong {
-  display: block;
-
-  color: #0d416c;
-
-  font-family: Georgia, serif;
-
-  font-size: 14px;
-
+  font-size: 9px;
   font-weight: 700;
-
-  letter-spacing: 1px;
-}
-
-
-.arayana-map-label small {
-  display: block;
-
-  margin-top: 2px;
-
-  color: #82949f;
-
-  font-size: 5px;
-
-  font-weight: 700;
-
-  letter-spacing: 1px;
-}
-
-
-/* =====================================================
-   COMPASS
-===================================================== */
-
-.location-compass {
-  position: absolute;
-
-  right: 24px;
-  bottom: 24px;
-
-  z-index: 8;
-
-  width: 44px;
-  height: 44px;
-
-  display: flex;
-
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 50%;
-
-  background: rgba(255,255,255,.88);
-
-  border: 1px solid #d5e2e9;
-
-  color: #0d416c;
-
-  box-shadow:
-    0 5px 15px rgba(13,65,108,.08);
-}
-
-
-.location-compass span {
-  position: absolute;
-
-  top: 3px;
-
-  color: #3184c1;
-
-  font-size: 6px;
-
-  font-weight: 800;
-}
-
-
-.location-compass svg {
-  transform: rotate(-30deg);
-}
-
-
-/* =====================================================
-   CAPTION
-===================================================== */
-
-.map-caption {
-  position: absolute;
-
-  left: 24px;
-  bottom: 22px;
-
-  z-index: 8;
-
-  display: flex;
-
-  flex-direction: column;
-}
-
-
-.map-caption > span {
-  margin-bottom: 4px;
-
-  color: #3184c1;
-
-  font-size: 6px;
-
-  font-weight: 800;
-
   letter-spacing: 2px;
 }
 
+.video-live-dot {
+  width: 6px;
+  height: 6px;
 
-.map-caption strong {
-  color: #0d416c;
+  border-radius: 50%;
 
-  font-family: Georgia, serif;
+  background: #d8bd83;
 
-  font-size: 22px;
+  box-shadow: 0 0 0 5px rgba(216, 189, 131, 0.12);
 
-  font-weight: 400;
+  animation: locationPulse 2s infinite;
+}
+
+@keyframes locationPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(216, 189, 131, 0.12);
+  }
+
+  50% {
+    box-shadow: 0 0 0 8px rgba(216, 189, 131, 0.02);
+  }
 }
 
 
-.map-caption small {
-  margin-top: 2px;
+/* Play Circle */
 
-  color: #8797a1;
+.location-video-play {
+  width: 42px;
+  height: 42px;
 
-  font-size: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+
+  color: #fff;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+.location-video:hover .location-video-play {
+  transform: scale(1.08);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 
 /* =====================================================
-   MOBILE
+   VIDEO CENTER CONTENT
 ===================================================== */
 
-@media (max-width: 767px) {
+.location-video-info {
+  position: absolute;
 
-  .arayana-location {
-    padding: 64px 20px 0;
+  left: 38px;
+  bottom: 125px;
+
+  max-width: 450px;
+
+  color: #fff;
+}
+
+.location-video-info > span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  color: #d8bd83;
+}
+
+.location-video-info h3 {
+  margin: 0 0 16px;
+
+  font-size: clamp(34px, 4vw, 52px);
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: -1.5px;
+}
+
+.location-video-info h3 em {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 400;
+}
+
+.location-video-info p {
+  max-width: 390px;
+
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.7;
+
+  color: rgba(255, 255, 255, 0.78);
+}
+
+
+/* =====================================================
+   VIDEO BOTTOM LOCATIONS
+===================================================== */
+
+.location-video-bottom {
+  position: absolute;
+
+  left: 25px;
+  right: 25px;
+  bottom: 24px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 15px 18px;
+
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 14px;
+
+  background: rgba(10, 22, 18, 0.42);
+  backdrop-filter: blur(12px);
+}
+
+.video-location-item {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.video-location-item span {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.video-location-item strong {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  color: #fff;
+}
+
+.video-location-line {
+  width: 1px;
+  height: 27px;
+
+  margin: 0 17px;
+
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+/* =====================================================
+   BOTTOM STATS
+===================================================== */
+
+.location-bottom {
+  grid-column: 1 / -1;
+
+  display: grid;
+  grid-template-columns:
+    1fr
+    1fr
+    1.4fr
+    0.8fr;
+
+  margin-top: 15px;
+
+  border-top: 1px solid rgba(23, 35, 31, 0.12);
+}
+
+.location-bottom-item {
+  min-height: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 20px 25px;
+
+  border-right: 1px solid rgba(23, 35, 31, 0.12);
+}
+
+.location-bottom-item:first-child {
+  padding-left: 0;
+}
+
+.location-bottom-item span {
+  margin-bottom: 8px;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  color: #8a7351;
+}
+
+.location-bottom-item strong {
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #1d2a25;
+}
+
+.location-bottom-action {
+  align-items: flex-end;
+
+  border-right: none;
+}
+
+.location-bottom-action a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #1d2a25;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    gap 0.3s ease,
+    color 0.3s ease;
+}
+
+.location-bottom-action a:hover {
+  gap: 13px;
+  color: #8a7351;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .Aaranya-location {
+    padding: 80px 35px 0;
+
+    grid-template-columns: 1fr;
+    gap: 45px;
   }
 
   .location-content {
-    display: block;
+    padding: 0;
+  }
+
+  .location-video {
+    min-height: 600px;
+  }
+
+  .location-bottom {
+    margin-top: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  .Aaranya-location {
+    padding: 70px 20px 0;
   }
 
   .location-content h2 {
-    font-size: 42px;
+    font-size: 48px;
   }
 
   .location-intro {
     font-size: 14px;
   }
 
+  .location-video {
+    min-height: 560px;
+    border-radius: 20px;
+  }
+
+  .location-video-info {
+    left: 25px;
+    bottom: 125px;
+  }
+
+  .location-video-info h3 {
+    font-size: 38px;
+  }
+
+  .location-video-bottom {
+    left: 15px;
+    right: 15px;
+
+    gap: 10px;
+
+    padding: 12px;
+  }
+
+  .video-location-line {
+    margin: 0 8px;
+  }
+
+  .video-location-item strong {
+    font-size: 8px;
+  }
+
   .location-bottom {
     grid-template-columns: 1fr 1fr;
-    gap: 22px 14px;
+  }
+
+  .location-bottom-item {
+    min-height: 90px;
+    padding: 18px 15px;
+  }
+
+  .location-bottom-item:first-child {
+    padding-left: 15px;
   }
 
   .location-bottom-action {
-    justify-content: start;
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 520px) {
+
+  .location-video {
+    min-height: 520px;
   }
 
-  .location-map {
-    height: 500px;
-
-    border-radius: 18px;
+  .location-video-info {
+    left: 20px;
+    right: 20px;
+    bottom: 145px;
   }
 
-
-  .map-grid {
-    background-size: 30px 30px;
+  .location-video-info h3 {
+    font-size: 32px;
   }
 
-
-  .arabian-sea-label {
-    left: 5px;
-
-    font-size: 7px;
+  .location-video-info p {
+    font-size: 12px;
   }
 
+  .location-video-bottom {
+    flex-direction: column;
+    align-items: stretch;
 
-  .map-mopa {
-    top: 25px;
-    right: 15px;
+    gap: 10px;
   }
 
-
-  .map-arayana {
-    left: 53%;
-    top: 50%;
+  .video-location-line {
+    width: 100%;
+    height: 1px;
+    margin: 0;
   }
 
-
-  .map-shiroda {
-    left: 5%;
-    top: 59%;
+  .video-location-item {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
-
-  .map-redi {
-    left: 7%;
-    top: 74%;
+  .location-bottom {
+    grid-template-columns: 1fr;
   }
 
-
-  .map-nirvade {
-    left: 20%;
-    top: 34%;
+  .location-bottom-item {
+    border-right: none;
+    border-bottom: 1px solid rgba(23, 35, 31, 0.12);
   }
-
-
-  .map-vengurla {
-    left: 24%;
-    top: 84%;
-  }
-
-
-  .map-point-icon {
-    width: 28px;
-    height: 28px;
-  }
-
-
-  .map-point-label {
-    padding: 5px 7px;
-  }
-
-
-  .map-point-label strong {
-    font-size: 5.5px;
-  }
-
-
-  .map-point-label span {
-    font-size: 3.8px;
-  }
-
-
-  .arayana-main-pin {
-    width: 42px;
-    height: 42px;
-  }
-
-
-  .arayana-pulse {
-    width: 68px;
-    height: 68px;
-
-    left: -13px;
-  }
-
-
-  .arayana-map-label {
-    padding: 6px 9px;
-  }
-
-
-  .arayana-map-label strong {
-    font-size: 10px;
-  }
-
-
-  .location-compass {
-    width: 38px;
-    height: 38px;
-
-    right: 15px;
-    bottom: 15px;
-  }
-
-
-  .map-caption {
-    left: 15px;
-    bottom: 15px;
-  }
-
-
-  .map-caption strong {
-    font-size: 17px;
-  }
-
 }

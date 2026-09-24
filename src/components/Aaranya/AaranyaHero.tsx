@@ -4,26 +4,26 @@ import {
   MapPin,
   MoveUpRight,
 } from "lucide-react";
-import "./ArayanaHero.css";
+import "./AaranyaHero.css";
 import hero from "../../assets/aryana-hero.png"
-const ArayanaHero: React.FC = () => {
+const AaranyaHero: React.FC = () => {
   return (
-    <section className="arayana-hero-wrapper">
-      <div className="arayana-hero-card">
+    <section className="Aaranya-hero-wrapper">
+      <div className="Aaranya-hero-card">
 
         {/* ================= TOP NAV ================= */}
-        <div className="arayana-hero-nav">
+        <div className="Aaranya-hero-nav">
 
-          <div className="arayana-logo">
-            <div className="arayana-logo-mark">A</div>
+          <div className="Aaranya-logo">
+            <div className="Aaranya-logo-mark">A</div>
 
-            <div className="arayana-logo-text">
-              <strong>ARAYANA</strong>
+            <div className="Aaranya-logo-text">
+              <strong>Aaranya</strong>
               <span>BY BHL GROUP</span>
             </div>
           </div>
 
-          <nav className="arayana-nav-links">
+          <nav className="Aaranya-nav-links">
             <a href="#about">About</a>
             <a href="#residences">Residences</a>
             <a href="#amenities">Amenities</a>
@@ -31,7 +31,7 @@ const ArayanaHero: React.FC = () => {
             <a href="#gallery">Gallery</a>
           </nav>
 
-          <a href="#contact" className="arayana-contact-btn">
+          <a href="#contact" className="Aaranya-contact-btn">
             Contact Us
             <MoveUpRight size={15} />
           </a>
@@ -40,25 +40,25 @@ const ArayanaHero: React.FC = () => {
 
 
         {/* ================= HERO IMAGE ================= */}
-        <div className="arayana-hero-image">
+        <div className="Aaranya-hero-image">
 
           <img
             src={hero}
-            alt="Arayana Sindhudurg"
+            alt="Aaranya Sindhudurg"
           />
 
-          <div className="arayana-image-overlay" />
+          <div className="Aaranya-image-overlay" />
 
 
           {/* ================= HERO CONTENT ================= */}
-          <div className="arayana-content">
+          <div className="Aaranya-content">
 
-            <div className="arayana-location-badge">
+            <div className="Aaranya-location-badge">
               <MapPin size={13} />
               Sindhudurg, Maharashtra
             </div>
 
-            <p className="arayana-kicker">
+            <p className="Aaranya-kicker">
               A NEW WAY OF LIVING
             </p>
 
@@ -68,7 +68,7 @@ const ArayanaHero: React.FC = () => {
               <em>to nature.</em>
             </h1>
 
-            <p className="arayana-description">
+            <p className="Aaranya-description">
               Discover thoughtfully designed studios and
               apartments surrounded by the natural beauty
               of Sindhudurg.
@@ -76,22 +76,22 @@ const ArayanaHero: React.FC = () => {
 
 
             {/* CTA BUTTONS */}
-            <div className="arayana-buttons">
+            <div className="Aaranya-buttons">
 
               <a
                 href="#residences"
-                className="arayana-primary-btn"
+                className="Aaranya-primary-btn"
               >
                 <span>Explore Residences</span>
 
-                <span className="arayana-btn-icon">
+                <span className="Aaranya-btn-icon">
                   <ArrowUpRight size={18} />
                 </span>
               </a>
 
               <a
                 href="#contact"
-                className="arayana-secondary-btn"
+                className="Aaranya-secondary-btn"
               >
                 Book a Site Visit
               </a>
@@ -102,10 +102,10 @@ const ArayanaHero: React.FC = () => {
 
 
           {/* ================= FLOATING CARD ================= */}
-          <div className="arayana-floating-card">
+          <div className="Aaranya-floating-card">
 
             <div className="floating-card-top">
-              <span>ARAYANA</span>
+              <span>Aaranya</span>
 
               <div className="floating-arrow">
                 <ArrowUpRight size={16} />
@@ -137,4 +137,4 @@ const ArayanaHero: React.FC = () => {
   );
 };
 
-export default ArayanaHero;
+export default AaranyaHero;

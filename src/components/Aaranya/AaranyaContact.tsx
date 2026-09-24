@@ -1,33 +1,95 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   ArrowUpRight,
   Mail,
   MapPin,
   Phone,
-  Send,
 } from "lucide-react";
-import "./ArayanaHero.css";
 
-const ArayanaContact: React.FC = () => {
+import "./AaranyaHero.css";
+import { submitToSheet } from "../utils/submitToSheet";
+
+const AaranyaContact: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    interest: "",
+    message: "",
+  });
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
+    const { name, value } = e.target;
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
+ const handleSubmit = async (
+  e: React.FormEvent<HTMLFormElement>
+) => {
+  e.preventDefault();
+
+  if (isSubmitting) return;
+
+  setIsSubmitting(true);
+
+  try {
+    await submitToSheet({
+      formName: "Aaranya Contact Form",
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.interest,
+      message: formData.message,
+    });
+
+    alert("✅ Enquiry submitted successfully!");
+
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      interest: "",
+      message: "",
+    });
+
+  } catch (error) {
+    console.error("Submission error:", error);
+
+    alert(
+      "❌ Unable to submit enquiry. Please try again."
+    );
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
   return (
-    <section className="arayana-contact" id="contact">
+    <section className="Aaranya-contact" id="contact">
 
-      {/* Decorative background */}
+      {/* ================= BACKGROUND ================= */}
+
       <div className="contact-bg-text">
-        ARAYANA
+        Aaranya
       </div>
-
 
       <div className="contact-container">
 
-        {/* =================================================
-            LEFT CONTENT
-        ================================================= */}
+        {/* ================= LEFT CONTENT ================= */}
 
         <div className="contact-intro">
 
           <span className="contact-eyebrow">
-            BEGIN YOUR ARAYANA JOURNEY
+            BEGIN YOUR AARANYA JOURNEY
           </span>
 
           <h2>
@@ -37,13 +99,12 @@ const ArayanaContact: React.FC = () => {
           </h2>
 
           <p>
-            Discover Arayana, Sindhudurg and explore premium
+            Discover Aaranya, Sindhudurg and explore premium
             villa plots, studio apartments, apartments and
             premium residences designed for a better way of living.
           </p>
 
-
-          {/* Contact Info */}
+          {/* ================= CONTACT INFO ================= */}
 
           <div className="contact-info-list">
 
@@ -58,18 +119,16 @@ const ArayanaContact: React.FC = () => {
               </div>
             </a>
 
-
-            <a href="mailto:info@brickhillgroup.com">
+            <a href="mailto:sales@brickhillgroup.com">
               <span className="contact-info-icon">
                 <Mail size={17} />
               </span>
 
               <div>
                 <small>EMAIL US</small>
-                <strong>info@brickhillgroup.com</strong>
+                <strong>sales@brickhillgroup.com</strong>
               </div>
             </a>
-
 
             <div className="contact-location">
               <span className="contact-info-icon">
@@ -84,9 +143,8 @@ const ArayanaContact: React.FC = () => {
 
           </div>
 
-
           <div className="contact-note">
-            <span>ARAYANA • SINDHUDURG</span>
+            <span>AARANYA • SINDHUDURG</span>
 
             <strong>
               Luxury living. Natural surroundings.
@@ -96,23 +154,19 @@ const ArayanaContact: React.FC = () => {
         </div>
 
 
-        {/* =================================================
-            FORM
-        ================================================= */}
+        {/* ================= FORM ================= */}
 
         <div className="contact-form-wrapper">
 
           <div className="contact-form-header">
 
             <div>
-              <span>
-                ENQUIRE NOW
-              </span>
+              <span>ENQUIRE NOW</span>
 
               <h3>
                 Let's talk
                 <br />
-                <em>about Arayana.</em>
+                <em>about Aaranya.</em>
               </h3>
             </div>
 
@@ -123,7 +177,14 @@ const ArayanaContact: React.FC = () => {
           </div>
 
 
-          <form className="arayana-form">
+          {/* IMPORTANT: onSubmit added here */}
+
+          <form
+            className="Aaranya-form"
+            onSubmit={handleSubmit}
+          >
+
+            {/* ================= NAME + PHONE ================= */}
 
             <div className="form-row">
 
@@ -135,8 +196,10 @@ const ArayanaContact: React.FC = () => {
 
                 <input
                   type="text"
-                  placeholder="Enter your name"
                   name="name"
+                  placeholder="Enter your name"
+                  value={formData.name}
+                  onChange={handleChange}
                   required
                 />
 
@@ -151,8 +214,10 @@ const ArayanaContact: React.FC = () => {
 
                 <input
                   type="tel"
-                  placeholder="+91"
                   name="phone"
+                  placeholder="+91"
+                  value={formData.phone}
+                  onChange={handleChange}
                   required
                 />
 
@@ -160,6 +225,8 @@ const ArayanaContact: React.FC = () => {
 
             </div>
 
+
+            {/* ================= EMAIL ================= */}
 
             <div className="form-field">
 
@@ -169,12 +236,16 @@ const ArayanaContact: React.FC = () => {
 
               <input
                 type="email"
-                placeholder="Enter your email"
                 name="email"
+                placeholder="Enter your email"
+                value={formData.email}
+                onChange={handleChange}
               />
 
             </div>
 
+
+            {/* ================= INTEREST ================= */}
 
             <div className="form-field">
 
@@ -182,32 +253,38 @@ const ArayanaContact: React.FC = () => {
                 I'M INTERESTED IN
               </label>
 
-              <select name="interest" defaultValue="">
+              <select
+                name="interest"
+                value={formData.interest}
+                onChange={handleChange}
+                required
+              >
+
                 <option value="" disabled>
                   Select an option
                 </option>
 
-                <option value="villa-plots">
-                  Premium Villa Plots
+                <option value="Premium Villa Residential Plots">
+                  Premium Villa Residential Plots
                 </option>
 
-                <option value="studio">
+                <option value="Studio Apartments">
                   Studio Apartments
                 </option>
 
-                <option value="1bhk">
+                <option value="1 BHK Apartments">
                   1 BHK Apartments
                 </option>
 
-                <option value="2bhk">
+                <option value="2 BHK Apartments">
                   2 BHK Apartments
                 </option>
 
-                <option value="bungalow">
+                <option value="Premium Bungalows">
                   Premium Bungalows
                 </option>
 
-                <option value="commercial">
+                <option value="Commercial Spaces">
                   Commercial Spaces
                 </option>
 
@@ -215,6 +292,8 @@ const ArayanaContact: React.FC = () => {
 
             </div>
 
+
+            {/* ================= MESSAGE ================= */}
 
             <div className="form-field">
 
@@ -226,18 +305,25 @@ const ArayanaContact: React.FC = () => {
                 name="message"
                 rows={3}
                 placeholder="Tell us what you're looking for..."
+                value={formData.message}
+                onChange={handleChange}
               />
 
             </div>
 
 
+            {/* ================= SUBMIT ================= */}
+
             <button
               type="submit"
               className="contact-submit"
+              disabled={isSubmitting}
             >
 
               <span>
-                Request a Callback
+                {isSubmitting
+                  ? "Submitting..."
+                  : "Request a Callback"}
               </span>
 
               <b>
@@ -249,7 +335,7 @@ const ArayanaContact: React.FC = () => {
 
             <p className="form-disclaimer">
               By submitting this form, you agree to be contacted
-              regarding Arayana project information and enquiries.
+              regarding Aaranya project information and enquiries.
             </p>
 
           </form>
@@ -259,14 +345,12 @@ const ArayanaContact: React.FC = () => {
       </div>
 
 
-      {/* =================================================
-          BOTTOM STRIP
-      ================================================= */}
+      {/* ================= BOTTOM STRIP ================= */}
 
       <div className="contact-bottom">
 
         <div className="contact-bottom-brand">
-          ARAYANA
+          Aaranya
         </div>
 
         <div className="contact-bottom-center">
@@ -287,4 +371,4 @@ const ArayanaContact: React.FC = () => {
   );
 };
 
-export default ArayanaContact;
+export default AaranyaContact;

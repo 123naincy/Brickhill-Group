@@ -150,10 +150,10 @@ const socialLinks = [
   <Mail className="h-5 w-5 text-[#6fa8dd]" />
   
   <a 
-    href="mailto:info@brickhillgroup.com" 
+    href="mailto:sales@brickhillgroup.com" 
     className="hover:underline"
   >
-    info@brickhillgroup.com
+    sales@brickhillgroup.com
   </a>
 </li>
             </ul>

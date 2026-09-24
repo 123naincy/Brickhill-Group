@@ -5,7 +5,7 @@ import {
   Home,
   Maximize2,
 } from "lucide-react";
-import "./ArayanaHero.css";
+import "./AaranyaHero.css";
 
 import studioImg from "../../assets/studio-apartment.png";
 import oneBhkImg from "../../assets/1-bhk.png";
@@ -55,7 +55,7 @@ const residences = [
   },
 ];
 
-const ArayanaResidences: React.FC = () => {
+const AaranyaResidences: React.FC = () => {
   const [active, setActive] = useState("studio");
 
   const selected =
@@ -64,7 +64,7 @@ const ArayanaResidences: React.FC = () => {
 
   return (
     <section
-      className="arayana-residences"
+      className="Aaranya-residences"
       id="residences"
     >
 
@@ -80,7 +80,7 @@ const ArayanaResidences: React.FC = () => {
           <h2>
             Find your
             <br />
-            <em>place at Arayana.</em>
+            <em>place at Aaranya.</em>
           </h2>
         </div>
 
@@ -92,7 +92,59 @@ const ArayanaResidences: React.FC = () => {
 
       </div>
 
+  <div className="residence-selector">
 
+        <div className="selector-heading">
+          <span>
+            EXPLORE CONFIGURATIONS
+          </span>
+        </div>
+
+
+        <div className="residence-tabs">
+
+          {residences.map((residence) => (
+
+            <button
+              key={residence.id}
+              className={
+                active === residence.id
+                  ? "active"
+                  : ""
+              }
+              onClick={() =>
+                setActive(residence.id)
+              }
+            >
+
+              <span className="tab-number">
+                {residence.number}
+              </span>
+
+              <span className="tab-content">
+
+                <strong>
+                  {residence.title}
+                </strong>
+
+                <small>
+                  {residence.size}
+                </small>
+
+              </span>
+
+              <ArrowUpRight
+                size={15}
+                className="tab-arrow"
+              />
+
+            </button>
+
+          ))}
+
+        </div>
+
+      </div>
       {/* ================= MAIN SHOWCASE ================= */}
 
       <div className="residences-showcase">
@@ -185,7 +237,7 @@ const ArayanaResidences: React.FC = () => {
 
           <p className="residence-description">
             Thoughtfully planned spaces created for
-            comfortable, contemporary living at Arayana.
+            comfortable, contemporary living at Aaranya.
           </p>
 
 
@@ -203,66 +255,8 @@ const ArayanaResidences: React.FC = () => {
         </div>
 
       </div>
-
-
-      {/* ================= CONFIGURATIONS ================= */}
-
-      <div className="residence-selector">
-
-        <div className="selector-heading">
-          <span>
-            EXPLORE CONFIGURATIONS
-          </span>
-        </div>
-
-
-        <div className="residence-tabs">
-
-          {residences.map((residence) => (
-
-            <button
-              key={residence.id}
-              className={
-                active === residence.id
-                  ? "active"
-                  : ""
-              }
-              onClick={() =>
-                setActive(residence.id)
-              }
-            >
-
-              <span className="tab-number">
-                {residence.number}
-              </span>
-
-              <span className="tab-content">
-
-                <strong>
-                  {residence.title}
-                </strong>
-
-                <small>
-                  {residence.size}
-                </small>
-
-              </span>
-
-              <ArrowUpRight
-                size={15}
-                className="tab-arrow"
-              />
-
-            </button>
-
-          ))}
-
-        </div>
-
-      </div>
-
     </section>
   );
 };
 
-export default ArayanaResidences;
+export default AaranyaResidences;

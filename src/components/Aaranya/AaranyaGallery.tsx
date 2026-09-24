@@ -1,17 +1,17 @@
 import React from "react";
 import { ArrowUpRight, Maximize2 } from "lucide-react";
-import "./ArayanaHero.css";
+import "./AaranyaHero.css";
 
 import gallery1 from "../../assets/aryana-lifestyle.png";
 import gallery2 from "../../assets/premium-spcaes.png";
 import gallery3 from "../../assets/natural-surrending.png";
 import gallery4 from "../../assets/community-spaces.png";
-import gallery5 from "../../assets/outdoor-spaces.png";
+import gallery5 from "../../assets/out-door-spaces.jpg";
 
 const galleryItems = [
   {
     image: gallery1,
-    title: "The Arayana Lifestyle",
+    title: "The Aaranya Lifestyle",
     category: "LIFESTYLE",
     size: "large",
   },
@@ -41,9 +41,9 @@ const galleryItems = [
   },
 ];
 
-const ArayanaGallery: React.FC = () => {
+const AaranyaGallery: React.FC = () => {
   return (
-    <section className="arayana-gallery" id="gallery">
+    <section className="Aaranya-gallery" id="gallery">
 
       {/* ================= HEADER ================= */}
 
@@ -51,7 +51,7 @@ const ArayanaGallery: React.FC = () => {
 
         <div>
           <span className="gallery-eyebrow">
-            A GLIMPSE OF ARAYANA
+            A GLIMPSE OF Aaranya
           </span>
 
           <h2>
@@ -66,7 +66,7 @@ const ArayanaGallery: React.FC = () => {
           <p>
             Explore a visual glimpse of the spaces,
             lifestyle and natural character envisioned
-            at Arayana, Sindhudurg.
+            at Aaranya, Sindhudurg.
           </p>
 
           <span className="gallery-count">
@@ -143,7 +143,7 @@ const ArayanaGallery: React.FC = () => {
 
         <div>
           <span>
-            ARAYANA • SINDHUDURG
+            Aaranya • SINDHUDURG
           </span>
 
           <strong>
@@ -165,4 +165,4 @@ const ArayanaGallery: React.FC = () => {
   );
 };
 
-export default ArayanaGallery;
+export default AaranyaGallery;

@@ -6,18 +6,18 @@ import {
   Sparkles,
   Home,
 } from "lucide-react";
-import "./ArayanaHero.css";
+import "./AaranyaHero.css";
 import lifestyle_image from "../../assets/lifestyle.png";
 
-const ArayanaLifestyle: React.FC = () => {
+const AaranyaLifestyle: React.FC = () => {
   return (
-    <section className="arayana-lifestyle" id="amenities">
+    <section className="Aaranya-lifestyle" id="amenities">
 
       {/* ================= LEFT CONTENT ================= */}
       <div className="lifestyle-intro">
 
         <span className="lifestyle-label">
-          THE ARAYANA EXPERIENCE
+          THE Aaranya EXPERIENCE
         </span>
 
         <h2>
@@ -27,7 +27,7 @@ const ArayanaLifestyle: React.FC = () => {
         </h2>
 
         <p>
-          Arayana brings together thoughtfully planned residences,
+          Aaranya brings together thoughtfully planned residences,
           a secure community and the natural charm of Sindhudurg
           to create a lifestyle that feels different from the ordinary.
         </p>
@@ -36,7 +36,7 @@ const ArayanaLifestyle: React.FC = () => {
           href="#contact"
           className="lifestyle-cta"
         >
-          Discover Arayana
+          Discover Aaranya
 
           <span>
             <ArrowUpRight size={17} />
@@ -51,13 +51,13 @@ const ArayanaLifestyle: React.FC = () => {
 
         <img
           src={lifestyle_image}
-          alt="Arayana Lifestyle"
+          alt="Aaranya Lifestyle"
         />
 
         <div className="lifestyle-image-overlay" />
 
         <div className="lifestyle-quote">
-          <span>ARAYANA</span>
+          <span>Aaranya</span>
 
           <strong>
             Luxury that feels
@@ -165,4 +165,4 @@ const ArayanaLifestyle: React.FC = () => {
   );
 };
 
-export default ArayanaLifestyle;
+export default AaranyaLifestyle;

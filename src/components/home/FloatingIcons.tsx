@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Phone, X } from "lucide-react";
 import logo from "../../assets/logo.png";
 
-const PHONE = "+919910729150";
+const PHONE = "+919056401240";
 const WHATSAPP_URL =
-  "https://wa.me/919910729150?text=Hi!%20I'm%20interested%20in%20BHL%20Group%20real%20estate%20and%20investment%20solutions.";
+  "https://wa.me/9056401240?text=Hi!%20I'm%20interested%20in%20BHL%20Group%20real%20estate%20and%20investment%20solutions.";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (

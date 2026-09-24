@@ -9,14 +9,14 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 
-import "./ArayanaHero.css";
+import "./AaranyaHero.css";
 
-import poolImg from "../../assets/swinning-pool.png";
-import wellnessImg from "../../assets/spa.png";
-import restaurantImg from "../../assets/rastaurent.png";
-import clubImg from "../../assets/club-house.png";
-import outdoorImg from "../../assets/outdoor-spaces.png";
-import gymImg from "../../assets/gym.png";
+import poolImg from "../../assets/swimming-pool.jpeg";
+import wellnessImg from "../../assets/spa.jpg";
+import restaurantImg from "../../assets/restaurant.jpg";
+import clubImg from "../../assets/club-house.jpg";
+import outdoorImg from "../../assets/out-door-spaces.jpg";
+import gymImg from "../../assets/gym.jpg";
 
 const amenities = [
   {
@@ -57,27 +57,26 @@ const amenities = [
   },
 ];
 
-const ArayanaAmenities: React.FC = () => {
+const AaranyaAmenities: React.FC = () => {
   return (
-    <section className="arayana-amenities" id="amenities">
+    <section className="Aaranya-amenities" id="amenities">
 
       {/* ================= HEADER ================= */}
 
       <div className="amenities-heading">
 
         <span className="amenities-eyebrow">
-          LIFE AT ARAYANA
+          LIFE AT Aaranya
         </span>
 
         <h2>
-          25+ Curated
+         Amenities Designed for
           <br />
-          <em>Amenities</em>
+          <em>Modern Living</em>
         </h2>
 
         <p>
-          Thoughtfully designed spaces for wellness,
-          recreation, connection and everyday living.
+          Thoughtfully crafted spaces for wellness, recreation, connection and everyday comfort.
         </p>
 
       </div>
@@ -174,4 +173,4 @@ const ArayanaAmenities: React.FC = () => {
   );
 };
 
-export default ArayanaAmenities;
+export default AaranyaAmenities;

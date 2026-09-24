@@ -7,20 +7,20 @@ import {
   ShieldCheck,
   Store,
 } from "lucide-react";
-import "./ArayanaHero.css";
+import "./AaranyaHero.css";
 import phase_one from "../../assets/phase-one.png";
 import phase_two from "../../assets/phase-two.png";
-const ArayanaPhases: React.FC = () => {
+const AaranyaPhases: React.FC = () => {
   return (
-    <section className="arayana-phases" id="residences">
+    <section className="Aaranya-phases" id="residences">
 
       {/* ================= HEADER ================= */}
-      <div className="arayana-phases-header">
+      <div className="Aaranya-phases-header">
 
-        <div className="arayana-phases-heading">
+        <div className="Aaranya-phases-heading">
 
-          <span className="arayana-section-label">
-            ARAYANA • THE DEVELOPMENT
+          <span className="Aaranya-section-label">
+            Aaranya • THE DEVELOPMENT
           </span>
 
           <h2>
@@ -31,7 +31,7 @@ const ArayanaPhases: React.FC = () => {
 
         </div>
 
-        <p className="arayana-phases-intro">
+        <p className="Aaranya-phases-intro">
           A thoughtfully planned development combining premium
           villa plots, studio apartments, apartments, bungalows
           and commercial spaces across two distinctive phases.
@@ -41,14 +41,14 @@ const ArayanaPhases: React.FC = () => {
 
 
       {/* ================= PHASE 01 ================= */}
-      <article className="arayana-phase phase-one">
+      <article className="Aaranya-phase phase-one">
 
         {/* Image */}
-        <div className="arayana-phase-image">
+        <div className="Aaranya-phase-image">
 
           <img
             src={phase_one}
-            alt="Arayana Phase 1"
+            alt="Aaranya Phase 1"
           />
 
           <div className="phase-image-overlay" />
@@ -58,14 +58,14 @@ const ArayanaPhases: React.FC = () => {
           </div>
 
           <div className="phase-image-label">
-            PREMIUM VILLA PLOTS
+            PREMIUM VILLA Residential Plots
           </div>
 
         </div>
 
 
         {/* Content */}
-        <div className="arayana-phase-content">
+        <div className="Aaranya-phase-content">
 
           <div className="phase-top">
 
@@ -75,7 +75,7 @@ const ArayanaPhases: React.FC = () => {
               </span>
 
               <h3>
-                Premium Villa
+                Premium Villa Residential
                 <br />
                 <em>Plots</em>
               </h3>
@@ -90,7 +90,7 @@ const ArayanaPhases: React.FC = () => {
 
 
           <p className="phase-description">
-            A limited inventory of premium villa plots designed
+            A limited inventory of premium villa Residential plots, designed
             for those looking to create their own space in a
             peaceful and secure setting.
           </p>
@@ -114,7 +114,7 @@ const ArayanaPhases: React.FC = () => {
 
               <div>
                 <span>INVENTORY</span>
-                <strong>45 Premium Villa Plots</strong>
+                <strong>45 premium villa Residential plots,</strong>
               </div>
             </div>
 
@@ -170,10 +170,10 @@ const ArayanaPhases: React.FC = () => {
 
 
       {/* ================= PHASE 02 ================= */}
-      <article className="arayana-phase phase-two">
+      <article className="Aaranya-phase phase-two">
 
         {/* Content */}
-        <div className="arayana-phase-content">
+        <div className="Aaranya-phase-content">
 
           <div className="phase-top">
 
@@ -237,24 +237,6 @@ const ArayanaPhases: React.FC = () => {
               <b>32</b>
 
             </div>
-
-
-            <div className="phase-type">
-
-              <div className="phase-type-icon">
-                <Home size={20} />
-              </div>
-
-              <div>
-                <strong>2 BHK Apartments</strong>
-                <span>Premium Residences</span>
-              </div>
-
-              <b>—</b>
-
-            </div>
-
-
             <div className="phase-type">
 
               <div className="phase-type-icon">
@@ -269,7 +251,20 @@ const ArayanaPhases: React.FC = () => {
               <b>09</b>
 
             </div>
+    <div className="phase-type">
 
+              <div className="phase-type-icon">
+                <Home size={20} />
+              </div>
+
+              <div>
+                <strong>2 BHK Apartments</strong>
+                <span>Premium Residences</span>
+              </div>
+
+              <b>—</b>
+
+            </div>
           </div>
 
 
@@ -317,11 +312,11 @@ const ArayanaPhases: React.FC = () => {
 
 
         {/* Image */}
-        <div className="arayana-phase-image">
+        <div className="Aaranya-phase-image">
 
           <img
             src={phase_two}
-            alt="Arayana Phase 2"
+            alt="Aaranya Phase 2"
           />
 
           <div className="phase-image-overlay" />
@@ -342,4 +337,4 @@ const ArayanaPhases: React.FC = () => {
   );
 };
 
-export default ArayanaPhases;
+export default AaranyaPhases;

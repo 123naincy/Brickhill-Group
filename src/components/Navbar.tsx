@@ -20,7 +20,7 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
-    { name: "Arayana", path: "/arayana" },
+    { name: "Aaranya", path: "/Aaranya" },
     { name: "Blog", path: "/blog" },
     { name: "Gallery", path: "/gallery" },
   ];
@@ -34,11 +34,11 @@ export default function Navbar() {
 
           <div className="flex items-center gap-6 text-sm">
             <a
-              href="mailto:info@brickhillgroup.com"
+              href="mailto:sales@brickhillgroup.com"
               className="flex items-center gap-2 text-white hover:text-[#9fc5e9]"
             >
               <Mail className="w-4 h-4 text-white" />
-              info@brickhillgroup.com
+              sales@brickhillgroup.com
             </a>
 
             <a
@@ -180,11 +180,11 @@ export default function Navbar() {
               <div className="flex flex-col gap-4 text-sm">
 
                 <a
-                  href="mailto:info@brickhillgroup.com"
+                  href="mailto:sales@brickhillgroup.com"
                   className="flex items-center gap-3 text-[#073762]"
                 >
                   <Mail size={18} />
-                  info@brickhillgroup.com
+                  sales@brickhillgroup.com
                 </a>
 
                 <a
