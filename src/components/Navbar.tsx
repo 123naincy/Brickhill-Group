@@ -5,7 +5,6 @@ import {
   CalendarDays,
   Users,
   Phone,
-  Newspaper
 } from "lucide-react";
 
 import { useState } from "react";
@@ -20,7 +19,7 @@ export default function Navbar() {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Projects", path: "/projects" },
-    { name: "Aaranya", path: "/Aaranya" },
+    { name: "Aaranya", path: "/aaranya" },
     { name: "Blog", path: "/blog" },
     { name: "Gallery", path: "/gallery" },
   ];
@@ -82,8 +81,9 @@ export default function Navbar() {
             >
               <img
                 src={logo}
-                alt="BHL Group"
+                alt="Brickhill Group"
                 className="h-12 md:h-14 w-auto object-contain"
+                decoding="async"
               />
             </Link>
 
@@ -124,8 +124,11 @@ export default function Navbar() {
 
             {/* Mobile Toggle */}
             <button
+              type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden text-[#073762]"
+              className="lg:hidden text-[#073762] min-w-11 min-h-11 inline-flex items-center justify-center"
+              aria-label={isOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isOpen}
             >
               {isOpen ? (
                 <X size={30} />

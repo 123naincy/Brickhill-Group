@@ -2,10 +2,10 @@ import React from "react";
 import { ArrowUpRight, Maximize2 } from "lucide-react";
 import "./AaranyaHero.css";
 
-import gallery1 from "../../assets/aryana-lifestyle.png";
-import gallery2 from "../../assets/premium-spcaes.png";
-import gallery3 from "../../assets/natural-surrending.png";
-import gallery4 from "../../assets/community-spaces.png";
+import gallery1 from "../../assets/aryana-lifestyle.jpg";
+import gallery2 from "../../assets/premium-spcaes.jpg";
+import gallery3 from "../../assets/natural-surrending.jpg";
+import gallery4 from "../../assets/community-spaces.jpg";
 import gallery5 from "../../assets/out-door-spaces.jpg";
 
 const galleryItems = [
@@ -92,6 +92,8 @@ const AaranyaGallery: React.FC = () => {
             <img
               src={item.image}
               alt={item.title}
+              loading="lazy"
+              decoding="async"
             />
 
             <div className="gallery-overlay" />

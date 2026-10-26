@@ -4,14 +4,15 @@ import ReactMarkdown from "react-markdown";
 import { useState } from "react";
 import { createSlug } from "../components/utils/slug";
 import { submitToSheet } from "../components/utils/submitToSheet";
-import { Helmet } from "react-helmet-async";
+import Seo from "../components/seo/Seo";
+import Breadcrumbs from "../components/seo/Breadcrumbs";
+import NotFound from "./NotFound";
+import { getSeoEntries } from "../seo/manifest";
+
 export default function BlogDetail() {
   const { slug } = useParams<{ slug: string }>();
   const blog = blogs.find((b) => createSlug(b.title) === slug);
-
-  if (!blog) {
-    return <h2 className="text-center mt-10">Blog Not Found ❌</h2>;
-  }
+  const entry = getSeoEntries().find((item) => item.path === `/blog/${slug}`);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -31,133 +32,34 @@ export default function BlogDetail() {
       });
       alert("Thank you! Our team will contact you soon.");
       setFormData({ name: "", phone: "", email: "" });
-    } catch (error) {
+    } catch {
       alert("Something went wrong. Please try again.");
     } finally {
       setIsSubmitting(false);
     }
   };
+
+  if (!blog || !entry) {
+    return <NotFound />;
+  }
+
   return (
-    <>
-    <Helmet>
-  {/* Primary SEO */}
-  <title>
-    {blog.title} | BHL Group
-  </title>
-
-  <meta
-    name="description"
-    content="Explore premium real estate insights, investment opportunities, infrastructure developments, luxury projects, warehousing, and market trends with BHL Group across India."
-  />
-
-  <meta
-    name="keywords"
-    content="BHL Group, BHL Group, Real Estate India, Property Investment, Luxury Real Estate, Land Banking India, Infrastructure Development, Warehousing Solutions, Goa Real Estate, Delhi NCR Projects, Investment Opportunities"
-  />
-
-  <meta
-    name="author"
-    content="BHL Group"
-  />
-
-  <meta
-    name="robots"
-    content="index, follow"
-  />
-
-  {/* Canonical */}
-  <link
-    rel="canonical"
-    href={`https://brickhillgroup.com/blog/${slug}`}
-  />
-
-  {/* Open Graph */}
-  <meta
-    property="og:type"
-    content="article"
-  />
-
-  <meta
-    property="og:title"
-    content={`${blog.title} | BHL Group`}
-  />
-
-  <meta
-    property="og:description"
-    content="Read expert insights on luxury real estate, land banking, infrastructure, logistics, and investment opportunities across India with BHL Group."
-  />
-
-  <meta
-    property="og:url"
-    content={`https://brickhillgroup.com/blog/${slug}`}
-  />
-
-  <meta
-    property="og:image"
-    content={blog.image}
-  />
-
-  <meta
-    property="og:site_name"
-    content="BHL Group"
-  />
-
-  {/* Twitter SEO */}
-  <meta
-    name="twitter:card"
-    content="summary_large_image"
-  />
-
-  <meta
-    name="twitter:title"
-    content={`${blog.title} | BHL Group`}
-  />
-
-  <meta
-    name="twitter:description"
-    content="Explore premium real estate trends, infrastructure developments, and investment opportunities with BHL Group."
-  />
-
-  <meta
-    name="twitter:image"
-    content={blog.image}
-  />
-
-  {/* Structured Data */}
-  <script type="application/ld+json">
-    {JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      headline: blog.title,
-      image: blog.image,
-      author: {
-        "@type": "Organization",
-        name: "BHL Group",
-      },
-      publisher: {
-        "@type": "Organization",
-        name: "BHL Group",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://brickhillgroup.com/logo.png",
-        },
-      },
-      mainEntityOfPage: {
-        "@type": "WebPage",
-        "@id": `https://brickhillgroup.com/blog/${slug}`,
-      },
-      description:
-        "Explore luxury real estate, infrastructure, warehousing, land banking, and investment opportunities across India with BHL Group.",
-    })}
-  </script>
-</Helmet>
-<div className="bg-gray-50 min-h-screen">
+    <main>
+    <Seo entry={entry} />
+    <div className="pt-24 lg:pt-32 bg-white">
+      <Breadcrumbs items={entry.breadcrumbs} />
+    </div>
+    <div className="bg-gray-50 min-h-screen">
       {/* ✅ Hero Banner */}
       <div className="relative w-full h-[420px]">
         <img
           src={blog.image}
           alt={blog.title}
           className="w-full h-full object-cover"
+          width={1200}
+          height={630}
+          fetchPriority="high"
+          decoding="async"
         />
 
         {/* Overlay */}
@@ -187,7 +89,20 @@ export default function BlogDetail() {
 
           {/* Markdown */}
           <div className="prose prose-lg max-w-none prose-p:font-normal prose-img:rounded-xl prose-img:shadow-md blog-content">
-            <ReactMarkdown>{blog.content}</ReactMarkdown>
+            <ReactMarkdown
+              components={{
+                img: ({ src, alt }) => (
+                  <img
+                    src={src || ""}
+                    alt={alt || ""}
+                    loading="lazy"
+                    decoding="async"
+                  />
+                ),
+              }}
+            >
+              {blog.content}
+            </ReactMarkdown>
           </div>
 
           {/* CTA */}
@@ -265,7 +180,7 @@ export default function BlogDetail() {
         </aside>
       </div>
     </div>
-    </>
+    </main>
     
   );
 }

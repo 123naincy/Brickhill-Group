@@ -1,8 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
-import { Document, Page } from "react-pdf";
+import { Document, pdfjs } from "react-pdf";
+import "react-pdf/dist/Page/TextLayer.css";
+import "react-pdf/dist/Page/AnnotationLayer.css";
 import HTMLFlipBook from "react-pageflip";
 import BookPage from "./BookPage";
 import { getPdfUrl } from "../../utils/pdfUrl";
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  "pdfjs-dist/build/pdf.worker.min.mjs",
+  import.meta.url
+).toString();
 
 interface Props {
   pdf: string;

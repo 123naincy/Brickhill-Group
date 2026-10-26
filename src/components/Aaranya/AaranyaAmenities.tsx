@@ -102,6 +102,8 @@ const AaranyaAmenities: React.FC = () => {
               <img
                 src={amenity.image}
                 alt={amenity.title}
+                loading="lazy"
+                decoding="async"
               />
 
               <div className="amenity-overlay" />

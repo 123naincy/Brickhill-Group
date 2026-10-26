@@ -12,6 +12,7 @@ export default function Hero() {
         muted
         loop
         playsInline
+        preload="metadata"
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src={HERO_VIDEO} type="video/mp4" />
@@ -27,7 +28,7 @@ export default function Hero() {
           </h1>
 
           <p className="hero-subtitle hero-animate hero-animate-2">
-            Discover premium villa Residential plots, near Goa, thoughtfully crafted for luxury living, serene holiday homes, and exceptional long-term investment.
+            Brickhill Group is a real estate company based in Gurugram, Haryana. The portfolio includes residential plots near Goa, plus commercial, industrial, and warehouse projects.
           </p>
 
           <div className="hero-buttons hero-animate hero-animate-3">

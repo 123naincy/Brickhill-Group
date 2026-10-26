@@ -4,6 +4,7 @@ import { MapPin, Square, Tag, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Project } from "../types/Project";
 import { allImages, fallbackImage } from "../data/AllImages";
+import { projectPath } from "../seo/projects";
 
 export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -45,11 +46,11 @@ export default function Projects() {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
             Our Projects
-          </h2>
-          <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
-            Discover our portfolio of exceptional developments across all sectors
+          </h1>
+          <p className="text-xl text-neutral-600 max-w-3xl mx-auto">
+            Residential, commercial, industrial, and warehouse developments from Brickhill Group, including projects in Sindhudurg, Mohali, Panipat, and along major highways.
           </p>
         </div>
 
@@ -103,7 +104,9 @@ export default function Projects() {
                 {/* Content */}
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-[#073762] mb-3">
-                    {project.title}
+                    <Link to={projectPath(project)} style={{ color: "#073762" }}>
+                      {project.title}
+                    </Link>
                   </h3>
 
                   <p className="text-neutral-600 mb-4 line-clamp-3">
@@ -128,15 +131,14 @@ export default function Projects() {
                       </div>
                     )}
 
-                    {project.page_url && (
-                      <Link
-                        to={project.page_url}
-                        className="inline-flex items-center gap-2 mt-4 text-[#3d85c5] font-semibold hover:text-[#073762] transition"
-                      >
-                        View Project Details
-                        <ArrowRight className="w-4 h-4" />
-                      </Link>
-                    )}
+                    <Link
+                      to={projectPath(project)}
+                      className="inline-flex items-center gap-2 mt-4 font-semibold"
+                      style={{ color: "#3d85c5" }}
+                    >
+                      View {project.title}
+                      <ArrowRight className="w-4 h-4" />
+                    </Link>
                   </div>
                 </div>
               </div>

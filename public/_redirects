@@ -1,0 +1,6 @@
+# Permanent redirects. Do not rewrite every URL to /index.html.
+/Aaranya              /aaranya     301
+/Aaranya/             /aaranya     301
+/newsletter-card      /newsletter  301
+/newsletter-card/     /newsletter  301
+/*/                   /:splat      301

@@ -8,8 +8,8 @@ import {
   Store,
 } from "lucide-react";
 import "./AaranyaHero.css";
-import phase_one from "../../assets/phase-one.png";
-import phase_two from "../../assets/phase-two.png";
+import phase_one from "../../assets/phase-one.jpg";
+import phase_two from "../../assets/phase-two.jpg";
 const AaranyaPhases: React.FC = () => {
   return (
     <section className="Aaranya-phases" id="residences">
@@ -48,7 +48,9 @@ const AaranyaPhases: React.FC = () => {
 
           <img
             src={phase_one}
-            alt="Aaranya Phase 1"
+            alt="Aaranya phase one layout in Sindhudurg"
+            loading="lazy"
+            decoding="async"
           />
 
           <div className="phase-image-overlay" />
@@ -316,7 +318,9 @@ const AaranyaPhases: React.FC = () => {
 
           <img
             src={phase_two}
-            alt="Aaranya Phase 2"
+            alt="Aaranya phase two layout in Sindhudurg"
+            loading="lazy"
+            decoding="async"
           />
 
           <div className="phase-image-overlay" />

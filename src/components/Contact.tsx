@@ -1,7 +1,6 @@
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
 import { submitToSheet } from "../components/utils/submitToSheet";
-import { Helmet } from "react-helmet-async";
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -43,56 +42,6 @@ export default function Contact() {
   };
 
   return (
-    <>
-      <Helmet>
-        {/* Title */}
-        <title>
-          Contact BHL Group | Real Estate Investment Experts in Gurugram
-        </title>
-        {/* Meta Description */}
-        <meta
-          name="description"
-          content="Contact BHL Group for premium real estate investment opportunities in Gurugram. Reach our team for residential, commercial, industrial and warehouse property inquiries."
-        />
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="BHL Group contact, real estate developers Gurugram, property investment Gurugram contact, commercial property Gurugram contact"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="BHL Group" />
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://www.brickhillgroup.com/contact"
-        />
-        {/* Open Graph */}
-        <meta
-          property="og:title"
-          content="Contact BHL Group | Real Estate Investment"
-        />
-
-        <meta
-          property="og:description"
-          content="Get in touch with BHL Group to explore property investment opportunities in Gurugram."
-        />
-
-
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-
-        <meta
-          name="twitter:title"
-          content="Contact BHL Group | Real Estate Experts"
-        />
-
-        <meta
-          name="twitter:description"
-          content="Reach BHL Group for real estate investment opportunities in Gurugram."
-        />
-
-      </Helmet>
       <section
         id="contact"
         className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]"
@@ -101,9 +50,9 @@ export default function Contact() {
 
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
+            <h1 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
               Get In Touch
-            </h2>
+            </h1>
             <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
               Have a question or ready to start your project? We’re here to help!
             </p>
@@ -280,6 +229,5 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </>
   );
 }

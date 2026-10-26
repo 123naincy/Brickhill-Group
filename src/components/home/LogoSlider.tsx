@@ -15,9 +15,10 @@ export default function LogoSlider({ speed = "normal" }: LogoSliderProps) {
             <div key={`${logo.id}-${index}`} className="logo-marquee-item">
               <img
                 src={logo.src}
-                alt={logo.name}
+                alt={index < partnerLogos.length ? logo.name : ""}
                 className="logo-marquee-img"
                 loading="lazy"
+                decoding="async"
               />
             </div>
           ))}

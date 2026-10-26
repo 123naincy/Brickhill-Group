@@ -7,10 +7,10 @@ import {
 } from "lucide-react";
 import "./AaranyaHero.css";
 
-import studioImg from "../../assets/studio-apartment.png";
-import oneBhkImg from "../../assets/1-bhk.png";
-import twoBhkImg from "../../assets/2-bhk.png";
-import bungalowImg from "../../assets/bunglows.png";
+import studioImg from "../../assets/studio-apartment.jpg";
+import oneBhkImg from "../../assets/1-bhk.jpg";
+import twoBhkImg from "../../assets/2-bhk.jpg";
+import bungalowImg from "../../assets/bunglows.jpg";
 
 const residences = [
   {
@@ -156,6 +156,8 @@ const AaranyaResidences: React.FC = () => {
           <img
             src={selected.image}
             alt={selected.title}
+            loading="lazy"
+            decoding="async"
           />
 
           <div className="residence-image-overlay" />

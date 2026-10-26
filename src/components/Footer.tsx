@@ -29,7 +29,7 @@ const socialLinks = [
   },
   {
     icon: Linkedin,
-    url: "https://www.linkedin.com/company/bhlgroups/?viewAsMember=true",
+    url: "https://www.linkedin.com/company/bhlgroups/",
     label: "LinkedIn",
   },
 ];
@@ -43,7 +43,7 @@ const socialLinks = [
           <div>
             <div className="logo mb-2">
               <Link to="/" className="logo">
-                <img src={Logo} alt="Brickhill-group" className="img-fluid" />
+                <img src={Logo} alt="Brickhill Group" className="img-fluid" />
               </Link>
             </div>
 
@@ -73,10 +73,12 @@ const socialLinks = [
               Quick Links
             </h3>
             <ul className="space-y-3 text-white/80">
-              <li><a href="/about" className="hover:text-[#9fc5e9] transition">About Us</a></li>
-              <li><a href="/group-buying" className="hover:text-[#9fc5e9] transition">Group Buying</a></li>
-              <li><a href="/blog" className="hover:text-[#9fc5e9] transition">Blog</a></li>
-              <li><a href="/newsletter" className="hover:text-[#9fc5e9] transition">Newsletter</a></li>
+              <li><Link to="/about" className="hover:text-[#9fc5e9] transition">About Us</Link></li>
+              <li><Link to="/projects" className="hover:text-[#9fc5e9] transition">Projects</Link></li>
+              <li><Link to="/group-buying" className="hover:text-[#9fc5e9] transition">Group Buying</Link></li>
+              <li><Link to="/blog" className="hover:text-[#9fc5e9] transition">Blog</Link></li>
+              <li><Link to="/newsletter" className="hover:text-[#9fc5e9] transition">Newsletter</Link></li>
+              <li><Link to="/contact" className="hover:text-[#9fc5e9] transition">Contact</Link></li>
             </ul>
           </div>
 
@@ -87,39 +89,47 @@ const socialLinks = [
             </h3>
             <ul className="space-y-3">
               <li>
-                <Link
-                  to="https://kbdlandcorp.in/eden-street"
+                <a
+                  href="https://kbdlandcorp.in/eden-street"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white/80 hover:text-[#9fc5e9] transition"
                 >
                   Eden street
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
-                  to="https://kbdlandcorp.in/bridal-shopping-commercial"
+                <a
+                  href="https://kbdlandcorp.in/bridal-shopping-commercial"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white/80 hover:text-[#9fc5e9] transition"
                 >
                   Bridal Square
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
-                  to="https://panipatindustrialplots.com/"
+                <a
+                  href="https://panipatindustrialplots.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white/80 hover:text-[#9fc5e9] transition"
                 >
                   Panipat Industrial Plots
-                </Link>
+                </a>
               </li>
 
               <li>
-                <Link
-                  to="https://thelogiprime.com/"
+                <a
+                  href="https://thelogiprime.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-white/80 hover:text-[#9fc5e9] transition"
                 >
                   Warehouse
-                </Link>
+                </a>
               </li>
             </ul>
           </div>

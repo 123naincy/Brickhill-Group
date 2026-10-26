@@ -1,34 +1,26 @@
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
+import Seo from "../components/seo/Seo";
+import Breadcrumbs from "../components/seo/Breadcrumbs";
 import { newsletters } from "../data/newsletters";
 import FlipBook from "../components/newsletter/FlipBook";
 import { getPdfUrl } from "../utils/pdfUrl";
+import NotFound from "./NotFound";
+import { getSeoEntries } from "../seo/manifest";
 
 const NewsletterViewer = () => {
   const { id } = useParams();
   const newsletter = newsletters.find((item) => item.id === Number(id));
+  const entry = getSeoEntries().find((item) => item.path === `/newsletter/${id}`);
 
-  if (!newsletter) {
-    return (
-      <div className="pt-24 px-6 text-center min-h-[60vh]">
-        <h2 className="text-2xl font-bold text-[#073762] mb-4">
-          Newsletter Not Found
-        </h2>
-        <Link to="/newsletter" className="text-[#3d85c5] font-semibold">
-          ← Back to Newsletters
-        </Link>
-      </div>
-    );
+  if (!newsletter || !entry) {
+    return <NotFound />;
   }
 
   return (
-    <>
-      <Helmet>
-        <title>{`${newsletter.title} | BHL Group`}</title>
-      </Helmet>
-
-      <div className="viewer-page pt-24">
-        <div className="viewer-header">
+    <main className="viewer-page">
+      <Seo entry={entry} />
+      <Breadcrumbs items={entry.breadcrumbs} />
+      <div className="viewer-header">
           <Link to="/newsletter" className="text-[#3d85c5] font-semibold">
             ← Back to Newsletters
           </Link>
@@ -46,8 +38,7 @@ const NewsletterViewer = () => {
         </div>
 
         <FlipBook key={newsletter.id} pdf={newsletter.pdf} />
-      </div>
-    </>
+    </main>
   );
 };
 

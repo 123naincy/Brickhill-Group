@@ -13,8 +13,10 @@ const NewsletterCard = ({ newsletter }: Props) => {
     >
       <img
         src={newsletter.cover}
-        alt={newsletter.title}
+        alt={`${newsletter.month} ${newsletter.year} newsletter cover`}
         className="newsletter-img"
+        loading="lazy"
+        decoding="async"
       />
 
       <div className="newsletter-overlay">

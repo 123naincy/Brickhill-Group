@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
 import projectsData from "../../data/projects.json";
 import { ArrowRight, MapPin } from "lucide-react";
+import { Link } from "react-router-dom";
 import type { Project } from "../../types/Project";
 import { allImages, fallbackImage } from "../../data/AllImages";
+import { projectPath } from "../../seo/projects";
 
 export default function FeaturedProjects() {
   const [projects, setProjects] = useState<Project[]>([]);
@@ -74,7 +76,9 @@ export default function FeaturedProjects() {
                 {/* Content */}
                 <div className="p-6">
                   <h3 className="text-2xl font-bold text-[#073762] mb-2">
-                    {project.title}
+                    <Link to={projectPath(project)} style={{ color: "#073762" }}>
+                      {project.title}
+                    </Link>
                   </h3>
 
                   <div className="flex items-center text-neutral-600 mb-3">
@@ -91,12 +95,13 @@ export default function FeaturedProjects() {
                       {project.area}
                     </span>
 
-                    <a
-                      href="#projects"
-                      className="text-[#3d85c5] font-semibold hover:text-[#073762] transition"
+                    <Link
+                      to={projectPath(project)}
+                      className="font-semibold"
+                      style={{ color: "#3d85c5" }}
                     >
-                      Learn More →
-                    </a>
+                      View {project.title}
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -106,13 +111,13 @@ export default function FeaturedProjects() {
 
         {/* CTA */}
         <div className="text-center">
-          <a
-            href="./projects"
+          <Link
+            to="/projects"
             className="inline-flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-[#073762] to-[#3d85c5] text-white font-semibold rounded-full shadow-xl hover:scale-105 transition duration-300"
           >
             View All Projects
             <ArrowRight className="h-5 w-5" />
-          </a>
+          </Link>
         </div>
 
       </div>

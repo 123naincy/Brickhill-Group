@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowUpRight } from "lucide-react";
 import landbase from "../../assets/projects/landbase.jpg";
-import realtors from "../../assets/projects/realtors.png";
+import realtors from "../../assets/projects/realtors.jpg";
 import studio from "../../assets/projects/studio.jpg";
 import logi from "../../assets/projects/warehouse-two.jpg";
 import infra from "../../assets/projects/infra.jpg"

@@ -42,9 +42,9 @@ export default function GallerySection() {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-4">
             Gallery
-          </h2>
+          </h1>
           <p className="text-xl text-neutral-600 max-w-2xl mx-auto">
             Explore our visual journey through projects and developments
           </p>
@@ -80,6 +80,8 @@ export default function GallerySection() {
                   src={allImages[image.image_key] || fallbackImage}
                   alt={image.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 

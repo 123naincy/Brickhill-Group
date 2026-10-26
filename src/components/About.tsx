@@ -1,67 +1,14 @@
 import { Target, Eye, Award, Users } from "lucide-react";
-import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 
-export default function About() {
+type AboutProps = {
+  isPage?: boolean;
+};
+
+export default function About({ isPage = false }: AboutProps) {
+  const Heading = isPage ? "h1" : "h2";
+
   return (
-     <>
-      <Helmet>
-        {/* Title */}
-        <title>
-          About BHL Group | Real Estate Developers in Gurugram
-        </title>
-        {/* Meta Description */}
-        <meta
-          name="description"
-          content="Learn about BHL Group, a trusted real estate developer in Gurugram specializing in residential, commercial, industrial, and warehouse developments."
-        />
-        {/* Keywords */}
-        <meta
-          name="keywords"
-          content="BHL Group, real estate developers Gurugram, property development company India, commercial real estate Gurugram, warehouse projects Gurugram"
-        />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="BHL Group" />
-        {/* Canonical */}
-        <link
-          rel="canonical"
-          href="https://www.brickhillgroup.com/about"
-        />
-        {/* Open Graph */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.brickhillgroup.com/about" />
-        <meta
-          property="og:title"
-          content="About BHL Group | Real Estate Developers"
-        />
-
-        <meta
-          property="og:description"
-          content="Discover BHL Group's journey, mission, and vision in building premium real estate developments."
-        />
-        <meta
-          property="og:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
-
-        {/* Twitter */}
-        <meta name="twitter:card" content="summary_large_image" />
-
-        <meta
-          name="twitter:title"
-          content="About BHL Group | Real Estate Developers"
-        />
-
-        <meta
-          name="twitter:description"
-          content="Explore BHL Group’s mission, vision and real estate expertise."
-        />
-
-        <meta
-          name="twitter:image"
-          content="https://www.brickhillgroup.com/og-image.jpg"
-        />
-
-      </Helmet>
     <section
       id="about"
       className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]"
@@ -71,13 +18,19 @@ export default function About() {
         {/* Intro */}
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div>
-            <h2 className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-6">
-              About BHL Group
-            </h2>
+            <Heading className="text-4xl font-bold bg-gradient-to-r from-[#073762] to-[#3d85c5] bg-clip-text text-transparent mb-6">
+              {isPage ? "About Brickhill Group" : "About BHL Group"}
+            </Heading>
 
             <p className="text-lg text-neutral-700 leading-relaxed">
   BHL Group is a trusted real estate brand with over a decade of expertise in delivering residential, commercial, industrial, warehousing, and innovative lifestyle developments, including BHL Studioz. We believe real estate is more than just building structures it is about creating valuable spaces where businesses grow, communities thrive, and modern lifestyles evolve. Driven by innovation, strategic vision, transparency, and a commitment to excellence, BHL Group continues to set new industry benchmarks by developing future-ready spaces that inspire trust, growth, and long-term value.
 </p>
+            <p className="text-lg text-neutral-700 leading-relaxed mt-4">
+              The office is at DLF Corporate Greens, Tower 1 1604-1605, Gurugram, Haryana, 122002.{" "}
+              <Link to="/projects" className="inline-link">See current projects</Link>
+              {" "}or{" "}
+              <Link to="/contact" className="inline-link">contact the Gurugram team</Link>.
+            </p>
             
           </div>
 
@@ -85,8 +38,12 @@ export default function About() {
           <div className="relative">
             <img
               src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="BHL Group Office"
+              alt="Colleagues working together in an office"
               className="rounded-2xl shadow-xl"
+              width={800}
+              height={533}
+              loading={isPage ? "eager" : "lazy"}
+              decoding="async"
             />
 
             {/* Gradient badge */}
@@ -155,6 +112,5 @@ export default function About() {
 
       </div>
     </section>
-    </>
   );
 }

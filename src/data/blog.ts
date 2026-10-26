@@ -1,7 +1,3 @@
-import EstateTrendsImg1 from "../../public/assets/blog/estate-trends.jpg";
-import BlogSecond from "../../public/assets/blog/blog-two-third.jpg";
-import BlogThird from "../../public/assets/blog/blog-third-first.jpg";
-import BlogForth from "../../public/assets/blog/indian-real-estate-wealth-creator.png";
 export const blogs = [
   {
     id: 1,
@@ -9,7 +5,7 @@ export const blogs = [
     date: "April 03, 2026",
     author: "Mrs. Divyanshi Agrawal",
     category: "Bank Officer - Aditya Birla Finance",
-    image: EstateTrendsImg1,
+    image: "/assets/blog/estate-trends.jpg",
 
     content: `## Real Estate Trends Shaping the Future of Property Investment
 
@@ -40,7 +36,7 @@ In conclusion, the real estate industry offers strong potential for growth and s
     date: "March 15, 2026",
     author: "Mr. Shivam Sharma",
     category: "Software Engineer",
-    image: BlogSecond,
+    image: "/assets/blog/blog-two-third.jpg",
     content: `## How a Real Estate Realtor Provides Smart Real Estate Solutions
 
 ![Real Estate Realtor](/assets/blog/blog-two-two.jpg)
@@ -70,7 +66,7 @@ In conclusion, combining expert guidance with personalized [real estate solution
     date: "March 27, 2026",
     author: "Mrs. Swati Chauhan",
     category: "Real Estate Agent",
-    image: BlogThird,
+    image: "/assets/blog/blog-third-first.jpg",
     content: `## Why Real Estate India Is Booming in 2026
 
 ![Real Estate India Growth](/assets/blog/blog-third-second.jpg)
@@ -100,7 +96,7 @@ Looking ahead, [real estate india](https://kbdlandcorp.in) is expected to grow s
     date: "May 22, 2026",
     author: "Mr. Sumit Bhriya",
     category: "Ceo & Founder - BHL Group",
-    image: BlogForth,
+    image: "/assets/blog/indian-real-estate-wealth-creator.png",
     content: `## Why Indian Real Estate Could Be the Next Big Wealth Creator in India
 
 ![Real Estate India Growth](/assets/blog/skylines-rising.png)

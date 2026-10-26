@@ -5,7 +5,7 @@ import {
   MoveUpRight,
 } from "lucide-react";
 import "./AaranyaHero.css";
-import hero from "../../assets/aryana-hero.png"
+import hero from "../../assets/aryana-hero.jpg"
 const AaranyaHero: React.FC = () => {
   return (
     <section className="Aaranya-hero-wrapper">
@@ -44,7 +44,9 @@ const AaranyaHero: React.FC = () => {
 
           <img
             src={hero}
-            alt="Aaranya Sindhudurg"
+            alt="Aaranya residential project in Sindhudurg"
+            decoding="async"
+            fetchPriority="high"
           />
 
           <div className="Aaranya-image-overlay" />

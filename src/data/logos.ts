@@ -17,14 +17,14 @@ export type PartnerLogo = {
 
 /** Add or replace logos here — or drop files in public/assets/logos/ and use `/assets/logos/name.png` */
 export const partnerLogos: PartnerLogo[] = [
-  { id: "bhl", name: "BHL Group", src: infra },
-  { id: "bhl-footer", name: "BHL Group", src: Landbase },
+  { id: "bhl", name: "BHL Infra", src: infra },
+  { id: "bhl-footer", name: "BHL Landbase", src: Landbase },
   { id: "go-boundary", name: "Go Boundary", src: goBoundaryLogo },
-  { id: "realtors", name: "Realtors", src: realtorsLogo },
-  { id: "logi-prime", name: "LogiPrime", src: LogiPrime },
-  { id: "Aaranya", name: "Plaza 117", src: Aaranya },
-  { id: "Mec-Proud", name: "Himalayan City", src: Mecproud },
-  { id: "Newsletter", name: "BHL Group", src: Newsletter },
-  { id: "Studioz", name: "BHL Group", src: Studioz },
-  { id: "Vediya", name: "BHL Group", src: Vediya },
+  { id: "realtors", name: "BHL Realtors", src: realtorsLogo },
+  { id: "logi-prime", name: "Logi Prime", src: LogiPrime },
+  { id: "Aaranya", name: "Aaranya", src: Aaranya },
+  { id: "Mec-Proud", name: "Mec Proud", src: Mecproud },
+  { id: "Newsletter", name: "BHL Newsletter", src: Newsletter },
+  { id: "Studioz", name: "BHL Studioz", src: Studioz },
+  { id: "Vediya", name: "Vediya", src: Vediya },
 ];

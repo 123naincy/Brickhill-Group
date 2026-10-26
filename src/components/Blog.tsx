@@ -48,8 +48,13 @@ export default function BlogSection({ isPage = false }: BlogSectionProps) {
                   {blog.category}
                 </span>
 
-                <h3 className="text-xl font-bold text-[#073762] mt-4 line-clamp-2">
-                  {blog.title}
+                <h3 className="text-xl font-bold mt-4 line-clamp-2">
+                  <Link
+                    to={`/blog/${createSlug(blog.title)}`}
+                    style={{ color: "#073762" }}
+                  >
+                    {blog.title}
+                  </Link>
                 </h3>
 
                 <div className="flex items-center gap-4 text-sm text-neutral-500 mt-4">
@@ -66,9 +71,9 @@ export default function BlogSection({ isPage = false }: BlogSectionProps) {
 
                 <Link
                   to={`/blog/${createSlug(blog.title)}`}
-                  className="inline-block mt-4 text-[#3d85c5] font-semibold hover:text-[#073762] transition"
+                  className="inline-link inline-block mt-4"
                 >
-                  Read full blog
+                  Read {blog.title}
                 </Link>
               </div>
             </article>

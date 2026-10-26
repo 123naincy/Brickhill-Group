@@ -1,4 +1,5 @@
 import { Home, Building, Factory, Warehouse } from "lucide-react";
+import { Link } from "react-router-dom";
 import { allImages } from "../../data/AllImages";
 
 const residential = allImages.residentialFallback;
@@ -14,6 +15,7 @@ export default function Services() {
       description:
         "Luxurious homes and apartments designed for modern living with premium amenities and strategic locations.",
       image: residential,
+      alt: "Residential property developed with Brickhill Group",
     },
     {
       icon: Building,
@@ -21,6 +23,7 @@ export default function Services() {
       description:
         "State-of-the-art office spaces and retail complexes that drive business growth and success.",
       image: commercial,
+      alt: "Commercial project by Brickhill Group",
     },
     {
       icon: Factory,
@@ -28,6 +31,7 @@ export default function Services() {
       description:
         "Robust industrial facilities equipped with modern infrastructure for manufacturing excellence.",
       image: industrial,
+      alt: "Industrial project associated with Brickhill Group",
     },
     {
       icon: Warehouse,
@@ -35,6 +39,7 @@ export default function Services() {
       description:
         "Efficient storage and logistics solutions with strategic connectivity and advanced systems.",
       image: warehouse,
+      alt: "Warehouse facility associated with Brickhill Group",
     },
   ];
 
@@ -71,8 +76,10 @@ export default function Services() {
               <div className="relative h-48 overflow-hidden">
                 <img
                   src={s.image}
-                  alt={s.title}
+                  alt={s.alt}
                   className="w-full h-full object-cover group-hover:scale-110 transition duration-700"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 
@@ -89,6 +96,9 @@ export default function Services() {
                 <p className="text-neutral-600 leading-relaxed text-sm">
                   {s.description}
                 </p>
+                <Link to="/projects" className="inline-link inline-block mt-4 text-sm">
+                  View {s.title.toLowerCase()} projects
+                </Link>
               </div>
             </div>
           ))}

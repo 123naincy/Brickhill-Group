@@ -7,7 +7,7 @@ import {
   Home,
 } from "lucide-react";
 import "./AaranyaHero.css";
-import lifestyle_image from "../../assets/lifestyle.png";
+import lifestyle_image from "../../assets/lifestyle.jpg";
 
 const AaranyaLifestyle: React.FC = () => {
   return (
@@ -51,7 +51,9 @@ const AaranyaLifestyle: React.FC = () => {
 
         <img
           src={lifestyle_image}
-          alt="Aaranya Lifestyle"
+          alt="Outdoor lifestyle setting at Aaranya, Sindhudurg"
+          loading="lazy"
+          decoding="async"
         />
 
         <div className="lifestyle-image-overlay" />

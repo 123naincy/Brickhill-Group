@@ -1,47 +1,7 @@
-import { Helmet } from "react-helmet-async";
-
-const faqs = [
-  [
-    "What is this webinar about?",
-    "This webinar explains how group buying works in real estate and how buyers save significantly through collective purchasing.",
-  ],
-  [
-    "Who should attend this webinar?",
-    "Anyone interested in buying property whether for investment or personal use who wants to understand smarter buying strategies and real, on-ground deals.",
-  ],
-  [
-    "Why is there a ₹99 access fee?",
-    "The fee ensures serious participation and helps maintain quality interaction.",
-  ],
-  [
-    "Will real projects and pricing be discussed?",
-    "Yes. The webinar includes real projects, live price comparisons, and an explanation of how group negotiations are conducted with developers.",
-  ],
-  [
-    "Will there be a live Q&A session?",
-    "Absolutely. Participants can ask questions directly during the session and get clarity on the process, projects, and next steps.",
-  ],
-];
+import { webinarFaqs } from "../../data/webinarFaqs";
 
 export default function FAQSection() {
   return (
-    <>
-      <Helmet>
-        <script type="application/ld+json">
-          {JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqs.map(([q, a]) => ({
-              "@type": "Question",
-              "name": q,
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": a
-              }
-            }))
-          })}
-        </script>
-      </Helmet>
     <section className="py-20 bg-gradient-to-br from-[#f4f8fc] via-white to-[#eaf3fb]">
       <div className="max-w-4xl mx-auto px-6">
 
@@ -58,17 +18,17 @@ export default function FAQSection() {
 
         {/* FAQ Items */}
         <div className="space-y-6">
-          {faqs.map(([q, a], i) => (
+          {webinarFaqs.map((faq) => (
             <div
-              key={i}
+              key={faq.question}
               className="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition duration-300 border border-[#9fc5e9]/30 hover:-translate-y-1"
             >
               <div className="border-l-4 border-[#3d85c5] pl-4">
                 <h3 className="font-semibold text-lg text-[#073762] mb-2">
-                  {q}
+                  {faq.question}
                 </h3>
                 <p className="text-neutral-600">
-                  {a}
+                  {faq.answer}
                 </p>
               </div>
             </div>
@@ -77,6 +37,5 @@ export default function FAQSection() {
 
       </div>
     </section>
-    </>
   );
 }

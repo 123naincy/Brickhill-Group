@@ -40,6 +40,21 @@ a {
   color: #fff;
 }
 
+a.inline-link {
+  color: #0b5394 !important;
+  font-weight: 600;
+}
+
+a.inline-link:hover {
+  color: #073762 !important;
+}
+
+.hero-text-link {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-decoration: underline !important;
+}
+
 /* ================= BREADCRUMB ================= */
 
 .breadcrumb-banner {
@@ -1238,7 +1253,7 @@ header .topbar {
 ========================= */
 
 .newsletter-page {
-    padding: 120px 0 60px;
+    padding: 150px 0 60px;
 }
 
 .heading {
